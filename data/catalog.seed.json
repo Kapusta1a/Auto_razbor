@@ -1,0 +1,478 @@
+{
+  "schemaVersion": 1,
+  "note": "Стартовый демонстрационный набор. Не полный мировой каталог; перед публикацией данные следует сверить по рынкам и источникам.",
+  "brands": [
+    {
+      "id": "toyota",
+      "name": "Toyota",
+      "country": "Japan",
+      "models": [
+        {
+          "id": "toyota-camry",
+          "name": "Camry",
+          "generations": [
+            {
+              "id": "toyota-camry-xv10",
+              "code": "XV10",
+              "years": "1991–1996",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "toyota-camry-xv20",
+              "code": "XV20",
+              "years": "1996–2001",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "toyota-camry-xv30",
+              "code": "XV30",
+              "years": "2001–2006",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "toyota-camry-xv40",
+              "code": "XV40",
+              "years": "2006–2011",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "toyota-camry-xv50",
+              "code": "XV50",
+              "years": "2011–2017",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "toyota-camry-xv70",
+              "code": "XV70",
+              "years": "2017–2024",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "toyota-camry-xv80",
+              "code": "XV80",
+              "years": "2023–present",
+              "markets": [
+                "Selected markets"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bmw",
+      "name": "BMW",
+      "country": "Germany",
+      "models": [
+        {
+          "id": "bmw-3-series",
+          "name": "3 Series",
+          "generations": [
+            {
+              "id": "bmw-3-e30",
+              "code": "E30",
+              "years": "1982–1994",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "bmw-3-e36",
+              "code": "E36",
+              "years": "1990–2000",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "bmw-3-e46",
+              "code": "E46",
+              "years": "1997–2006",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "bmw-3-e90",
+              "code": "E90/E91/E92/E93",
+              "years": "2004–2013",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "bmw-3-f30",
+              "code": "F30/F31/F34",
+              "years": "2011–2019",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "bmw-3-g20",
+              "code": "G20/G21",
+              "years": "2018–present",
+              "markets": [
+                "Global"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "volkswagen",
+      "name": "Volkswagen",
+      "country": "Germany",
+      "models": [
+        {
+          "id": "volkswagen-golf",
+          "name": "Golf",
+          "generations": [
+            {
+              "id": "vw-golf-mk1",
+              "code": "Mk1",
+              "years": "1974–1983",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "vw-golf-mk2",
+              "code": "Mk2",
+              "years": "1983–1992",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "vw-golf-mk3",
+              "code": "Mk3",
+              "years": "1991–1997",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "vw-golf-mk4",
+              "code": "Mk4",
+              "years": "1997–2006",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "vw-golf-mk5",
+              "code": "Mk5",
+              "years": "2003–2008",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "vw-golf-mk6",
+              "code": "Mk6",
+              "years": "2008–2013",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "vw-golf-mk7",
+              "code": "Mk7",
+              "years": "2012–2020",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "vw-golf-mk8",
+              "code": "Mk8",
+              "years": "2019–present",
+              "markets": [
+                "Global"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mercedes-benz",
+      "name": "Mercedes-Benz",
+      "country": "Germany",
+      "models": [
+        {
+          "id": "mercedes-c-class",
+          "name": "C-Class",
+          "generations": [
+            {
+              "id": "mb-c-w202",
+              "code": "W202",
+              "years": "1993–2000",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "mb-c-w203",
+              "code": "W203",
+              "years": "2000–2007",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "mb-c-w204",
+              "code": "W204",
+              "years": "2007–2014",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "mb-c-w205",
+              "code": "W205",
+              "years": "2014–2021",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "mb-c-w206",
+              "code": "W206",
+              "years": "2021–present",
+              "markets": [
+                "Global"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "honda",
+      "name": "Honda",
+      "country": "Japan",
+      "models": [
+        {
+          "id": "honda-civic",
+          "name": "Civic",
+          "generations": [
+            {
+              "id": "honda-civic-1",
+              "code": "1st generation",
+              "years": "1972–1979",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "honda-civic-5",
+              "code": "5th generation",
+              "years": "1991–1995",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "honda-civic-6",
+              "code": "6th generation",
+              "years": "1995–2000",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "honda-civic-7",
+              "code": "7th generation",
+              "years": "2000–2005",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "honda-civic-8",
+              "code": "8th generation",
+              "years": "2005–2011",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "honda-civic-9",
+              "code": "9th generation",
+              "years": "2011–2015",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "honda-civic-10",
+              "code": "10th generation",
+              "years": "2015–2021",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "honda-civic-11",
+              "code": "11th generation",
+              "years": "2021–present",
+              "markets": [
+                "Global"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hyundai",
+      "name": "Hyundai",
+      "country": "South Korea",
+      "models": [
+        {
+          "id": "hyundai-sonata",
+          "name": "Sonata",
+          "generations": [
+            {
+              "id": "hyundai-sonata-yf",
+              "code": "YF",
+              "years": "2009–2014",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "hyundai-sonata-lf",
+              "code": "LF",
+              "years": "2014–2019",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "hyundai-sonata-dn8",
+              "code": "DN8",
+              "years": "2019–present",
+              "markets": [
+                "Global"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ford",
+      "name": "Ford",
+      "country": "United States",
+      "models": [
+        {
+          "id": "ford-mustang",
+          "name": "Mustang",
+          "generations": [
+            {
+              "id": "ford-mustang-s197",
+              "code": "S197",
+              "years": "2005–2014",
+              "markets": [
+                "North America"
+              ]
+            },
+            {
+              "id": "ford-mustang-s550",
+              "code": "S550",
+              "years": "2015–2023",
+              "markets": [
+                "Global"
+              ]
+            },
+            {
+              "id": "ford-mustang-s650",
+              "code": "S650",
+              "years": "2023–present",
+              "markets": [
+                "Global"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nissan",
+      "name": "Nissan",
+      "country": "Japan",
+      "models": [
+        {
+          "id": "nissan-skyline",
+          "name": "Skyline",
+          "generations": [
+            {
+              "id": "nissan-skyline-r32",
+              "code": "R32",
+              "years": "1989–1994",
+              "markets": [
+                "Japan"
+              ]
+            },
+            {
+              "id": "nissan-skyline-r33",
+              "code": "R33",
+              "years": "1993–1998",
+              "markets": [
+                "Japan"
+              ]
+            },
+            {
+              "id": "nissan-skyline-r34",
+              "code": "R34",
+              "years": "1998–2002",
+              "markets": [
+                "Japan"
+              ]
+            },
+            {
+              "id": "nissan-skyline-v35",
+              "code": "V35",
+              "years": "2001–2007",
+              "markets": [
+                "Japan"
+              ]
+            },
+            {
+              "id": "nissan-skyline-v36",
+              "code": "V36",
+              "years": "2006–2014",
+              "markets": [
+                "Japan"
+              ]
+            },
+            {
+              "id": "nissan-skyline-v37",
+              "code": "V37",
+              "years": "2014–present",
+              "markets": [
+                "Japan"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
