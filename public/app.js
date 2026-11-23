@@ -316,7 +316,7 @@ async function loadCommonsPhoto(card, brandName, modelName, gen) {
     } else caption.append(license);
     figure.append(img, caption);
     const existing = host.querySelector(".generation-photo");
-    if (!existing) host.insertBefore(figure, host.querySelector(".spec-list") || host.firstChild.nextSibling);
+    if (!existing) host.insertBefore(figure, host.querySelector(".spec-list") || host.firstChild?.nextSibling || null);
   } catch (error) {
     const note = document.createElement("small");
     note.className = "pending-data";
