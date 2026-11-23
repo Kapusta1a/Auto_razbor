@@ -114,10 +114,10 @@ function showModel(id) {
       </div>
       <p class="model-summary">Поколения и обозначения кузова, представленные в каталоге AUTO_RAZBOR.</p>
       <div class="generation-list">${activeModel.generations.map((gen, index) => `
-        <article class="generation-card generation-card-rich">
+        <button type="button" class="generation-card generation-card-rich generation-open" data-generation="${escapeHtml(gen.id)}">
           <div class="generation-number">${String(index + 1).padStart(2, "0")}</div>
           <div class="generation-info">
-            <b>${escapeHtml(gen.code)}</b>
+            <b>${escapeHtml(gen.code)} <span class="generation-open-label">Открыть карточку ↗</span></b>
             <span class="generation-years">${escapeHtml(gen.years)}</span>
             <small>Рынки: ${escapeHtml((gen.markets || []).join(", ") || "не указаны")}</small>
             ${gen.images?.length ? gen.images.map(photo => `
@@ -140,14 +140,68 @@ function showModel(id) {
             ${!gen.specifications?.length ? `<small class="pending-data">Характеристики ещё не подтверждены. <a href="${safeUrl(gen.researchUrl)}" target="_blank" rel="noopener">Найти технические данные ↗</a></small>` : ""}
           </div>
           <span class="generation-tag">ПОКОЛЕНИЕ</span>
-        </article>`).join("")}</div>
+        </button>`).join("")}</div>
       <p class="data-note">Характеристики зависят от рынка, года выпуска и комплектации. В карточку включаются только варианты с указанным источником; для точного подбора запчастей сверяйте VIN и код двигателя.</p>
     </section>`;
   $("favoriteBtn").addEventListener("click", toggleFavorite);
+  $("details").querySelectorAll("[data-generation]").forEach(button =>
+    button.addEventListener("click", () => showGeneration(button.dataset.generation))
+  );
   $("details").querySelectorAll(".generation-card-rich").forEach((card, index) => {
     const gen = activeModel.generations[index];
     if (gen && !gen.images?.length) loadCommonsPhoto(card, activeBrand.name, activeModel.name, gen);
   });
+}
+
+function showGeneration(generationId) {
+  const gen = activeModel?.generations.find(item => item.id === generationId);
+  if (!gen) return;
+  const photos = (gen.images || []).map(photo => `
+    <figure class="generation-photo"><img src="${safeUrl(photo.url)}" alt="${escapeHtml(photo.caption || activeModel.name + " " + gen.code)}"><figcaption>Фото: <a href="${safeUrl(photo.sourceUrl)}" target="_blank" rel="noopener">источник</a> · ${escapeHtml(photo.author || "")} · ${escapeHtml(photo.license || "")}</figcaption></figure>`).join("");
+  const specs = (gen.specifications || []).map(spec => `
+    <section class="spec-card"><b>${escapeHtml(spec.variant)}</b><small>${escapeHtml(spec.market)}</small><dl>${[["Двигатель",spec.engine],["Объём",spec.displacement],["Топливо",spec.fuel],["Мощность",spec.power],["Крутящий момент",spec.torque],["КПП",spec.transmission],["Привод",spec.drivetrain]].filter(pair=>pair[1]).map(pair=>`<div><dt>${pair[0]}</dt><dd>${escapeHtml(pair[1])}</dd></div>`).join("")}</dl><a class="spec-source" href="${safeUrl(spec.source)}" target="_blank" rel="noopener">${escapeHtml(spec.sourceLabel || "Источник данных")}</a></section>`).join("");
+  const premium = gen.premiumContent || {};
+  const hasPremium = ["weaknesses","bestEngines","worstEngines","pros","cons","buyingTips"].some(key => Array.isArray(premium[key]) && premium[key].length);
+  const premiumBlock = hasPremium ? `
+    <div class="premium-content">
+      ${premiumSection("Типичные болячки", premium.weaknesses)}
+      ${premiumSection("Лучшие моторы", premium.bestEngines)}
+      ${premiumSection("Моторы, к которым стоит присмотреться с осторожностью", premium.worstEngines)}
+      ${premiumSection("Плюсы поколения", premium.pros)}
+      ${premiumSection("Минусы поколения", premium.cons)}
+      ${premiumSection("Что проверить перед покупкой", premium.buyingTips)}
+      <small>Материалы должны проверяться по конкретному рынку, мотору и году выпуска.</small>
+    </div>` : `
+    <div class="premium-lock">
+      <div class="lock-icon">✦</div><h3>Полный разбор поколения — в подписке</h3>
+      <p>Типичные неисправности, ресурс узлов, лучшие и проблемные моторы, плюсы и минусы, чек-лист осмотра и советы перед покупкой.</p>
+      <button type="button" class="subscribe-cta" data-subscriptions>Посмотреть подписки</button>
+      <small>Экспертные материалы для этого поколения ещё готовятся. Не будем выдавать непроверенные советы за факты.</small>
+    </div>`;
+  $("modelDetails").innerHTML = `
+    <section class="generation-page">
+      <button type="button" class="back" id="backToModel">← Назад к поколениям</button>
+      <p class="detail-kicker">КАРТОЧКА ПОКОЛЕНИЯ</p>
+      <h3>${escapeHtml(activeBrand.name)} ${escapeHtml(activeModel.name)} · ${escapeHtml(gen.code)}</h3>
+      <p class="generation-years">${escapeHtml(gen.years)} · ${escapeHtml((gen.markets || []).join(", "))}</p>
+      <div class="generation-gallery">${photos}<div id="generationPhotoLookup"></div></div>
+      <h4>Характеристики</h4>
+      ${specs || '<p class="pending-data">Подтверждённые характеристики для этого поколения пока добавляются. <a href="' + safeUrl(gen.researchUrl) + '" target="_blank" rel="noopener">Открыть источники для проверки ↗</a></p>'}
+      <p class="data-note">Параметры зависят от рынка и комплектации. Проверяйте VIN и код двигателя.</p>
+      <h4>Подробный разбор</h4>
+      ${premiumBlock}
+    </section>`;
+  $("backToModel").addEventListener("click", () => showModel(activeModel.id));
+  $("modelDetails").querySelector("[data-subscriptions]")?.addEventListener("click", () => {
+    $("subscriptions").scrollIntoView({behavior:"smooth",block:"start"});
+  });
+  if (!gen.images?.length) loadCommonsPhoto($("generationPhotoLookup"), activeBrand.name, activeModel.name, gen);
+  $("modelDetails").scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+function premiumSection(title, items) {
+  if (!Array.isArray(items) || !items.length) return "";
+  return `<section class="premium-section"><h4>${title}</h4><ul>${items.map(item=>`<li>${escapeHtml(item)}</li>`).join("")}</ul></section>`;
 }
 
 function toggleFavorite() {
