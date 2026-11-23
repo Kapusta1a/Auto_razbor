@@ -121,7 +121,7 @@ function showModel(id) {
                   </section>`).join("")}
               </div>` : ""}
             ${!gen.images?.length && gen.photoSearchUrl ? `<a class="photo-search" href="${safeUrl(gen.photoSearchUrl)}" target="_blank" rel="noopener">Открыть фотографии поколения ↗</a>` : ""}
-            ${!gen.specifications?.length ? `<small class="pending-data">Технические версии и характеристики для этого поколения ещё проверяются по рынкам.</small>` : ""}
+            ${!gen.specifications?.length ? `<small class="pending-data">Характеристики ещё не подтверждены. <a href="${safeUrl(gen.researchUrl)}" target="_blank" rel="noopener">Найти технические данные ↗</a></small>` : ""}
           </div>
           <span class="generation-tag">ПОКОЛЕНИЕ</span>
         </article>`).join("")}</div>
