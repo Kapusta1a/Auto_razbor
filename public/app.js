@@ -98,16 +98,34 @@ function showModel(id) {
       </div>
       <p class="model-summary">Поколения и обозначения кузова, представленные в каталоге AUTO_RAZBOR.</p>
       <div class="generation-list">${activeModel.generations.map((gen, index) => `
-        <article class="generation-card">
+        <article class="generation-card generation-card-rich">
           <div class="generation-number">${String(index + 1).padStart(2, "0")}</div>
           <div class="generation-info">
             <b>${escapeHtml(gen.code)}</b>
             <span class="generation-years">${escapeHtml(gen.years)}</span>
             <small>Рынки: ${escapeHtml((gen.markets || []).join(", ") || "не указаны")}</small>
+            ${gen.images?.length ? gen.images.map(photo => `
+              <figure class="generation-photo">
+                <img src="${safeUrl(photo.url)}" alt="${escapeHtml(photo.caption || (activeModel.name + " " + gen.code))}" loading="lazy">
+                <figcaption>Фото: <a href="${safeUrl(photo.sourceUrl)}" target="_blank" rel="noopener">источник</a> · ${escapeHtml(photo.author)} · <a href="${safeUrl(photo.licenseUrl)}" target="_blank" rel="noopener">${escapeHtml(photo.license)}</a></figcaption>
+              </figure>`).join("") : ""}
+            ${gen.specifications?.length ? `
+              <div class="spec-list"><b class="spec-heading">Характеристики по рынкам и версиям</b>
+                ${gen.specifications.map(spec => `
+                  <section class="spec-card">
+                    <b>${escapeHtml(spec.variant)}</b><small>${escapeHtml(spec.market)}</small>
+                    <dl>
+                      ${[["Двигатель",spec.engine],["Объём",spec.displacement],["Топливо",spec.fuel],["Мощность",spec.power],["Крутящий момент",spec.torque],["КПП",spec.transmission],["Привод",spec.drivetrain]].filter(pair=>pair[1]).map(pair=>`<div><dt>${pair[0]}</dt><dd>${escapeHtml(pair[1])}</dd></div>`).join("")}
+                    </dl>
+                    <a class="spec-source" href="${safeUrl(spec.source)}" target="_blank" rel="noopener">${escapeHtml(spec.sourceLabel || "Источник данных")}</a>
+                  </section>`).join("")}
+              </div>` : ""}
+            ${!gen.images?.length && gen.photoSearchUrl ? `<a class="photo-search" href="${safeUrl(gen.photoSearchUrl)}" target="_blank" rel="noopener">Открыть фотографии поколения ↗</a>` : ""}
+            ${!gen.specifications?.length ? `<small class="pending-data">Технические версии и характеристики для этого поколения ещё проверяются по рынкам.</small>` : ""}
           </div>
           <span class="generation-tag">ПОКОЛЕНИЕ</span>
         </article>`).join("")}</div>
-      <p class="data-note">Примечание: годы и обозначения могут различаться в зависимости от рынка и модификации. Справочные данные требуют проверки по VIN и документам конкретного автомобиля.</p>
+      <p class="data-note">Характеристики зависят от рынка, года выпуска и комплектации. В карточку включаются только варианты с указанным источником; для точного подбора запчастей сверяйте VIN и код двигателя.</p>
     </section>`;
   $("favoriteBtn").addEventListener("click", toggleFavorite);
 }
@@ -133,6 +151,10 @@ function yearRange(generations) {
   return years.length ? years[0].split(/[–-]/)[0] + " — " + years[years.length - 1].split(/[–-]/).pop() : "Годы не указаны";
 }
 function monogram(name) { return String(name).replace(/[^A-Za-zА-Яа-я0-9]/g, "").slice(0, 2).toUpperCase(); }
+function safeUrl(value) {
+  try { const url = new URL(String(value || ""), window.location.href); return ["https:", "http:"].includes(url.protocol) ? url.href : "#"; }
+  catch { return "#"; }
+}
 function escapeHtml(value) {
   return String(value ?? "").replace(/[&<>"']/g, char => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
