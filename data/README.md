@@ -1,42 +1,14 @@
-# Каталог AUTO_RAZBOR: правила наполнения
+# AUTO_RAZBOR data directory
 
-## Текущий статус
+- `catalog.seed.json` — initial global catalogue seed (not exhaustive; some generation ranges/codes need source verification).
+- `catalog.schema.json` — JSON Schema for the catalogue record shape.
 
-`data/catalog.seed.json` — расширенный демонстрационный seed для разработки интерфейса и проверки структуры. Он не претендует на полноту мирового автопарка. Часть поколений и интервалов выпуска требует независимой проверки.
+Before adding data, preserve stable lowercase IDs and check that IDs are unique across brands, models and generations. Keep market-specific differences explicit. Do not invent unknown technical specifications.
 
-## Иерархия
+Run the lightweight structural validator from the repository root:
 
-`brand → model → generation → modification`
+```sh
+node scripts/validate-catalog.mjs
+```
 
-Рекомендуемые поля поколения:
-- `id` — стабильный slug;
-- `code` — заводской индекс или общепринятое обозначение;
-- `years` — ориентировочный период выпуска;
-- `markets` — рынки, где поколение продавалось.
-
-## Следующие поля
-
-Для полноценной записи постепенно добавлять:
-- локальные названия модели и поколения;
-- тип кузова;
-- платформу и заводские коды;
-- модификации, двигатели, коробки передач и привод;
-- даты начала/окончания выпуска по каждому рынку;
-- источники, URL и дату проверки каждого набора данных;
-- изображения с подтверждёнными правами использования.
-
-## Качество данных
-
-1. Не считать рестайлинг отдельным поколением без оснований.
-2. Разделять региональные версии, если различаются кузов, силовые агрегаты или индекс.
-3. Не заполнять неизвестные значения догадками.
-4. Хранить источник и дату проверки.
-5. Перед импортом удалять дубликаты по стабильным ID и проверять связи brand/model/generation.
-
-## Источники для дальнейшего импорта
-
-- NHTSA vPIC (США): https://vpic.nhtsa.dot.gov/api/
-- Официальные каталоги производителей и региональные сайты.
-- Национальные реестры и открытые наборы данных с проверенной лицензией.
-
-Перед массовым импортом необходимо проверить условия использования, покрытие стран и точность полей каждого источника.
+For a production catalogue, add source metadata per record (source name, source URL, checked date, market and confidence) and verify licensing before importing third-party datasets.
