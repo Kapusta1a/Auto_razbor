@@ -24,6 +24,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Validate backend and catalog
+        run: |
+          node --check server.mjs
+          node --check public/admin.js
+          npm run validate:data
       - name: Prepare static site
         run: |
           mkdir -p _site
