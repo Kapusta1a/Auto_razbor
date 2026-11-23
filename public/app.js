@@ -262,7 +262,7 @@ async function loadBrandLogo(brand) {
 
 function monogram(name) { return String(name).replace(/[^A-Za-zА-Яа-я0-9]/g, "").slice(0, 2).toUpperCase(); }
 async function loadCommonsPhoto(card, brandName, modelName, gen) {
-  const host = card.querySelector(".generation-info");
+  const host = card.querySelector(".generation-info") || card;
   if (!host || card.dataset.photoLookup === "done") return;
   card.dataset.photoLookup = "done";
   const yearMatch = String(gen.years || "").match(/(?:19|20)\\d{2}/);
@@ -338,5 +338,12 @@ function escapeHtml(value) {
 $("search").addEventListener("input", () => {
   closeDetails();
   renderBrands();
+});
+document.querySelectorAll("[data-buy-plan]").forEach(button => {
+  button.addEventListener("click", () => {
+    const note = $("paymentNote");
+    if (note) note.textContent = "Тариф выбран: " + button.dataset.buyPlan + ". Приём оплаты ещё не подключён — деньги не списываются. Следующим шагом настроим оплату Telegram Stars и автоматическую выдачу доступа.";
+    $("subscriptions").scrollIntoView({behavior:"smooth",block:"start"});
+  });
 });
 init();
