@@ -69,7 +69,7 @@ function section(title,items) {
 }
 async function loadCommonsPhoto(brand,model,gen) {
   const host=document.getElementById("generationGallery");
-  const year=(String(gen.years||"").match(/(?:19|20)\\d{2}/)||[])[0]||"";
+  const year=(String(gen.years||"").match(/(?:19|20)\d{2}/)||[])[0]||"";
   const q=[brand,model,gen.code,year].filter(Boolean).join(" ");
   const url=new URL("https://commons.wikimedia.org/w/api.php");
   url.search=new URLSearchParams({action:"query",generator:"search",gsrsearch:q,gsrnamespace:"6",gsrlimit:"8",prop:"imageinfo",iiprop:"url|extmetadata",iiurlwidth:"1200",format:"json",origin:"*"}).toString();
