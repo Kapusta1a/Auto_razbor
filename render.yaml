@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: auto-razbor
+    runtime: node
+    plan: free
+    region: frankfurt
+    branch: main
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_WEBHOOK_SECRET
+        generateValue: true
+      - key: INIT_DATA_MAX_AGE
+        value: "86400"
