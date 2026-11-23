@@ -114,7 +114,7 @@ function showModel(id) {
       </div>
       <p class="model-summary">Поколения и обозначения кузова, представленные в каталоге AUTO_RAZBOR.</p>
       <div class="generation-list">${activeModel.generations.map((gen, index) => `
-        <button type="button" class="generation-card generation-card-rich generation-open" data-generation="${escapeHtml(gen.id)}">
+        <article class="generation-card generation-card-rich generation-open" data-generation="${escapeHtml(gen.id)}" role="button" tabindex="0">
           <div class="generation-number">${String(index + 1).padStart(2, "0")}</div>
           <div class="generation-info">
             <b>${escapeHtml(gen.code)} <span class="generation-open-label">Открыть карточку ↗</span></b>
@@ -140,12 +140,12 @@ function showModel(id) {
             ${!gen.specifications?.length ? `<small class="pending-data">Характеристики ещё не подтверждены. <a href="${safeUrl(gen.researchUrl)}" target="_blank" rel="noopener">Найти технические данные ↗</a></small>` : ""}
           </div>
           <span class="generation-tag">ПОКОЛЕНИЕ</span>
-        </button>`).join("")}</div>
+        </article>`).join("")}</div>
       <p class="data-note">Характеристики зависят от рынка, года выпуска и комплектации. В карточку включаются только варианты с указанным источником; для точного подбора запчастей сверяйте VIN и код двигателя.</p>
     </section>`;
   $("favoriteBtn").addEventListener("click", toggleFavorite);
   $("details").querySelectorAll("[data-generation]").forEach(button =>
-    button.addEventListener("click", () => showGeneration(button.dataset.generation))
+    button.addEventListener("click", event => { if (!event.target.closest("a")) showGeneration(button.dataset.generation); })
   );
   $("details").querySelectorAll(".generation-card-rich").forEach((card, index) => {
     const gen = activeModel.generations[index];
