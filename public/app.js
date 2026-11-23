@@ -6,6 +6,7 @@ let catalog = { brands: [] };
 let activeBrand = null;
 let activeModel = null;
 let favorites = new Set(JSON.parse(localStorage.getItem("ar-favorites") || "[]"));
+const brandLogoCache = new Map();
 
 async function init() {
   try {
@@ -57,9 +58,18 @@ function renderBrands(filter = $("search").value) {
       <span class="card-copy"><b>${escapeHtml(brand.name)}</b><small>${brand.models.length} моделей · ${escapeHtml(brand.country)}</small></span>
       <span class="card-arrow">↗</span>
     </button>`).join("") || '<p class="loading">Ничего не найдено. Попробуйте другую марку, модель или код поколения.</p>';
-  $("catalog").querySelectorAll("[data-brand]").forEach(btn =>
-    btn.addEventListener("click", () => showBrand(btn.dataset.brand))
-  );
+    $("catalog").querySelectorAll("[data-brand]").forEach(btn => {
+    btn.addEventListener("click", () => showBrand(btn.dataset.brand));
+    const brand = catalog.brands.find(item => item.id === btn.dataset.brand);
+    if (brand) loadBrandLogo(brand).then(logo => {
+      if (!logo || !btn.isConnected) return;
+      const mark = btn.querySelector(".brand-monogram");
+      if (mark) mark.innerHTML = '<img class="brand-logo-img" src="' + safeUrl(logo.url) + '" alt="' + escapeHtml(brand.name) + ' логотип" loading="lazy">';
+      btn.title = "Логотип: " + logo.license + " · " + logo.artist + " · Источник: Wikimedia Commons";
+      const small = btn.querySelector(".card-copy small");
+      if (small) small.textContent = brand.models.length + " моделей · " + brand.country + " · логотип: " + logo.license;
+    });
+  });
   $("count").textContent = q ? `${matches.length} марок найдено` : `${catalog.brands.length} марок`;
 }
 
@@ -71,7 +81,7 @@ function showBrand(id) {
   $("details").innerHTML = `
     <button class="back" id="backBrands">← Все марки</button>
     <div class="detail-kicker">МАРКА · ${escapeHtml(activeBrand.country)}</div>
-    <div class="detail-heading"><div><h2>${escapeHtml(activeBrand.name)}</h2><p>${activeBrand.models.length} моделей в каталоге</p></div><span class="detail-monogram">${escapeHtml(monogram(activeBrand.name))}</span></div>
+    <div class="detail-heading"><div><h2>${escapeHtml(activeBrand.name)}</h2><p>${activeBrand.models.length} моделей в каталоге</p><p id="brandLogoCredit" class="brand-logo-credit">Поиск логотипа с указанием лицензии…</p></div><span class="detail-monogram" id="brandDetailLogo">${escapeHtml(monogram(activeBrand.name))}</span></div>
     <div class="model-list">${activeBrand.models.map(model => `
       <button class="model-card" data-model="${escapeHtml(model.id)}">
         <b>${escapeHtml(model.name)}</b>
@@ -80,6 +90,12 @@ function showBrand(id) {
       </button>`).join("")}</div>
     <div id="modelDetails"></div>`;
   $("backBrands").addEventListener("click", closeDetails);
+  loadBrandLogo(activeBrand).then(logo => {
+    const mark = $("brandDetailLogo"), credit = $("brandLogoCredit");
+    if (!logo || !mark || !credit) return;
+    mark.innerHTML = '<img class="brand-logo-img detail-brand-logo" src="' + safeUrl(logo.url) + '" alt="' + escapeHtml(activeBrand.name) + ' логотип">';
+    credit.innerHTML = 'Логотип: <a href="' + safeUrl(logo.sourceUrl) + '" target="_blank" rel="noopener">источник</a> · ' + escapeHtml(logo.license) + ' · ' + escapeHtml(logo.artist) + (logo.licenseUrl ? ' · <a href="' + safeUrl(logo.licenseUrl) + '" target="_blank" rel="noopener">условия лицензии</a>' : "");
+  });
   $("details").querySelectorAll("[data-model]").forEach(btn =>
     btn.addEventListener("click", () => showModel(btn.dataset.model))
   );
@@ -153,6 +169,27 @@ function yearRange(generations) {
   if (!generations.length) return "Годы не указаны";
   const years = generations.map(g => g.years).filter(Boolean);
   return years.length ? years[0].split(/[–-]/)[0] + " — " + years[years.length - 1].split(/[–-]/).pop() : "Годы не указаны";
+}
+async function loadBrandLogo(brand) {
+  if (brandLogoCache.has(brand.id)) return brandLogoCache.get(brand.id);
+  const task = (async () => {
+    const endpoint = new URL("https://commons.wikimedia.org/w/api.php");
+    endpoint.search = new URLSearchParams({action:"query",generator:"search",gsrsearch:brand.name+" logo",gsrnamespace:"6",gsrlimit:"12",prop:"imageinfo",iiprop:"url|extmetadata",iiurlwidth:"240",format:"json",origin:"*"}).toString();
+    try {
+      const response = await fetch(endpoint.toString()); if (!response.ok) return null;
+      const payload = await response.json(), brandToken = brand.name.toLowerCase().replace(/[^a-z0-9]/g, "");
+      const pages = Object.values(payload.query?.pages || {});
+      const candidate = pages.find(page => {
+        const title = String(page.title || "").toLowerCase().replace(/[^a-z0-9]/g, ""), info = page.imageinfo?.[0], meta = info?.extmetadata || {};
+        const license = meta.LicenseShortName?.value || meta.UsageTerms?.value || "", artist = meta.Artist?.value || meta.Credit?.value || "";
+        return title.includes("logo") && title.includes(brandToken) && (info?.thumburl || info?.url) && license && artist && !/unknown|no license|без лицензии/i.test(license);
+      });
+      if (!candidate) return null;
+      const info = candidate.imageinfo[0], meta = info.extmetadata || {}, clean = key => String(meta[key]?.value || "").replace(/<[^>]*>/g, "").trim();
+      return {url:info.thumburl || info.url,sourceUrl:info.descriptionurl,license:clean("LicenseShortName") || clean("UsageTerms"),licenseUrl:clean("LicenseUrl"),artist:clean("Artist") || clean("Credit") || "Автор указан на странице файла"};
+    } catch { return null; }
+  })();
+  brandLogoCache.set(brand.id, task); return task;
 }
 function monogram(name) { return String(name).replace(/[^A-Za-zА-Яа-я0-9]/g, "").slice(0, 2).toUpperCase(); }
 async function loadCommonsPhoto(card, brandName, modelName, gen) {
