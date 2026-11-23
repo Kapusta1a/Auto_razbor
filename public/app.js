@@ -145,7 +145,7 @@ function showModel(id) {
     </section>`;
   $("favoriteBtn").addEventListener("click", toggleFavorite);
   $("details").querySelectorAll("[data-generation]").forEach(button =>
-    button.addEventListener("click", event => { if (!event.target.closest("a")) showGeneration(button.dataset.generation); })
+    button.addEventListener("click", event => { if (!event.target.closest("a")) { const params = new URLSearchParams({ brand: activeBrand.id, model: activeModel.id, generation: button.dataset.generation }); window.location.href = "./generation.html?" + params.toString(); } })
   );
   $("details").querySelectorAll(".generation-card-rich").forEach((card, index) => {
     const gen = activeModel.generations[index];
