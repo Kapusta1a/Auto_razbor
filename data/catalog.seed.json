@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 1,
-  "note": "Расширенный стартовый набор для разработки. Это не исчерпывающая и не окончательно проверенная мировая база; годы, коды поколений и региональные различия нужно валидировать по надежным источникам перед публикацией.",
+  "schemaVersion": 2,
+  "note": "Глобальная база с разбивкой по рынкам и модификациям. Спецификации добавляются только при наличии источника; пустые поля означают, что данные ещё не подтверждены. Фото сопровождаются источником, автором и лицензией.",
   "brands": [
     {
       "id": "toyota",
@@ -17,7 +17,10 @@
               "years": "1991–1996",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Category%3AToyota_Camry_(XV10)"
             },
             {
               "id": "toyota-camry-xv20",
@@ -25,7 +28,10 @@
               "years": "1996–2001",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Category%3AToyota_Camry_(XV20)"
             },
             {
               "id": "toyota-camry-xv30",
@@ -33,7 +39,10 @@
               "years": "2001–2006",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Category%3AToyota_Camry_(XV30)"
             },
             {
               "id": "toyota-camry-xv40",
@@ -41,7 +50,10 @@
               "years": "2006–2011",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Category%3AToyota_Camry_(XV40)"
             },
             {
               "id": "toyota-camry-xv50",
@@ -49,6 +61,17 @@
               "years": "2011–2017",
               "markets": [
                 "Global"
+              ],
+              "specifications": [],
+              "images": [
+                {
+                  "url": "https://commons.wikimedia.org/wiki/Special:FilePath/14-17%20Toyota%20Camry%20SE.jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:14-17_Toyota_Camry_SE.jpg",
+                  "author": "MooFridge",
+                  "license": "CC0 1.0",
+                  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+                  "caption": "Toyota Camry XV50"
+                }
               ]
             },
             {
@@ -57,6 +80,57 @@
               "years": "2017–2024",
               "markets": [
                 "Global"
+              ],
+              "specifications": [
+                {
+                  "market": "США",
+                  "variant": "2.5 бензин, базовые комплектации (2018)",
+                  "engine": "A25A-FKS, рядный 4-цилиндровый",
+                  "displacement": "2 487 см³",
+                  "fuel": "Бензин",
+                  "power": "203 л.с. (LE/SE/XLE)",
+                  "torque": "184 lb-ft (≈249 Н·м)",
+                  "transmission": "8-ступенчатый автомат Direct Shift",
+                  "drivetrain": "Передний привод",
+                  "source": "https://pressroom.toyota.com/all-new-2018-toyota-camry-launch/",
+                  "sourceLabel": "Toyota USA Newsroom — 2018 Camry"
+                },
+                {
+                  "market": "США",
+                  "variant": "3.5 V6 бензин (2018)",
+                  "engine": "2GR-FKS, V6",
+                  "displacement": "3 456 см³",
+                  "fuel": "Бензин",
+                  "power": "301 л.с.",
+                  "torque": "267 lb-ft (≈362 Н·м)",
+                  "transmission": "8-ступенчатый автомат Direct Shift",
+                  "drivetrain": "Передний привод",
+                  "source": "https://pressroom.toyota.com/all-new-2018-toyota-camry-launch/",
+                  "sourceLabel": "Toyota USA Newsroom — 2018 Camry"
+                },
+                {
+                  "market": "США",
+                  "variant": "2.5 Hybrid (2018)",
+                  "engine": "2.5 бензиновый + электромотор",
+                  "displacement": "2 487 см³",
+                  "fuel": "Гибрид, бензин/электричество",
+                  "power": "208 л.с. суммарно",
+                  "torque": "163 lb-ft для ДВС (≈221 Н·м)",
+                  "transmission": "Электронная бесступенчатая трансмиссия (eCVT)",
+                  "drivetrain": "Передний привод",
+                  "source": "https://pressroom.toyota.com/all-new-2018-toyota-camry-launch/",
+                  "sourceLabel": "Toyota USA Newsroom — 2018 Camry"
+                }
+              ],
+              "images": [
+                {
+                  "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2018%20Toyota%20Camry%20%28XV70%29.jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Toyota_Camry_(XV70).jpg",
+                  "author": "Benespit",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "caption": "Toyota Camry XV70"
+                }
               ]
             },
             {
@@ -65,6 +139,17 @@
               "years": "2023–present",
               "markets": [
                 "Selected markets"
+              ],
+              "specifications": [],
+              "images": [
+                {
+                  "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Toyota%20Camry%20%28XV80%29%20181233201.jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyota_Camry_(XV80)_181233201.jpg",
+                  "author": "Trop86",
+                  "license": "CC0 1.0",
+                  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+                  "caption": "Toyota Camry XV80"
+                }
               ]
             }
           ]
@@ -86,7 +171,9 @@
               "years": "1982–1994",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "bmw-3-e36",
@@ -94,7 +181,9 @@
               "years": "1990–2000",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "bmw-3-e46",
@@ -102,7 +191,9 @@
               "years": "1997–2006",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "bmw-3-e90",
@@ -110,7 +201,9 @@
               "years": "2004–2013",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "bmw-3-f30",
@@ -118,7 +211,9 @@
               "years": "2011–2019",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "bmw-3-g20",
@@ -126,7 +221,9 @@
               "years": "2018–present",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -147,7 +244,9 @@
               "years": "1974–1983",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "vw-golf-mk2",
@@ -155,7 +254,9 @@
               "years": "1983–1992",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "vw-golf-mk3",
@@ -163,7 +264,9 @@
               "years": "1991–1997",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "vw-golf-mk4",
@@ -171,7 +274,9 @@
               "years": "1997–2006",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "vw-golf-mk5",
@@ -179,7 +284,9 @@
               "years": "2003–2008",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "vw-golf-mk6",
@@ -187,7 +294,9 @@
               "years": "2008–2013",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "vw-golf-mk7",
@@ -195,7 +304,9 @@
               "years": "2012–2020",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "vw-golf-mk8",
@@ -203,7 +314,9 @@
               "years": "2019–present",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -224,7 +337,9 @@
               "years": "1993–2000",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "mb-c-w203",
@@ -232,7 +347,9 @@
               "years": "2000–2007",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "mb-c-w204",
@@ -240,7 +357,9 @@
               "years": "2007–2014",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "mb-c-w205",
@@ -248,7 +367,9 @@
               "years": "2014–2021",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "mb-c-w206",
@@ -256,7 +377,9 @@
               "years": "2021–present",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -277,7 +400,9 @@
               "years": "1972–1979",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "honda-civic-5",
@@ -285,7 +410,9 @@
               "years": "1991–1995",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "honda-civic-6",
@@ -293,7 +420,9 @@
               "years": "1995–2000",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "honda-civic-7",
@@ -301,7 +430,9 @@
               "years": "2000–2005",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "honda-civic-8",
@@ -309,7 +440,9 @@
               "years": "2005–2011",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "honda-civic-9",
@@ -317,7 +450,9 @@
               "years": "2011–2015",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "honda-civic-10",
@@ -325,7 +460,9 @@
               "years": "2015–2021",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "honda-civic-11",
@@ -333,7 +470,9 @@
               "years": "2021–present",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -354,7 +493,9 @@
               "years": "2009–2014",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "hyundai-sonata-lf",
@@ -362,7 +503,9 @@
               "years": "2014–2019",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "hyundai-sonata-dn8",
@@ -370,7 +513,9 @@
               "years": "2019–present",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -391,7 +536,9 @@
               "years": "2005–2014",
               "markets": [
                 "North America"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "ford-mustang-s550",
@@ -399,7 +546,9 @@
               "years": "2015–2023",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "ford-mustang-s650",
@@ -407,7 +556,9 @@
               "years": "2023–present",
               "markets": [
                 "Global"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -428,7 +579,9 @@
               "years": "1989–1994",
               "markets": [
                 "Japan"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "nissan-skyline-r33",
@@ -436,7 +589,9 @@
               "years": "1993–1998",
               "markets": [
                 "Japan"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "nissan-skyline-r34",
@@ -444,7 +599,9 @@
               "years": "1998–2002",
               "markets": [
                 "Japan"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "nissan-skyline-v35",
@@ -452,7 +609,9 @@
               "years": "2001–2007",
               "markets": [
                 "Japan"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "nissan-skyline-v36",
@@ -460,7 +619,9 @@
               "years": "2006–2014",
               "markets": [
                 "Japan"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "nissan-skyline-v37",
@@ -468,7 +629,9 @@
               "years": "2014–present",
               "markets": [
                 "Japan"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -489,7 +652,9 @@
               "years": "1994–2001",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "audi-a4-b6",
@@ -497,7 +662,9 @@
               "years": "2000–2006",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "audi-a4-b7",
@@ -505,7 +672,9 @@
               "years": "2004–2009",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "audi-a4-b8",
@@ -513,7 +682,9 @@
               "years": "2007–2016",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "audi-a4-b9",
@@ -521,7 +692,9 @@
               "years": "2015–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -535,7 +708,9 @@
               "years": "1997–2004",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "audi-a6-c6",
@@ -543,7 +718,9 @@
               "years": "2004–2011",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "audi-a6-c7",
@@ -551,7 +728,9 @@
               "years": "2011–2018",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "audi-a6-c8",
@@ -559,7 +738,9 @@
               "years": "2018–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -580,7 +761,9 @@
               "years": "1975–1989",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "porsche-911-964",
@@ -588,7 +771,9 @@
               "years": "1989–1994",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "porsche-911-993",
@@ -596,7 +781,9 @@
               "years": "1994–1998",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "porsche-911-996",
@@ -604,7 +791,9 @@
               "years": "1997–2006",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "porsche-911-997",
@@ -612,7 +801,9 @@
               "years": "2004–2012",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "porsche-911-991",
@@ -620,7 +811,9 @@
               "years": "2011–2019",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "porsche-911-992",
@@ -628,7 +821,9 @@
               "years": "2018–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -642,7 +837,9 @@
               "years": "2002–2010",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "porsche-cayenne-958",
@@ -650,7 +847,9 @@
               "years": "2010–2017",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "porsche-cayenne-9ya-9yb",
@@ -658,7 +857,9 @@
               "years": "2017–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -679,7 +880,9 @@
               "years": "2003–2009",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "mazda-mazda3-bl",
@@ -687,7 +890,9 @@
               "years": "2008–2013",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "mazda-mazda3-bm-bn",
@@ -695,7 +900,9 @@
               "years": "2013–2019",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "mazda-mazda3-bp",
@@ -703,7 +910,9 @@
               "years": "2019–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -717,7 +926,9 @@
               "years": "2012–2017",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "mazda-cx-5-kf",
@@ -725,7 +936,9 @@
               "years": "2017–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -746,7 +959,9 @@
               "years": "1992–2000",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "subaru-impreza-gd-gg",
@@ -754,7 +969,9 @@
               "years": "2000–2007",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "subaru-impreza-ge-gh",
@@ -762,7 +979,9 @@
               "years": "2007–2011",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "subaru-impreza-gp-gj",
@@ -770,7 +989,9 @@
               "years": "2011–2016",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "subaru-impreza-gk-gt",
@@ -778,7 +999,9 @@
               "years": "2016–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -792,7 +1015,9 @@
               "years": "1997–2002",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "subaru-forester-sg",
@@ -800,7 +1025,9 @@
               "years": "2002–2008",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "subaru-forester-sh",
@@ -808,7 +1035,9 @@
               "years": "2008–2013",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "subaru-forester-sj",
@@ -816,7 +1045,9 @@
               "years": "2012–2018",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "subaru-forester-sk",
@@ -824,7 +1055,9 @@
               "years": "2018–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -845,7 +1078,9 @@
               "years": "1988–1992",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "mitsubishi-lancer-cedia",
@@ -853,7 +1088,9 @@
               "years": "2000–2007",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "mitsubishi-lancer-cy",
@@ -861,7 +1098,9 @@
               "years": "2007–2017",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -875,7 +1114,9 @@
               "years": "2001–2006",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "mitsubishi-outlander-cw",
@@ -883,7 +1124,9 @@
               "years": "2006–2012",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "mitsubishi-outlander-gf-gg",
@@ -891,7 +1134,9 @@
               "years": "2012–2021",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "mitsubishi-outlander-gn",
@@ -899,7 +1144,9 @@
               "years": "2021–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -920,7 +1167,9 @@
               "years": "1983–1989",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "suzuki-swift-ma-ea",
@@ -928,7 +1177,9 @@
               "years": "1989–2004",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "suzuki-swift-rs",
@@ -936,7 +1187,9 @@
               "years": "2004–2010",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "suzuki-swift-azg",
@@ -944,7 +1197,9 @@
               "years": "2010–2017",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "suzuki-swift-a2l",
@@ -952,7 +1207,9 @@
               "years": "2017–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -966,7 +1223,9 @@
               "years": "1988–1998",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "suzuki-vitara-ft-gt",
@@ -974,7 +1233,9 @@
               "years": "1998–2005",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "suzuki-vitara-ly",
@@ -982,7 +1243,9 @@
               "years": "2015–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -1003,7 +1266,9 @@
               "years": "1998–2005",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "lexus-is-xe20",
@@ -1011,7 +1276,9 @@
               "years": "2005–2013",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "lexus-is-xe30",
@@ -1019,7 +1286,9 @@
               "years": "2013–2020",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "lexus-is-xe40",
@@ -1027,7 +1296,9 @@
               "years": "2020–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -1041,7 +1312,9 @@
               "years": "1998–2003",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "lexus-rx-xu30",
@@ -1049,7 +1322,9 @@
               "years": "2003–2009",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "lexus-rx-al10",
@@ -1057,7 +1332,9 @@
               "years": "2008–2015",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "lexus-rx-al20",
@@ -1065,7 +1342,9 @@
               "years": "2015–2022",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "lexus-rx-al30",
@@ -1073,7 +1352,9 @@
               "years": "2022–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -1094,7 +1375,9 @@
               "years": "2013–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -1108,7 +1391,9 @@
               "years": "2002–2008",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "infiniti-fx-s51",
@@ -1116,7 +1401,9 @@
               "years": "2008–2017",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -1137,7 +1424,9 @@
               "years": "1993–2004",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "kia-sportage-je-km",
@@ -1145,7 +1434,9 @@
               "years": "2004–2010",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "kia-sportage-sl",
@@ -1153,7 +1444,9 @@
               "years": "2010–2015",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "kia-sportage-ql",
@@ -1161,7 +1454,9 @@
               "years": "2015–2021",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "kia-sportage-nq5",
@@ -1169,7 +1464,9 @@
               "years": "2021–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -1183,7 +1480,9 @@
               "years": "1999–2005",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "kia-rio-jb",
@@ -1191,7 +1490,9 @@
               "years": "2005–2011",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "kia-rio-ub",
@@ -1199,7 +1500,9 @@
               "years": "2011–2017",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "kia-rio-yb",
@@ -1207,7 +1510,9 @@
               "years": "2017–2023",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -1228,7 +1533,9 @@
               "years": "2016–2020",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "genesis-g80-rg3",
@@ -1236,7 +1543,9 @@
               "years": "2020–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -1250,7 +1559,9 @@
               "years": "2020–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -1271,7 +1582,9 @@
               "years": "1966–1969",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "chevrolet-camaro-second-generation",
@@ -1279,7 +1592,9 @@
               "years": "1970–1981",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "chevrolet-camaro-third-generation",
@@ -1287,7 +1602,9 @@
               "years": "1982–1992",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "chevrolet-camaro-fourth-generation",
@@ -1295,7 +1612,9 @@
               "years": "1993–2002",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "chevrolet-camaro-fifth-generation",
@@ -1303,7 +1622,9 @@
               "years": "2009–2015",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "chevrolet-camaro-sixth-generation",
@@ -1311,7 +1632,9 @@
               "years": "2016–2024",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -1325,7 +1648,9 @@
               "years": "1983–1996",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "chevrolet-corvette-c5",
@@ -1333,7 +1658,9 @@
               "years": "1997–2004",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "chevrolet-corvette-c6",
@@ -1341,7 +1668,9 @@
               "years": "2005–2013",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "chevrolet-corvette-c7",
@@ -1349,7 +1678,9 @@
               "years": "2014–2019",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "chevrolet-corvette-c8",
@@ -1357,7 +1688,9 @@
               "years": "2020–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -1378,7 +1711,9 @@
               "years": "2005–2010",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "dodge-charger-ld",
@@ -1386,7 +1721,9 @@
               "years": "2011–2023",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -1400,7 +1737,9 @@
               "years": "2008–2023",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -1421,7 +1760,9 @@
               "years": "1986–1995",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "jeep-wrangler-tj",
@@ -1429,7 +1770,9 @@
               "years": "1996–2006",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "jeep-wrangler-jk",
@@ -1437,7 +1780,9 @@
               "years": "2006–2018",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "jeep-wrangler-jl",
@@ -1445,7 +1790,9 @@
               "years": "2017–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -1459,7 +1806,9 @@
               "years": "1992–1998",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "jeep-grand-cherokee-wj",
@@ -1467,7 +1816,9 @@
               "years": "1998–2004",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "jeep-grand-cherokee-wk",
@@ -1475,7 +1826,9 @@
               "years": "2004–2010",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "jeep-grand-cherokee-wk2",
@@ -1483,7 +1836,9 @@
               "years": "2010–2022",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "jeep-grand-cherokee-wl",
@@ -1491,7 +1846,9 @@
               "years": "2021–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -1512,7 +1869,9 @@
               "years": "2012–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -1526,7 +1885,9 @@
               "years": "2017–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -1540,7 +1901,9 @@
               "years": "2020–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -1561,7 +1924,9 @@
               "years": "2002–2014",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "volvo-xc90-second-generation",
@@ -1569,7 +1934,9 @@
               "years": "2014–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -1583,7 +1950,9 @@
               "years": "2000–2009",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "volvo-s60-p3",
@@ -1591,7 +1960,9 @@
               "years": "2010–2018",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "volvo-s60-spa",
@@ -1599,7 +1970,9 @@
               "years": "2018–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -1620,7 +1993,9 @@
               "years": "1998–2002",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "saab-9-3-second-generation",
@@ -1628,7 +2003,9 @@
               "years": "2002–2014",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -1642,7 +2019,9 @@
               "years": "1997–2010",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "saab-9-5-second-generation",
@@ -1650,7 +2029,9 @@
               "years": "2010–2012",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -1671,7 +2052,9 @@
               "years": "1990–1998",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "renault-clio-ii",
@@ -1679,7 +2062,9 @@
               "years": "1998–2012",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "renault-clio-iii",
@@ -1687,7 +2072,9 @@
               "years": "2005–2014",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "renault-clio-iv",
@@ -1695,7 +2082,9 @@
               "years": "2012–2019",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "renault-clio-v",
@@ -1703,7 +2092,9 @@
               "years": "2019–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -1717,7 +2108,9 @@
               "years": "1995–2002",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "renault-megane-ii",
@@ -1725,7 +2118,9 @@
               "years": "2002–2009",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "renault-megane-iii",
@@ -1733,7 +2128,9 @@
               "years": "2008–2016",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "renault-megane-iv",
@@ -1741,7 +2138,9 @@
               "years": "2016–2024",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -1762,7 +2161,9 @@
               "years": "2007–2013",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "peugeot-308-t9",
@@ -1770,7 +2171,9 @@
               "years": "2013–2021",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "peugeot-308-p5",
@@ -1778,7 +2181,9 @@
               "years": "2021–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -1792,7 +2197,9 @@
               "years": "2012–2019",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "peugeot-208-p21",
@@ -1800,7 +2207,9 @@
               "years": "2019–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -1821,7 +2230,9 @@
               "years": "2004–2010",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "citroen-c4-second-generation",
@@ -1829,7 +2240,9 @@
               "years": "2010–2018",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "citroen-c4-third-generation",
@@ -1837,7 +2250,9 @@
               "years": "2020–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -1851,7 +2266,9 @@
               "years": "2001–2008",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "citroen-c5-second-generation",
@@ -1859,7 +2276,9 @@
               "years": "2008–2017",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "citroen-c5-c5-x",
@@ -1867,7 +2286,9 @@
               "years": "2021–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -1888,7 +2309,9 @@
               "years": "1980–2003",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "fiat-panda-169",
@@ -1896,7 +2319,9 @@
               "years": "2003–2012",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "fiat-panda-319",
@@ -1904,7 +2329,9 @@
               "years": "2011–2024",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -1918,7 +2345,9 @@
               "years": "2007–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -1939,7 +2368,9 @@
               "years": "2015–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -1953,7 +2384,9 @@
               "years": "1997–2007",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -1974,7 +2407,9 @@
               "years": "2015–2019",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -1988,7 +2423,9 @@
               "years": "2019–2023",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -2009,7 +2446,9 @@
               "years": "2014–2024",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -2023,7 +2462,9 @@
               "years": "2011–2022",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -2044,7 +2485,9 @@
               "years": "1996–2010",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "skoda-octavia-1z",
@@ -2052,7 +2495,9 @@
               "years": "2004–2013",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "skoda-octavia-5e",
@@ -2060,7 +2505,9 @@
               "years": "2012–2020",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "skoda-octavia-nx",
@@ -2068,7 +2515,9 @@
               "years": "2019–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -2082,7 +2531,9 @@
               "years": "2001–2008",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "skoda-superb-3t",
@@ -2090,7 +2541,9 @@
               "years": "2008–2015",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "skoda-superb-3v",
@@ -2098,7 +2551,9 @@
               "years": "2015–2024",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "skoda-superb-b9",
@@ -2106,7 +2561,9 @@
               "years": "2024–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -2127,7 +2584,9 @@
               "years": "1999–2005",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "seat-leon-1p",
@@ -2135,7 +2594,9 @@
               "years": "2005–2012",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "seat-leon-5f",
@@ -2143,7 +2604,9 @@
               "years": "2012–2020",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "seat-leon-kl",
@@ -2151,7 +2614,9 @@
               "years": "2020–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -2165,7 +2630,9 @@
               "years": "1993–2002",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "seat-ibiza-6l",
@@ -2173,7 +2640,9 @@
               "years": "2002–2008",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "seat-ibiza-6j",
@@ -2181,7 +2650,9 @@
               "years": "2008–2017",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "seat-ibiza-kj",
@@ -2189,7 +2660,9 @@
               "years": "2017–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -2210,7 +2683,9 @@
               "years": "2017–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -2224,7 +2699,9 @@
               "years": "1998–2019",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "tata-safari-second-generation",
@@ -2232,7 +2709,9 @@
               "years": "2021–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -2253,7 +2732,9 @@
               "years": "2002–2022",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "mahindra-scorpio-n",
@@ -2261,7 +2742,9 @@
               "years": "2022–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -2275,7 +2758,9 @@
               "years": "2021–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -2296,7 +2781,9 @@
               "years": "2022–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -2310,7 +2797,9 @@
               "years": "2022–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -2331,7 +2820,9 @@
               "years": "2018–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -2345,7 +2836,9 @@
               "years": "2021–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -2366,7 +2859,9 @@
               "years": "2011–2017",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "great-wall-haval-h6-second-generation",
@@ -2374,7 +2869,9 @@
               "years": "2017–2020",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "great-wall-haval-h6-third-generation",
@@ -2382,7 +2879,9 @@
               "years": "2020–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -2396,7 +2895,9 @@
               "years": "2020–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -2417,7 +2918,9 @@
               "years": "2016–2020",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "chery-tiggo-7-pro",
@@ -2425,7 +2928,9 @@
               "years": "2020–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -2439,7 +2944,9 @@
               "years": "2018–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -2460,7 +2967,9 @@
               "years": "1977–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -2474,7 +2983,9 @@
               "years": "2011–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -2488,7 +2999,9 @@
               "years": "2015–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -2509,7 +3022,9 @@
               "years": "2005–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -2523,7 +3038,9 @@
               "years": "2003–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -2544,7 +3061,9 @@
               "years": "2010–2017",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "dacia-duster-hm",
@@ -2552,7 +3071,9 @@
               "years": "2017–2024",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "dacia-duster-p1310",
@@ -2560,7 +3081,9 @@
               "years": "2024–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -2574,7 +3097,9 @@
               "years": "2004–2012",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "dacia-logan-ii",
@@ -2582,7 +3107,9 @@
               "years": "2012–2020",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "dacia-logan-iii",
@@ -2590,7 +3117,9 @@
               "years": "2020–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -2611,7 +3140,9 @@
               "years": "1970–1996",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "land-rover-range-rover-p38a",
@@ -2619,7 +3150,9 @@
               "years": "1994–2002",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "land-rover-range-rover-l322",
@@ -2627,7 +3160,9 @@
               "years": "2002–2012",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "land-rover-range-rover-l405",
@@ -2635,7 +3170,9 @@
               "years": "2012–2022",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "land-rover-range-rover-l460",
@@ -2643,7 +3180,9 @@
               "years": "2022–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -2657,7 +3196,9 @@
               "years": "1989–1998",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "land-rover-discovery-series-ii",
@@ -2665,7 +3206,9 @@
               "years": "1998–2004",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "land-rover-discovery-discovery-3",
@@ -2673,7 +3216,9 @@
               "years": "2004–2009",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "land-rover-discovery-discovery-4",
@@ -2681,7 +3226,9 @@
               "years": "2009–2016",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "land-rover-discovery-discovery-5",
@@ -2689,7 +3236,9 @@
               "years": "2017–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -2710,7 +3259,9 @@
               "years": "2007–2015",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "jaguar-xf-x260",
@@ -2718,7 +3269,9 @@
               "years": "2015–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -2732,7 +3285,9 @@
               "years": "2003–2009",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "jaguar-xj-x351",
@@ -2740,7 +3295,9 @@
               "years": "2009–2019",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -2761,7 +3318,9 @@
               "years": "2001–2006",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "mini-hatch-r56",
@@ -2769,7 +3328,9 @@
               "years": "2006–2013",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "mini-hatch-f56",
@@ -2777,7 +3338,9 @@
               "years": "2014–2023",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "mini-hatch-f66",
@@ -2785,7 +3348,9 @@
               "years": "2024–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -2806,7 +3371,9 @@
               "years": "2002–2012",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "isuzu-d-max-second-generation",
@@ -2814,7 +3381,9 @@
               "years": "2012–2019",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "isuzu-d-max-third-generation",
@@ -2822,7 +3391,9 @@
               "years": "2019–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -2836,7 +3407,9 @@
               "years": "1981–1991",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "isuzu-trooper-ubs",
@@ -2844,7 +3417,9 @@
               "years": "1991–2002",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -2865,7 +3440,9 @@
               "years": "1995–1998",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "acura-tl-ua4-ua5",
@@ -2873,7 +3450,9 @@
               "years": "1998–2003",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "acura-tl-ua6-ua7",
@@ -2881,7 +3460,9 @@
               "years": "2003–2008",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "acura-tl-ua8-ua9",
@@ -2889,7 +3470,9 @@
               "years": "2008–2014",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         },
@@ -2903,7 +3486,9 @@
               "years": "2000–2006",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "acura-mdx-yd2",
@@ -2911,7 +3496,9 @@
               "years": "2006–2013",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "acura-mdx-yd3",
@@ -2919,7 +3506,9 @@
               "years": "2013–2020",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "acura-mdx-yd4",
@@ -2927,7 +3516,9 @@
               "years": "2021–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -2948,7 +3539,9 @@
               "years": "1991–1999",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "gmc-yukon-gmt800",
@@ -2956,7 +3549,9 @@
               "years": "2000–2006",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "gmc-yukon-gmt900",
@@ -2964,7 +3559,9 @@
               "years": "2007–2014",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "gmc-yukon-k2uc",
@@ -2972,7 +3569,9 @@
               "years": "2015–2020",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "gmc-yukon-t1uc",
@@ -2980,7 +3579,9 @@
               "years": "2021–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -3001,7 +3602,9 @@
               "years": "1973–1977",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "buick-regal-fourth-generation",
@@ -3009,7 +3612,9 @@
               "years": "1997–2004",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "buick-regal-fifth-generation",
@@ -3017,7 +3622,9 @@
               "years": "2008–2017",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "buick-regal-sixth-generation",
@@ -3025,7 +3632,9 @@
               "years": "2017–2020",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -3046,7 +3655,9 @@
               "years": "1997–2002",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "lincoln-navigator-second-generation",
@@ -3054,7 +3665,9 @@
               "years": "2002–2006",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "lincoln-navigator-third-generation",
@@ -3062,7 +3675,9 @@
               "years": "2006–2017",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "lincoln-navigator-fourth-generation",
@@ -3070,7 +3685,9 @@
               "years": "2017–present",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
@@ -3091,7 +3708,9 @@
               "years": "2004–2010",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             },
             {
               "id": "chrysler-300-ld",
@@ -3099,7 +3718,9 @@
               "years": "2011–2023",
               "markets": [
                 "To be verified by market"
-              ]
+              ],
+              "specifications": [],
+              "images": []
             }
           ]
         }
