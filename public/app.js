@@ -128,6 +128,10 @@ function showModel(id) {
       <p class="data-note">Характеристики зависят от рынка, года выпуска и комплектации. В карточку включаются только варианты с указанным источником; для точного подбора запчастей сверяйте VIN и код двигателя.</p>
     </section>`;
   $("favoriteBtn").addEventListener("click", toggleFavorite);
+  $("details").querySelectorAll(".generation-card-rich").forEach((card, index) => {
+    const gen = activeModel.generations[index];
+    if (gen && !gen.images?.length) loadCommonsPhoto(card, activeBrand.name, activeModel.name, gen);
+  });
 }
 
 function toggleFavorite() {
@@ -151,6 +155,70 @@ function yearRange(generations) {
   return years.length ? years[0].split(/[–-]/)[0] + " — " + years[years.length - 1].split(/[–-]/).pop() : "Годы не указаны";
 }
 function monogram(name) { return String(name).replace(/[^A-Za-zА-Яа-я0-9]/g, "").slice(0, 2).toUpperCase(); }
+async function loadCommonsPhoto(card, brandName, modelName, gen) {
+  const host = card.querySelector(".generation-info");
+  if (!host || card.dataset.photoLookup === "done") return;
+  card.dataset.photoLookup = "done";
+  const yearMatch = String(gen.years || "").match(/(?:19|20)\\d{2}/);
+  const year = yearMatch ? yearMatch[0] : "";
+  const terms = [brandName, modelName, gen.code, year].filter(Boolean).join(" ");
+  const endpoint = new URL("https://commons.wikimedia.org/w/api.php");
+  endpoint.search = new URLSearchParams({
+    action: "query", generator: "search", gsrsearch: terms, gsrnamespace: "6",
+    gsrlimit: "8", prop: "imageinfo", iiprop: "url|extmetadata",
+    iiurlwidth: "1000", format: "json", origin: "*"
+  }).toString();
+  try {
+    const response = await fetch(endpoint.toString());
+    if (!response.ok) throw new Error("Commons API unavailable");
+    const payload = await response.json();
+    const pages = Object.values(payload.query?.pages || {});
+    const candidate = pages.find(page => {
+      const meta = page.imageinfo?.[0]?.extmetadata || {};
+      const license = meta.LicenseShortName?.value || meta.UsageTerms?.value || "";
+      const artist = meta.Artist?.value || meta.Credit?.value || "";
+      const url = page.imageinfo?.[0]?.thumburl || page.imageinfo?.[0]?.url;
+      return url && license && artist && !/unknown|no license|без лицензии/i.test(license);
+    });
+    if (!candidate) {
+      const note = document.createElement("small");
+      note.className = "pending-data";
+      note.textContent = "Подходящее фото с подтверждённой лицензией пока не найдено.";
+      host.append(note);
+      return;
+    }
+    const info = candidate.imageinfo[0], meta = info.extmetadata || {};
+    const value = key => String(meta[key]?.value || "").replace(/<[^>]*>/g, "").trim();
+    const license = value("LicenseShortName") || value("UsageTerms");
+    const licenseUrl = value("LicenseUrl");
+    const artist = value("Artist") || value("Credit") || "Автор указан на странице файла";
+    const figure = document.createElement("figure");
+    figure.className = "generation-photo";
+    const img = document.createElement("img");
+    img.src = info.thumburl || info.url;
+    img.alt = brandName + " " + modelName + " " + gen.code;
+    img.loading = "lazy";
+    const caption = document.createElement("figcaption");
+    const source = document.createElement("a");
+    source.href = info.descriptionurl; source.target = "_blank"; source.rel = "noopener";
+    source.textContent = "Страница фотографии";
+    caption.append("Источник: ", source, " · Автор: " + artist + " · Лицензия: ");
+    if (licenseUrl) {
+      const link = document.createElement("a");
+      link.href = licenseUrl; link.target = "_blank"; link.rel = "noopener"; link.textContent = license;
+      caption.append(link);
+    } else caption.append(license);
+    figure.append(img, caption);
+    const existing = host.querySelector(".generation-photo");
+    if (!existing) host.insertBefore(figure, host.querySelector(".spec-list") || host.firstChild.nextSibling);
+  } catch (error) {
+    const note = document.createElement("small");
+    note.className = "pending-data";
+    note.textContent = "Не удалось проверить фотографии сейчас. Попробуйте открыть карточку позже.";
+    host.append(note);
+  }
+}
+
 function safeUrl(value) {
   try { const url = new URL(String(value || ""), window.location.href); return ["https:", "http:"].includes(url.protocol) ? url.href : "#"; }
   catch { return "#"; }
