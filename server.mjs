@@ -1,0 +1,144 @@
+import http from "node:http";
+import fs from "node:fs";
+import path from "node:path";
+import crypto from "node:crypto";
+import { fileURLToPath } from "node:url";
+
+const ROOT = path.dirname(fileURLToPath(import.meta.url));
+const PORT = Number(process.env.PORT || 3000);
+const BOT_TOKEN = process.env.BOT_TOKEN || "";
+const WEBAPP_URL = process.env.WEBAPP_URL || "";
+const WEBHOOK_SECRET = process.env.TELEGRAM_WEBHOOK_SECRET || "";
+const MAX_AGE = Number(process.env.INIT_DATA_MAX_AGE || 86400);
+
+const json = (res, status, body) => {
+  res.writeHead(status, { "content-type": "application/json; charset=utf-8", "cache-control": "no-store" });
+  res.end(JSON.stringify(body));
+};
+
+async function readBody(req, limit = 1024 * 1024) {
+  const chunks = [];
+  let size = 0;
+  for await (const chunk of req) {
+    size += chunk.length;
+    if (size > limit) throw new Error("Request body too large");
+    chunks.push(chunk);
+  }
+  return Buffer.concat(chunks).toString("utf8");
+}
+
+function validateInitData(initData) {
+  if (!BOT_TOKEN || typeof initData !== "string" || !initData) return null;
+  const params = new URLSearchParams(initData);
+  const receivedHash = params.get("hash");
+  if (!receivedHash || !/^[a-f0-9]{64}$/i.test(receivedHash)) return null;
+  params.delete("hash");
+  params.delete("signature");
+  const dataCheckString = [...params.entries()]
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([key, value]) => `${key}=${value}`)
+    .join("\n");
+  const secretKey = crypto.createHmac("sha256", "WebAppData").update(BOT_TOKEN).digest();
+  const expected = crypto.createHmac("sha256", secretKey).update(dataCheckString).digest();
+  const actual = Buffer.from(receivedHash, "hex");
+  if (actual.length !== expected.length || !crypto.timingSafeEqual(actual, expected)) return null;
+  const authDate = Number(params.get("auth_date"));
+  if (!Number.isFinite(authDate) || authDate > Date.now() / 1000 + 60 || Date.now() / 1000 - authDate > MAX_AGE) return null;
+  try {
+    const user = JSON.parse(params.get("user") || "null");
+    if (!user || !Number.isSafeInteger(user.id)) return null;
+    return { id: user.id, first_name: user.first_name || "", username: user.username || null, auth_date: authDate };
+  } catch {
+    return null;
+  }
+}
+
+async function telegram(method, payload) {
+  if (!BOT_TOKEN) throw new Error("BOT_TOKEN is not configured");
+  const response = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/${method}`, {
+    method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(payload)
+  });
+  const result = await response.json();
+  if (!response.ok || !result.ok) throw new Error(result.description || `Telegram API error: ${method}`);
+  return result.result;
+}
+
+async function handleWebhook(req, res) {
+  if (!WEBHOOK_SECRET || req.headers["x-telegram-bot-api-secret-token"] !== WEBHOOK_SECRET) {
+    return json(res, 403, { ok: false });
+  }
+  const update = JSON.parse(await readBody(req));
+  const message = update.message;
+  const chatId = message?.chat?.id;
+  const text = message?.text || "";
+  if (chatId && /^\/start(?:\s|$)/.test(text)) {
+    const keyboard = WEBAPP_URL ? { inline_keyboard: [[{ text: "🚘 Открыть AUTO_RAZBOR", web_app: { url: WEBAPP_URL } }]] } : undefined;
+    await telegram("sendMessage", {
+      chat_id: chatId,
+      text: "Добро пожаловать в AUTO_RAZBOR! Автомобильная энциклопедия: марки, модели, поколения и характеристики.",
+      ...(keyboard ? { reply_markup: keyboard } : {})
+    });
+  } else if (chatId && text === "/help") {
+    await telegram("sendMessage", { chat_id: chatId, text: "Нажмите кнопку «Открыть AUTO_RAZBOR» в меню бота или отправьте /start." });
+  }
+  json(res, 200, { ok: true });
+}
+
+async function serveStatic(req, res, pathname) {
+  const requested = pathname === "/" ? "/index.html" : pathname;
+  const file = path.resolve(ROOT, "public", "." + requested);
+  const base = path.resolve(ROOT, "public");
+  if (!file.startsWith(base + path.sep)) return json(res, 403, { error: "Forbidden" });
+  try {
+    const body = await fs.promises.readFile(file);
+    const ext = path.extname(file);
+    const types = { ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".css": "text/css; charset=utf-8", ".json": "application/json; charset=utf-8", ".svg": "image/svg+xml" };
+    res.writeHead(200, { "content-type": types[ext] || "application/octet-stream", "x-content-type-options": "nosniff" });
+    res.end(body);
+  } catch {
+    json(res, 404, { error: "Not found" });
+  }
+}
+
+const server = http.createServer(async (req, res) => {
+  try {
+    const url = new URL(req.url, "http://localhost");
+    if (req.method === "GET" && url.pathname === "/health") return json(res, 200, { ok: true, app: "AUTO_RAZBOR" });
+    if (req.method === "GET" && url.pathname === "/api/catalog") {
+      const catalog = JSON.parse(await fs.promises.readFile(path.join(ROOT, "data/catalog.seed.json"), "utf8"));
+      return json(res, 200, catalog);
+    }
+    if (req.method === "POST" && url.pathname === "/api/telegram/auth") {
+      const body = JSON.parse(await readBody(req, 32 * 1024));
+      const user = validateInitData(body.initData);
+      return user ? json(res, 200, { ok: true, user }) : json(res, 401, { ok: false, error: "Invalid Telegram initData" });
+    }
+    if (req.method === "POST" && url.pathname === "/webhook") return await handleWebhook(req, res);
+    if (req.method === "GET") return await serveStatic(req, res, url.pathname);
+    json(res, 405, { error: "Method not allowed" });
+  } catch (error) {
+    json(res, 400, { error: error.message || "Bad request" });
+  }
+});
+
+server.listen(PORT, () => console.log(`AUTO_RAZBOR listening on :${PORT}`));
+
+async function configureTelegram() {
+  if (!BOT_TOKEN) {
+    console.log("BOT_TOKEN missing: running in local preview mode; Telegram connection is disabled.");
+    return;
+  }
+  if (WEBAPP_URL) {
+    await telegram("setChatMenuButton", { menu_button: { type: "web_app", text: "AUTO_RAZBOR", web_app: { url: WEBAPP_URL } } });
+    console.log("Telegram Mini App menu button configured.");
+  }
+  if (process.env.TELEGRAM_WEBHOOK_URL && WEBHOOK_SECRET) {
+    await telegram("setWebhook", {
+      url: process.env.TELEGRAM_WEBHOOK_URL,
+      secret_token: WEBHOOK_SECRET,
+      allowed_updates: ["message"]
+    });
+    console.log("Telegram webhook configured.");
+  }
+}
+configureTelegram().catch(error => console.error("Telegram setup failed:", error.message));
