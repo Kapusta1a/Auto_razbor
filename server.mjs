@@ -181,7 +181,8 @@ const server = http.createServer(async (req, res) => {
     const url = new URL(req.url, "http://localhost");
     if (req.method === "GET" && url.pathname === "/health") return json(res, 200, { ok: true, app: "AUTO_RAZBOR" });
     if (req.method === "GET" && url.pathname === "/api/catalog") {
-      const catalog = JSON.parse(await fs.promises.readFile(path.join(ROOT, "data/catalog.seed.json"), "utf8"));
+      const catalogPath = path.resolve(process.env.CATALOG_FILE || path.join(ROOT, "data/catalog.seed.json"));
+      const catalog = JSON.parse(await fs.promises.readFile(catalogPath, "utf8"));
       return json(res, 200, catalog);
     }
     if (req.method === "POST" && url.pathname === "/api/admin/login") {
