@@ -16,8 +16,8 @@ function checkId(id, where) {
   ids.add(id);
 }
 
-if (!catalog || catalog.schemaVersion !== 1 || !Array.isArray(catalog.brands)) {
-  throw new Error("Invalid catalog root: expected schemaVersion: 1 and brands array");
+if (!catalog || ![1, 2].includes(catalog.schemaVersion) || !Array.isArray(catalog.brands)) {
+  throw new Error("Invalid catalog root: expected schemaVersion: 1 or 2 and brands array");
 }
 
 for (const brand of catalog.brands) {
