@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101318">
+  <title>AUTO_RAZBOR — энциклопедия автомобилей</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><span class="mark">AR</span><div><b>AUTO_RAZBOR</b><small>АВТОМОБИЛЬНАЯ ЭНЦИКЛОПЕДИЯ</small></div></div>
+    <span id="account" class="account">ГОСТЬ</span>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">МИРОВОЙ АВТОКАТАЛОГ</p>
+      <h1>Найди свой<br><em>автомобиль.</em></h1>
+      <p class="sub">Марки, модели, поколения и технические характеристики в одном месте.</p>
+      <input id="search" type="search" placeholder="Поиск марки или модели…" autocomplete="off">
+    </section>
+    <section class="section-head"><div><p class="eyebrow">КАТАЛОГ</p><h2>Марки автомобилей</h2></div><span id="count" class="muted">Загрузка…</span></section>
+    <div id="catalog" class="catalog"><div class="loading">Загружаем каталог…</div></div>
+    <section id="details" class="details hidden"></section>
+    <footer>Данные каталога постепенно расширяются и проходят проверку. AUTO_RAZBOR © 2026</footer>
+  </main>
+</body>
+</html>
