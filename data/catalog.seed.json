@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "note": "Глобальная база с разбивкой по рынкам и модификациям. Спецификации добавляются только при наличии источника; пустые поля означают, что данные ещё не подтверждены. Фото сопровождаются источником, автором и лицензией.",
+  "note": "Глобальная база по рынкам и модификациям. Данные вносятся только при наличии источника; пустые характеристики означают, что версия ещё не проверена. Поиск изображений и технических документов доступен отдельно для каждого поколения.",
   "brands": [
     {
       "id": "toyota",
@@ -20,7 +20,9 @@
               ],
               "specifications": [],
               "images": [],
-              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Category%3AToyota_Camry_(XV10)"
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Category%3AToyota_Camry_(XV10)",
+              "researchUrl": "https://www.google.com/search?q=Toyota%20Camry%20XV10%201991%E2%80%931996%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "toyota-camry-xv20",
@@ -31,7 +33,9 @@
               ],
               "specifications": [],
               "images": [],
-              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Category%3AToyota_Camry_(XV20)"
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Category%3AToyota_Camry_(XV20)",
+              "researchUrl": "https://www.google.com/search?q=Toyota%20Camry%20XV20%201996%E2%80%932001%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "toyota-camry-xv30",
@@ -42,7 +46,9 @@
               ],
               "specifications": [],
               "images": [],
-              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Category%3AToyota_Camry_(XV30)"
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Category%3AToyota_Camry_(XV30)",
+              "researchUrl": "https://www.google.com/search?q=Toyota%20Camry%20XV30%202001%E2%80%932006%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "toyota-camry-xv40",
@@ -53,7 +59,9 @@
               ],
               "specifications": [],
               "images": [],
-              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Category%3AToyota_Camry_(XV40)"
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Category%3AToyota_Camry_(XV40)",
+              "researchUrl": "https://www.google.com/search?q=Toyota%20Camry%20XV40%202006%E2%80%932011%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "toyota-camry-xv50",
@@ -72,7 +80,10 @@
                   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
                   "caption": "Toyota Camry XV50"
                 }
-              ]
+              ],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Toyota%20Camry%20XV50%202011%E2%80%932017",
+              "researchUrl": "https://www.google.com/search?q=Toyota%20Camry%20XV50%202011%E2%80%932017%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "toyota-camry-xv70",
@@ -131,7 +142,10 @@
                   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
                   "caption": "Toyota Camry XV70"
                 }
-              ]
+              ],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Toyota%20Camry%20XV70%202017%E2%80%932024",
+              "researchUrl": "https://www.google.com/search?q=Toyota%20Camry%20XV70%202017%E2%80%932024%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "partially-sourced"
             },
             {
               "id": "toyota-camry-xv80",
@@ -150,7 +164,10 @@
                   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
                   "caption": "Toyota Camry XV80"
                 }
-              ]
+              ],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Toyota%20Camry%20XV80%202023%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Toyota%20Camry%20XV80%202023%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -173,7 +190,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=BMW%203%20Series%20E30%201982%E2%80%931994",
+              "researchUrl": "https://www.google.com/search?q=BMW%203%20Series%20E30%201982%E2%80%931994%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "bmw-3-e36",
@@ -183,7 +203,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=BMW%203%20Series%20E36%201990%E2%80%932000",
+              "researchUrl": "https://www.google.com/search?q=BMW%203%20Series%20E36%201990%E2%80%932000%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "bmw-3-e46",
@@ -193,7 +216,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=BMW%203%20Series%20E46%201997%E2%80%932006",
+              "researchUrl": "https://www.google.com/search?q=BMW%203%20Series%20E46%201997%E2%80%932006%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "bmw-3-e90",
@@ -203,7 +229,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=BMW%203%20Series%20E90%2FE91%2FE92%2FE93%202004%E2%80%932013",
+              "researchUrl": "https://www.google.com/search?q=BMW%203%20Series%20E90%2FE91%2FE92%2FE93%202004%E2%80%932013%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "bmw-3-f30",
@@ -213,7 +242,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=BMW%203%20Series%20F30%2FF31%2FF34%202011%E2%80%932019",
+              "researchUrl": "https://www.google.com/search?q=BMW%203%20Series%20F30%2FF31%2FF34%202011%E2%80%932019%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "bmw-3-g20",
@@ -223,7 +255,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=BMW%203%20Series%20G20%2FG21%202018%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=BMW%203%20Series%20G20%2FG21%202018%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -246,7 +281,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Volkswagen%20Golf%20Mk1%201974%E2%80%931983",
+              "researchUrl": "https://www.google.com/search?q=Volkswagen%20Golf%20Mk1%201974%E2%80%931983%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "vw-golf-mk2",
@@ -256,7 +294,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Volkswagen%20Golf%20Mk2%201983%E2%80%931992",
+              "researchUrl": "https://www.google.com/search?q=Volkswagen%20Golf%20Mk2%201983%E2%80%931992%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "vw-golf-mk3",
@@ -266,7 +307,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Volkswagen%20Golf%20Mk3%201991%E2%80%931997",
+              "researchUrl": "https://www.google.com/search?q=Volkswagen%20Golf%20Mk3%201991%E2%80%931997%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "vw-golf-mk4",
@@ -276,7 +320,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Volkswagen%20Golf%20Mk4%201997%E2%80%932006",
+              "researchUrl": "https://www.google.com/search?q=Volkswagen%20Golf%20Mk4%201997%E2%80%932006%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "vw-golf-mk5",
@@ -286,7 +333,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Volkswagen%20Golf%20Mk5%202003%E2%80%932008",
+              "researchUrl": "https://www.google.com/search?q=Volkswagen%20Golf%20Mk5%202003%E2%80%932008%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "vw-golf-mk6",
@@ -296,7 +346,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Volkswagen%20Golf%20Mk6%202008%E2%80%932013",
+              "researchUrl": "https://www.google.com/search?q=Volkswagen%20Golf%20Mk6%202008%E2%80%932013%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "vw-golf-mk7",
@@ -306,7 +359,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Volkswagen%20Golf%20Mk7%202012%E2%80%932020",
+              "researchUrl": "https://www.google.com/search?q=Volkswagen%20Golf%20Mk7%202012%E2%80%932020%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "vw-golf-mk8",
@@ -316,7 +372,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Volkswagen%20Golf%20Mk8%202019%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Volkswagen%20Golf%20Mk8%202019%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -339,7 +398,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mercedes-Benz%20C-Class%20W202%201993%E2%80%932000",
+              "researchUrl": "https://www.google.com/search?q=Mercedes-Benz%20C-Class%20W202%201993%E2%80%932000%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "mb-c-w203",
@@ -349,7 +411,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mercedes-Benz%20C-Class%20W203%202000%E2%80%932007",
+              "researchUrl": "https://www.google.com/search?q=Mercedes-Benz%20C-Class%20W203%202000%E2%80%932007%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "mb-c-w204",
@@ -359,7 +424,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mercedes-Benz%20C-Class%20W204%202007%E2%80%932014",
+              "researchUrl": "https://www.google.com/search?q=Mercedes-Benz%20C-Class%20W204%202007%E2%80%932014%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "mb-c-w205",
@@ -369,7 +437,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mercedes-Benz%20C-Class%20W205%202014%E2%80%932021",
+              "researchUrl": "https://www.google.com/search?q=Mercedes-Benz%20C-Class%20W205%202014%E2%80%932021%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "mb-c-w206",
@@ -379,7 +450,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mercedes-Benz%20C-Class%20W206%202021%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Mercedes-Benz%20C-Class%20W206%202021%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -402,7 +476,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Honda%20Civic%201st%20generation%201972%E2%80%931979",
+              "researchUrl": "https://www.google.com/search?q=Honda%20Civic%201st%20generation%201972%E2%80%931979%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "honda-civic-5",
@@ -412,7 +489,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Honda%20Civic%205th%20generation%201991%E2%80%931995",
+              "researchUrl": "https://www.google.com/search?q=Honda%20Civic%205th%20generation%201991%E2%80%931995%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "honda-civic-6",
@@ -422,7 +502,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Honda%20Civic%206th%20generation%201995%E2%80%932000",
+              "researchUrl": "https://www.google.com/search?q=Honda%20Civic%206th%20generation%201995%E2%80%932000%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "honda-civic-7",
@@ -432,7 +515,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Honda%20Civic%207th%20generation%202000%E2%80%932005",
+              "researchUrl": "https://www.google.com/search?q=Honda%20Civic%207th%20generation%202000%E2%80%932005%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "honda-civic-8",
@@ -442,7 +528,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Honda%20Civic%208th%20generation%202005%E2%80%932011",
+              "researchUrl": "https://www.google.com/search?q=Honda%20Civic%208th%20generation%202005%E2%80%932011%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "honda-civic-9",
@@ -452,7 +541,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Honda%20Civic%209th%20generation%202011%E2%80%932015",
+              "researchUrl": "https://www.google.com/search?q=Honda%20Civic%209th%20generation%202011%E2%80%932015%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "honda-civic-10",
@@ -462,7 +554,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Honda%20Civic%2010th%20generation%202015%E2%80%932021",
+              "researchUrl": "https://www.google.com/search?q=Honda%20Civic%2010th%20generation%202015%E2%80%932021%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "honda-civic-11",
@@ -472,7 +567,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Honda%20Civic%2011th%20generation%202021%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Honda%20Civic%2011th%20generation%202021%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -495,7 +593,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Hyundai%20Sonata%20YF%202009%E2%80%932014",
+              "researchUrl": "https://www.google.com/search?q=Hyundai%20Sonata%20YF%202009%E2%80%932014%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "hyundai-sonata-lf",
@@ -505,7 +606,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Hyundai%20Sonata%20LF%202014%E2%80%932019",
+              "researchUrl": "https://www.google.com/search?q=Hyundai%20Sonata%20LF%202014%E2%80%932019%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "hyundai-sonata-dn8",
@@ -515,7 +619,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Hyundai%20Sonata%20DN8%202019%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Hyundai%20Sonata%20DN8%202019%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -538,7 +645,10 @@
                 "North America"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Ford%20Mustang%20S197%202005%E2%80%932014",
+              "researchUrl": "https://www.google.com/search?q=Ford%20Mustang%20S197%202005%E2%80%932014%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "ford-mustang-s550",
@@ -548,7 +658,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Ford%20Mustang%20S550%202015%E2%80%932023",
+              "researchUrl": "https://www.google.com/search?q=Ford%20Mustang%20S550%202015%E2%80%932023%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "ford-mustang-s650",
@@ -558,7 +671,10 @@
                 "Global"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Ford%20Mustang%20S650%202023%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Ford%20Mustang%20S650%202023%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -581,7 +697,10 @@
                 "Japan"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Nissan%20Skyline%20R32%201989%E2%80%931994",
+              "researchUrl": "https://www.google.com/search?q=Nissan%20Skyline%20R32%201989%E2%80%931994%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "nissan-skyline-r33",
@@ -591,7 +710,10 @@
                 "Japan"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Nissan%20Skyline%20R33%201993%E2%80%931998",
+              "researchUrl": "https://www.google.com/search?q=Nissan%20Skyline%20R33%201993%E2%80%931998%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "nissan-skyline-r34",
@@ -601,7 +723,10 @@
                 "Japan"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Nissan%20Skyline%20R34%201998%E2%80%932002",
+              "researchUrl": "https://www.google.com/search?q=Nissan%20Skyline%20R34%201998%E2%80%932002%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "nissan-skyline-v35",
@@ -611,7 +736,10 @@
                 "Japan"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Nissan%20Skyline%20V35%202001%E2%80%932007",
+              "researchUrl": "https://www.google.com/search?q=Nissan%20Skyline%20V35%202001%E2%80%932007%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "nissan-skyline-v36",
@@ -621,7 +749,10 @@
                 "Japan"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Nissan%20Skyline%20V36%202006%E2%80%932014",
+              "researchUrl": "https://www.google.com/search?q=Nissan%20Skyline%20V36%202006%E2%80%932014%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "nissan-skyline-v37",
@@ -631,7 +762,10 @@
                 "Japan"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Nissan%20Skyline%20V37%202014%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Nissan%20Skyline%20V37%202014%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -654,7 +788,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Audi%20A4%20B5%201994%E2%80%932001",
+              "researchUrl": "https://www.google.com/search?q=Audi%20A4%20B5%201994%E2%80%932001%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "audi-a4-b6",
@@ -664,7 +801,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Audi%20A4%20B6%202000%E2%80%932006",
+              "researchUrl": "https://www.google.com/search?q=Audi%20A4%20B6%202000%E2%80%932006%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "audi-a4-b7",
@@ -674,7 +814,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Audi%20A4%20B7%202004%E2%80%932009",
+              "researchUrl": "https://www.google.com/search?q=Audi%20A4%20B7%202004%E2%80%932009%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "audi-a4-b8",
@@ -684,7 +827,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Audi%20A4%20B8%202007%E2%80%932016",
+              "researchUrl": "https://www.google.com/search?q=Audi%20A4%20B8%202007%E2%80%932016%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "audi-a4-b9",
@@ -694,7 +840,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Audi%20A4%20B9%202015%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Audi%20A4%20B9%202015%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -710,7 +859,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Audi%20A6%20C5%201997%E2%80%932004",
+              "researchUrl": "https://www.google.com/search?q=Audi%20A6%20C5%201997%E2%80%932004%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "audi-a6-c6",
@@ -720,7 +872,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Audi%20A6%20C6%202004%E2%80%932011",
+              "researchUrl": "https://www.google.com/search?q=Audi%20A6%20C6%202004%E2%80%932011%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "audi-a6-c7",
@@ -730,7 +885,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Audi%20A6%20C7%202011%E2%80%932018",
+              "researchUrl": "https://www.google.com/search?q=Audi%20A6%20C7%202011%E2%80%932018%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "audi-a6-c8",
@@ -740,7 +898,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Audi%20A6%20C8%202018%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Audi%20A6%20C8%202018%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -763,7 +924,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Porsche%20911%20930%201975%E2%80%931989",
+              "researchUrl": "https://www.google.com/search?q=Porsche%20911%20930%201975%E2%80%931989%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "porsche-911-964",
@@ -773,7 +937,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Porsche%20911%20964%201989%E2%80%931994",
+              "researchUrl": "https://www.google.com/search?q=Porsche%20911%20964%201989%E2%80%931994%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "porsche-911-993",
@@ -783,7 +950,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Porsche%20911%20993%201994%E2%80%931998",
+              "researchUrl": "https://www.google.com/search?q=Porsche%20911%20993%201994%E2%80%931998%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "porsche-911-996",
@@ -793,7 +963,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Porsche%20911%20996%201997%E2%80%932006",
+              "researchUrl": "https://www.google.com/search?q=Porsche%20911%20996%201997%E2%80%932006%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "porsche-911-997",
@@ -803,7 +976,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Porsche%20911%20997%202004%E2%80%932012",
+              "researchUrl": "https://www.google.com/search?q=Porsche%20911%20997%202004%E2%80%932012%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "porsche-911-991",
@@ -813,7 +989,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Porsche%20911%20991%202011%E2%80%932019",
+              "researchUrl": "https://www.google.com/search?q=Porsche%20911%20991%202011%E2%80%932019%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "porsche-911-992",
@@ -823,7 +1002,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Porsche%20911%20992%202018%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Porsche%20911%20992%202018%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -839,7 +1021,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Porsche%20Cayenne%20955%2F957%202002%E2%80%932010",
+              "researchUrl": "https://www.google.com/search?q=Porsche%20Cayenne%20955%2F957%202002%E2%80%932010%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "porsche-cayenne-958",
@@ -849,7 +1034,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Porsche%20Cayenne%20958%202010%E2%80%932017",
+              "researchUrl": "https://www.google.com/search?q=Porsche%20Cayenne%20958%202010%E2%80%932017%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "porsche-cayenne-9ya-9yb",
@@ -859,7 +1047,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Porsche%20Cayenne%209YA%2F9YB%202017%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Porsche%20Cayenne%209YA%2F9YB%202017%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -882,7 +1073,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mazda%20Mazda3%20BK%202003%E2%80%932009",
+              "researchUrl": "https://www.google.com/search?q=Mazda%20Mazda3%20BK%202003%E2%80%932009%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "mazda-mazda3-bl",
@@ -892,7 +1086,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mazda%20Mazda3%20BL%202008%E2%80%932013",
+              "researchUrl": "https://www.google.com/search?q=Mazda%20Mazda3%20BL%202008%E2%80%932013%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "mazda-mazda3-bm-bn",
@@ -902,7 +1099,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mazda%20Mazda3%20BM%2FBN%202013%E2%80%932019",
+              "researchUrl": "https://www.google.com/search?q=Mazda%20Mazda3%20BM%2FBN%202013%E2%80%932019%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "mazda-mazda3-bp",
@@ -912,7 +1112,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mazda%20Mazda3%20BP%202019%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Mazda%20Mazda3%20BP%202019%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -928,7 +1131,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mazda%20CX-5%20KE%202012%E2%80%932017",
+              "researchUrl": "https://www.google.com/search?q=Mazda%20CX-5%20KE%202012%E2%80%932017%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "mazda-cx-5-kf",
@@ -938,7 +1144,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mazda%20CX-5%20KF%202017%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Mazda%20CX-5%20KF%202017%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -961,7 +1170,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Subaru%20Impreza%20GC%2FGF%201992%E2%80%932000",
+              "researchUrl": "https://www.google.com/search?q=Subaru%20Impreza%20GC%2FGF%201992%E2%80%932000%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "subaru-impreza-gd-gg",
@@ -971,7 +1183,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Subaru%20Impreza%20GD%2FGG%202000%E2%80%932007",
+              "researchUrl": "https://www.google.com/search?q=Subaru%20Impreza%20GD%2FGG%202000%E2%80%932007%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "subaru-impreza-ge-gh",
@@ -981,7 +1196,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Subaru%20Impreza%20GE%2FGH%202007%E2%80%932011",
+              "researchUrl": "https://www.google.com/search?q=Subaru%20Impreza%20GE%2FGH%202007%E2%80%932011%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "subaru-impreza-gp-gj",
@@ -991,7 +1209,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Subaru%20Impreza%20GP%2FGJ%202011%E2%80%932016",
+              "researchUrl": "https://www.google.com/search?q=Subaru%20Impreza%20GP%2FGJ%202011%E2%80%932016%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "subaru-impreza-gk-gt",
@@ -1001,7 +1222,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Subaru%20Impreza%20GK%2FGT%202016%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Subaru%20Impreza%20GK%2FGT%202016%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -1017,7 +1241,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Subaru%20Forester%20SF%201997%E2%80%932002",
+              "researchUrl": "https://www.google.com/search?q=Subaru%20Forester%20SF%201997%E2%80%932002%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "subaru-forester-sg",
@@ -1027,7 +1254,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Subaru%20Forester%20SG%202002%E2%80%932008",
+              "researchUrl": "https://www.google.com/search?q=Subaru%20Forester%20SG%202002%E2%80%932008%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "subaru-forester-sh",
@@ -1037,7 +1267,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Subaru%20Forester%20SH%202008%E2%80%932013",
+              "researchUrl": "https://www.google.com/search?q=Subaru%20Forester%20SH%202008%E2%80%932013%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "subaru-forester-sj",
@@ -1047,7 +1280,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Subaru%20Forester%20SJ%202012%E2%80%932018",
+              "researchUrl": "https://www.google.com/search?q=Subaru%20Forester%20SJ%202012%E2%80%932018%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "subaru-forester-sk",
@@ -1057,7 +1293,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Subaru%20Forester%20SK%202018%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Subaru%20Forester%20SK%202018%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -1080,7 +1319,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mitsubishi%20Lancer%20C6%2FC7%201988%E2%80%931992",
+              "researchUrl": "https://www.google.com/search?q=Mitsubishi%20Lancer%20C6%2FC7%201988%E2%80%931992%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "mitsubishi-lancer-cedia",
@@ -1090,7 +1332,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mitsubishi%20Lancer%20Cedia%202000%E2%80%932007",
+              "researchUrl": "https://www.google.com/search?q=Mitsubishi%20Lancer%20Cedia%202000%E2%80%932007%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "mitsubishi-lancer-cy",
@@ -1100,7 +1345,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mitsubishi%20Lancer%20CY%202007%E2%80%932017",
+              "researchUrl": "https://www.google.com/search?q=Mitsubishi%20Lancer%20CY%202007%E2%80%932017%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -1116,7 +1364,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mitsubishi%20Outlander%20CU%202001%E2%80%932006",
+              "researchUrl": "https://www.google.com/search?q=Mitsubishi%20Outlander%20CU%202001%E2%80%932006%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "mitsubishi-outlander-cw",
@@ -1126,7 +1377,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mitsubishi%20Outlander%20CW%202006%E2%80%932012",
+              "researchUrl": "https://www.google.com/search?q=Mitsubishi%20Outlander%20CW%202006%E2%80%932012%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "mitsubishi-outlander-gf-gg",
@@ -1136,7 +1390,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mitsubishi%20Outlander%20GF%2FGG%202012%E2%80%932021",
+              "researchUrl": "https://www.google.com/search?q=Mitsubishi%20Outlander%20GF%2FGG%202012%E2%80%932021%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "mitsubishi-outlander-gn",
@@ -1146,7 +1403,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mitsubishi%20Outlander%20GN%202021%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Mitsubishi%20Outlander%20GN%202021%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -1169,7 +1429,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Suzuki%20Swift%20SF%201983%E2%80%931989",
+              "researchUrl": "https://www.google.com/search?q=Suzuki%20Swift%20SF%201983%E2%80%931989%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "suzuki-swift-ma-ea",
@@ -1179,7 +1442,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Suzuki%20Swift%20MA%2FEA%201989%E2%80%932004",
+              "researchUrl": "https://www.google.com/search?q=Suzuki%20Swift%20MA%2FEA%201989%E2%80%932004%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "suzuki-swift-rs",
@@ -1189,7 +1455,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Suzuki%20Swift%20RS%202004%E2%80%932010",
+              "researchUrl": "https://www.google.com/search?q=Suzuki%20Swift%20RS%202004%E2%80%932010%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "suzuki-swift-azg",
@@ -1199,7 +1468,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Suzuki%20Swift%20AZG%202010%E2%80%932017",
+              "researchUrl": "https://www.google.com/search?q=Suzuki%20Swift%20AZG%202010%E2%80%932017%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "suzuki-swift-a2l",
@@ -1209,7 +1481,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Suzuki%20Swift%20A2L%202017%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Suzuki%20Swift%20A2L%202017%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -1225,7 +1500,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Suzuki%20Vitara%20ET%2FTA%201988%E2%80%931998",
+              "researchUrl": "https://www.google.com/search?q=Suzuki%20Vitara%20ET%2FTA%201988%E2%80%931998%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "suzuki-vitara-ft-gt",
@@ -1235,7 +1513,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Suzuki%20Vitara%20FT%2FGT%201998%E2%80%932005",
+              "researchUrl": "https://www.google.com/search?q=Suzuki%20Vitara%20FT%2FGT%201998%E2%80%932005%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "suzuki-vitara-ly",
@@ -1245,7 +1526,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Suzuki%20Vitara%20LY%202015%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Suzuki%20Vitara%20LY%202015%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -1268,7 +1552,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Lexus%20IS%20XE10%201998%E2%80%932005",
+              "researchUrl": "https://www.google.com/search?q=Lexus%20IS%20XE10%201998%E2%80%932005%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "lexus-is-xe20",
@@ -1278,7 +1565,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Lexus%20IS%20XE20%202005%E2%80%932013",
+              "researchUrl": "https://www.google.com/search?q=Lexus%20IS%20XE20%202005%E2%80%932013%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "lexus-is-xe30",
@@ -1288,7 +1578,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Lexus%20IS%20XE30%202013%E2%80%932020",
+              "researchUrl": "https://www.google.com/search?q=Lexus%20IS%20XE30%202013%E2%80%932020%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "lexus-is-xe40",
@@ -1298,7 +1591,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Lexus%20IS%20XE40%202020%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Lexus%20IS%20XE40%202020%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -1314,7 +1610,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Lexus%20RX%20XU10%201998%E2%80%932003",
+              "researchUrl": "https://www.google.com/search?q=Lexus%20RX%20XU10%201998%E2%80%932003%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "lexus-rx-xu30",
@@ -1324,7 +1623,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Lexus%20RX%20XU30%202003%E2%80%932009",
+              "researchUrl": "https://www.google.com/search?q=Lexus%20RX%20XU30%202003%E2%80%932009%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "lexus-rx-al10",
@@ -1334,7 +1636,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Lexus%20RX%20AL10%202008%E2%80%932015",
+              "researchUrl": "https://www.google.com/search?q=Lexus%20RX%20AL10%202008%E2%80%932015%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "lexus-rx-al20",
@@ -1344,7 +1649,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Lexus%20RX%20AL20%202015%E2%80%932022",
+              "researchUrl": "https://www.google.com/search?q=Lexus%20RX%20AL20%202015%E2%80%932022%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "lexus-rx-al30",
@@ -1354,7 +1662,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Lexus%20RX%20AL30%202022%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Lexus%20RX%20AL30%202022%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -1377,7 +1688,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Infiniti%20Q50%20V37%202013%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Infiniti%20Q50%20V37%202013%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -1393,7 +1707,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Infiniti%20FX%20S50%202002%E2%80%932008",
+              "researchUrl": "https://www.google.com/search?q=Infiniti%20FX%20S50%202002%E2%80%932008%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "infiniti-fx-s51",
@@ -1403,7 +1720,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Infiniti%20FX%20S51%202008%E2%80%932017",
+              "researchUrl": "https://www.google.com/search?q=Infiniti%20FX%20S51%202008%E2%80%932017%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -1426,7 +1746,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Kia%20Sportage%20JA%201993%E2%80%932004",
+              "researchUrl": "https://www.google.com/search?q=Kia%20Sportage%20JA%201993%E2%80%932004%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "kia-sportage-je-km",
@@ -1436,7 +1759,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Kia%20Sportage%20JE%2FKM%202004%E2%80%932010",
+              "researchUrl": "https://www.google.com/search?q=Kia%20Sportage%20JE%2FKM%202004%E2%80%932010%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "kia-sportage-sl",
@@ -1446,7 +1772,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Kia%20Sportage%20SL%202010%E2%80%932015",
+              "researchUrl": "https://www.google.com/search?q=Kia%20Sportage%20SL%202010%E2%80%932015%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "kia-sportage-ql",
@@ -1456,7 +1785,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Kia%20Sportage%20QL%202015%E2%80%932021",
+              "researchUrl": "https://www.google.com/search?q=Kia%20Sportage%20QL%202015%E2%80%932021%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "kia-sportage-nq5",
@@ -1466,7 +1798,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Kia%20Sportage%20NQ5%202021%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Kia%20Sportage%20NQ5%202021%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -1482,7 +1817,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Kia%20Rio%20DC%201999%E2%80%932005",
+              "researchUrl": "https://www.google.com/search?q=Kia%20Rio%20DC%201999%E2%80%932005%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "kia-rio-jb",
@@ -1492,7 +1830,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Kia%20Rio%20JB%202005%E2%80%932011",
+              "researchUrl": "https://www.google.com/search?q=Kia%20Rio%20JB%202005%E2%80%932011%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "kia-rio-ub",
@@ -1502,7 +1843,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Kia%20Rio%20UB%202011%E2%80%932017",
+              "researchUrl": "https://www.google.com/search?q=Kia%20Rio%20UB%202011%E2%80%932017%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "kia-rio-yb",
@@ -1512,7 +1856,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Kia%20Rio%20YB%202017%E2%80%932023",
+              "researchUrl": "https://www.google.com/search?q=Kia%20Rio%20YB%202017%E2%80%932023%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -1535,7 +1882,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Genesis%20G80%20DH%202016%E2%80%932020",
+              "researchUrl": "https://www.google.com/search?q=Genesis%20G80%20DH%202016%E2%80%932020%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "genesis-g80-rg3",
@@ -1545,7 +1895,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Genesis%20G80%20RG3%202020%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Genesis%20G80%20RG3%202020%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -1561,7 +1914,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Genesis%20GV80%20JX1%202020%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Genesis%20GV80%20JX1%202020%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -1584,7 +1940,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Chevrolet%20Camaro%20First%20generation%201966%E2%80%931969",
+              "researchUrl": "https://www.google.com/search?q=Chevrolet%20Camaro%20First%20generation%201966%E2%80%931969%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "chevrolet-camaro-second-generation",
@@ -1594,7 +1953,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Chevrolet%20Camaro%20Second%20generation%201970%E2%80%931981",
+              "researchUrl": "https://www.google.com/search?q=Chevrolet%20Camaro%20Second%20generation%201970%E2%80%931981%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "chevrolet-camaro-third-generation",
@@ -1604,7 +1966,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Chevrolet%20Camaro%20Third%20generation%201982%E2%80%931992",
+              "researchUrl": "https://www.google.com/search?q=Chevrolet%20Camaro%20Third%20generation%201982%E2%80%931992%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "chevrolet-camaro-fourth-generation",
@@ -1614,7 +1979,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Chevrolet%20Camaro%20Fourth%20generation%201993%E2%80%932002",
+              "researchUrl": "https://www.google.com/search?q=Chevrolet%20Camaro%20Fourth%20generation%201993%E2%80%932002%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "chevrolet-camaro-fifth-generation",
@@ -1624,7 +1992,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Chevrolet%20Camaro%20Fifth%20generation%202009%E2%80%932015",
+              "researchUrl": "https://www.google.com/search?q=Chevrolet%20Camaro%20Fifth%20generation%202009%E2%80%932015%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "chevrolet-camaro-sixth-generation",
@@ -1634,7 +2005,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Chevrolet%20Camaro%20Sixth%20generation%202016%E2%80%932024",
+              "researchUrl": "https://www.google.com/search?q=Chevrolet%20Camaro%20Sixth%20generation%202016%E2%80%932024%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -1650,7 +2024,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Chevrolet%20Corvette%20C4%201983%E2%80%931996",
+              "researchUrl": "https://www.google.com/search?q=Chevrolet%20Corvette%20C4%201983%E2%80%931996%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "chevrolet-corvette-c5",
@@ -1660,7 +2037,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Chevrolet%20Corvette%20C5%201997%E2%80%932004",
+              "researchUrl": "https://www.google.com/search?q=Chevrolet%20Corvette%20C5%201997%E2%80%932004%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "chevrolet-corvette-c6",
@@ -1670,7 +2050,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Chevrolet%20Corvette%20C6%202005%E2%80%932013",
+              "researchUrl": "https://www.google.com/search?q=Chevrolet%20Corvette%20C6%202005%E2%80%932013%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "chevrolet-corvette-c7",
@@ -1680,7 +2063,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Chevrolet%20Corvette%20C7%202014%E2%80%932019",
+              "researchUrl": "https://www.google.com/search?q=Chevrolet%20Corvette%20C7%202014%E2%80%932019%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "chevrolet-corvette-c8",
@@ -1690,7 +2076,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Chevrolet%20Corvette%20C8%202020%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Chevrolet%20Corvette%20C8%202020%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -1713,7 +2102,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Dodge%20Charger%20LX%202005%E2%80%932010",
+              "researchUrl": "https://www.google.com/search?q=Dodge%20Charger%20LX%202005%E2%80%932010%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "dodge-charger-ld",
@@ -1723,7 +2115,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Dodge%20Charger%20LD%202011%E2%80%932023",
+              "researchUrl": "https://www.google.com/search?q=Dodge%20Charger%20LD%202011%E2%80%932023%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -1739,7 +2134,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Dodge%20Challenger%20Third%20generation%202008%E2%80%932023",
+              "researchUrl": "https://www.google.com/search?q=Dodge%20Challenger%20Third%20generation%202008%E2%80%932023%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -1762,7 +2160,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Jeep%20Wrangler%20YJ%201986%E2%80%931995",
+              "researchUrl": "https://www.google.com/search?q=Jeep%20Wrangler%20YJ%201986%E2%80%931995%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "jeep-wrangler-tj",
@@ -1772,7 +2173,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Jeep%20Wrangler%20TJ%201996%E2%80%932006",
+              "researchUrl": "https://www.google.com/search?q=Jeep%20Wrangler%20TJ%201996%E2%80%932006%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "jeep-wrangler-jk",
@@ -1782,7 +2186,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Jeep%20Wrangler%20JK%202006%E2%80%932018",
+              "researchUrl": "https://www.google.com/search?q=Jeep%20Wrangler%20JK%202006%E2%80%932018%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "jeep-wrangler-jl",
@@ -1792,7 +2199,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Jeep%20Wrangler%20JL%202017%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Jeep%20Wrangler%20JL%202017%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -1808,7 +2218,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Jeep%20Grand%20Cherokee%20ZJ%201992%E2%80%931998",
+              "researchUrl": "https://www.google.com/search?q=Jeep%20Grand%20Cherokee%20ZJ%201992%E2%80%931998%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "jeep-grand-cherokee-wj",
@@ -1818,7 +2231,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Jeep%20Grand%20Cherokee%20WJ%201998%E2%80%932004",
+              "researchUrl": "https://www.google.com/search?q=Jeep%20Grand%20Cherokee%20WJ%201998%E2%80%932004%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "jeep-grand-cherokee-wk",
@@ -1828,7 +2244,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Jeep%20Grand%20Cherokee%20WK%202004%E2%80%932010",
+              "researchUrl": "https://www.google.com/search?q=Jeep%20Grand%20Cherokee%20WK%202004%E2%80%932010%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "jeep-grand-cherokee-wk2",
@@ -1838,7 +2257,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Jeep%20Grand%20Cherokee%20WK2%202010%E2%80%932022",
+              "researchUrl": "https://www.google.com/search?q=Jeep%20Grand%20Cherokee%20WK2%202010%E2%80%932022%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "jeep-grand-cherokee-wl",
@@ -1848,7 +2270,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Jeep%20Grand%20Cherokee%20WL%202021%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Jeep%20Grand%20Cherokee%20WL%202021%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -1871,7 +2296,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Tesla%20Model%20S%20First%20generation%202012%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Tesla%20Model%20S%20First%20generation%202012%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -1887,7 +2315,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Tesla%20Model%203%20First%20generation%202017%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Tesla%20Model%203%20First%20generation%202017%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -1903,7 +2334,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Tesla%20Model%20Y%20First%20generation%202020%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Tesla%20Model%20Y%20First%20generation%202020%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -1926,7 +2360,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Volvo%20XC90%20First%20generation%202002%E2%80%932014",
+              "researchUrl": "https://www.google.com/search?q=Volvo%20XC90%20First%20generation%202002%E2%80%932014%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "volvo-xc90-second-generation",
@@ -1936,7 +2373,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Volvo%20XC90%20Second%20generation%202014%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Volvo%20XC90%20Second%20generation%202014%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -1952,7 +2392,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Volvo%20S60%20P2%202000%E2%80%932009",
+              "researchUrl": "https://www.google.com/search?q=Volvo%20S60%20P2%202000%E2%80%932009%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "volvo-s60-p3",
@@ -1962,7 +2405,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Volvo%20S60%20P3%202010%E2%80%932018",
+              "researchUrl": "https://www.google.com/search?q=Volvo%20S60%20P3%202010%E2%80%932018%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "volvo-s60-spa",
@@ -1972,7 +2418,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Volvo%20S60%20SPA%202018%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Volvo%20S60%20SPA%202018%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -1995,7 +2444,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Saab%209-3%20First%20generation%201998%E2%80%932002",
+              "researchUrl": "https://www.google.com/search?q=Saab%209-3%20First%20generation%201998%E2%80%932002%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "saab-9-3-second-generation",
@@ -2005,7 +2457,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Saab%209-3%20Second%20generation%202002%E2%80%932014",
+              "researchUrl": "https://www.google.com/search?q=Saab%209-3%20Second%20generation%202002%E2%80%932014%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -2021,7 +2476,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Saab%209-5%20First%20generation%201997%E2%80%932010",
+              "researchUrl": "https://www.google.com/search?q=Saab%209-5%20First%20generation%201997%E2%80%932010%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "saab-9-5-second-generation",
@@ -2031,7 +2489,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Saab%209-5%20Second%20generation%202010%E2%80%932012",
+              "researchUrl": "https://www.google.com/search?q=Saab%209-5%20Second%20generation%202010%E2%80%932012%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -2054,7 +2515,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Renault%20Clio%20I%201990%E2%80%931998",
+              "researchUrl": "https://www.google.com/search?q=Renault%20Clio%20I%201990%E2%80%931998%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "renault-clio-ii",
@@ -2064,7 +2528,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Renault%20Clio%20II%201998%E2%80%932012",
+              "researchUrl": "https://www.google.com/search?q=Renault%20Clio%20II%201998%E2%80%932012%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "renault-clio-iii",
@@ -2074,7 +2541,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Renault%20Clio%20III%202005%E2%80%932014",
+              "researchUrl": "https://www.google.com/search?q=Renault%20Clio%20III%202005%E2%80%932014%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "renault-clio-iv",
@@ -2084,7 +2554,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Renault%20Clio%20IV%202012%E2%80%932019",
+              "researchUrl": "https://www.google.com/search?q=Renault%20Clio%20IV%202012%E2%80%932019%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "renault-clio-v",
@@ -2094,7 +2567,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Renault%20Clio%20V%202019%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Renault%20Clio%20V%202019%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -2110,7 +2586,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Renault%20Megane%20I%201995%E2%80%932002",
+              "researchUrl": "https://www.google.com/search?q=Renault%20Megane%20I%201995%E2%80%932002%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "renault-megane-ii",
@@ -2120,7 +2599,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Renault%20Megane%20II%202002%E2%80%932009",
+              "researchUrl": "https://www.google.com/search?q=Renault%20Megane%20II%202002%E2%80%932009%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "renault-megane-iii",
@@ -2130,7 +2612,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Renault%20Megane%20III%202008%E2%80%932016",
+              "researchUrl": "https://www.google.com/search?q=Renault%20Megane%20III%202008%E2%80%932016%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "renault-megane-iv",
@@ -2140,7 +2625,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Renault%20Megane%20IV%202016%E2%80%932024",
+              "researchUrl": "https://www.google.com/search?q=Renault%20Megane%20IV%202016%E2%80%932024%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -2163,7 +2651,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Peugeot%20308%20T7%202007%E2%80%932013",
+              "researchUrl": "https://www.google.com/search?q=Peugeot%20308%20T7%202007%E2%80%932013%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "peugeot-308-t9",
@@ -2173,7 +2664,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Peugeot%20308%20T9%202013%E2%80%932021",
+              "researchUrl": "https://www.google.com/search?q=Peugeot%20308%20T9%202013%E2%80%932021%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "peugeot-308-p5",
@@ -2183,7 +2677,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Peugeot%20308%20P5%202021%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Peugeot%20308%20P5%202021%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -2199,7 +2696,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Peugeot%20208%20A9%202012%E2%80%932019",
+              "researchUrl": "https://www.google.com/search?q=Peugeot%20208%20A9%202012%E2%80%932019%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "peugeot-208-p21",
@@ -2209,7 +2709,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Peugeot%20208%20P21%202019%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Peugeot%20208%20P21%202019%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -2232,7 +2735,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Citroen%20C4%20First%20generation%202004%E2%80%932010",
+              "researchUrl": "https://www.google.com/search?q=Citroen%20C4%20First%20generation%202004%E2%80%932010%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "citroen-c4-second-generation",
@@ -2242,7 +2748,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Citroen%20C4%20Second%20generation%202010%E2%80%932018",
+              "researchUrl": "https://www.google.com/search?q=Citroen%20C4%20Second%20generation%202010%E2%80%932018%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "citroen-c4-third-generation",
@@ -2252,7 +2761,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Citroen%20C4%20Third%20generation%202020%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Citroen%20C4%20Third%20generation%202020%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -2268,7 +2780,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Citroen%20C5%20First%20generation%202001%E2%80%932008",
+              "researchUrl": "https://www.google.com/search?q=Citroen%20C5%20First%20generation%202001%E2%80%932008%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "citroen-c5-second-generation",
@@ -2278,7 +2793,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Citroen%20C5%20Second%20generation%202008%E2%80%932017",
+              "researchUrl": "https://www.google.com/search?q=Citroen%20C5%20Second%20generation%202008%E2%80%932017%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "citroen-c5-c5-x",
@@ -2288,7 +2806,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Citroen%20C5%20C5%20X%202021%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Citroen%20C5%20C5%20X%202021%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -2311,7 +2832,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Fiat%20Panda%20141%201980%E2%80%932003",
+              "researchUrl": "https://www.google.com/search?q=Fiat%20Panda%20141%201980%E2%80%932003%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "fiat-panda-169",
@@ -2321,7 +2845,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Fiat%20Panda%20169%202003%E2%80%932012",
+              "researchUrl": "https://www.google.com/search?q=Fiat%20Panda%20169%202003%E2%80%932012%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "fiat-panda-319",
@@ -2331,7 +2858,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Fiat%20Panda%20319%202011%E2%80%932024",
+              "researchUrl": "https://www.google.com/search?q=Fiat%20Panda%20319%202011%E2%80%932024%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -2347,7 +2877,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Fiat%20500%20312%202007%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Fiat%20500%20312%202007%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -2370,7 +2903,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Alfa%20Romeo%20Giulia%20Type%20952%202015%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Alfa%20Romeo%20Giulia%20Type%20952%202015%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -2386,7 +2922,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Alfa%20Romeo%20156%20Type%20932%201997%E2%80%932007",
+              "researchUrl": "https://www.google.com/search?q=Alfa%20Romeo%20156%20Type%20932%201997%E2%80%932007%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -2409,7 +2948,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Ferrari%20488%20F142M%202015%E2%80%932019",
+              "researchUrl": "https://www.google.com/search?q=Ferrari%20488%20F142M%202015%E2%80%932019%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -2425,7 +2967,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Ferrari%20F8%20Tributo%20F142M%20FL%202019%E2%80%932023",
+              "researchUrl": "https://www.google.com/search?q=Ferrari%20F8%20Tributo%20F142M%20FL%202019%E2%80%932023%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -2448,7 +2993,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Lamborghini%20Huracan%20LB%20near-series%202014%E2%80%932024",
+              "researchUrl": "https://www.google.com/search?q=Lamborghini%20Huracan%20LB%20near-series%202014%E2%80%932024%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -2464,7 +3012,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Lamborghini%20Aventador%20LB834%202011%E2%80%932022",
+              "researchUrl": "https://www.google.com/search?q=Lamborghini%20Aventador%20LB834%202011%E2%80%932022%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -2487,7 +3038,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Skoda%20Octavia%201U%201996%E2%80%932010",
+              "researchUrl": "https://www.google.com/search?q=Skoda%20Octavia%201U%201996%E2%80%932010%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "skoda-octavia-1z",
@@ -2497,7 +3051,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Skoda%20Octavia%201Z%202004%E2%80%932013",
+              "researchUrl": "https://www.google.com/search?q=Skoda%20Octavia%201Z%202004%E2%80%932013%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "skoda-octavia-5e",
@@ -2507,7 +3064,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Skoda%20Octavia%205E%202012%E2%80%932020",
+              "researchUrl": "https://www.google.com/search?q=Skoda%20Octavia%205E%202012%E2%80%932020%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "skoda-octavia-nx",
@@ -2517,7 +3077,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Skoda%20Octavia%20NX%202019%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Skoda%20Octavia%20NX%202019%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -2533,7 +3096,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Skoda%20Superb%203U%202001%E2%80%932008",
+              "researchUrl": "https://www.google.com/search?q=Skoda%20Superb%203U%202001%E2%80%932008%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "skoda-superb-3t",
@@ -2543,7 +3109,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Skoda%20Superb%203T%202008%E2%80%932015",
+              "researchUrl": "https://www.google.com/search?q=Skoda%20Superb%203T%202008%E2%80%932015%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "skoda-superb-3v",
@@ -2553,7 +3122,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Skoda%20Superb%203V%202015%E2%80%932024",
+              "researchUrl": "https://www.google.com/search?q=Skoda%20Superb%203V%202015%E2%80%932024%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "skoda-superb-b9",
@@ -2563,7 +3135,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Skoda%20Superb%20B9%202024%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Skoda%20Superb%20B9%202024%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -2586,7 +3161,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=SEAT%20Leon%201M%201999%E2%80%932005",
+              "researchUrl": "https://www.google.com/search?q=SEAT%20Leon%201M%201999%E2%80%932005%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "seat-leon-1p",
@@ -2596,7 +3174,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=SEAT%20Leon%201P%202005%E2%80%932012",
+              "researchUrl": "https://www.google.com/search?q=SEAT%20Leon%201P%202005%E2%80%932012%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "seat-leon-5f",
@@ -2606,7 +3187,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=SEAT%20Leon%205F%202012%E2%80%932020",
+              "researchUrl": "https://www.google.com/search?q=SEAT%20Leon%205F%202012%E2%80%932020%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "seat-leon-kl",
@@ -2616,7 +3200,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=SEAT%20Leon%20KL%202020%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=SEAT%20Leon%20KL%202020%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -2632,7 +3219,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=SEAT%20Ibiza%206K%201993%E2%80%932002",
+              "researchUrl": "https://www.google.com/search?q=SEAT%20Ibiza%206K%201993%E2%80%932002%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "seat-ibiza-6l",
@@ -2642,7 +3232,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=SEAT%20Ibiza%206L%202002%E2%80%932008",
+              "researchUrl": "https://www.google.com/search?q=SEAT%20Ibiza%206L%202002%E2%80%932008%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "seat-ibiza-6j",
@@ -2652,7 +3245,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=SEAT%20Ibiza%206J%202008%E2%80%932017",
+              "researchUrl": "https://www.google.com/search?q=SEAT%20Ibiza%206J%202008%E2%80%932017%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "seat-ibiza-kj",
@@ -2662,7 +3258,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=SEAT%20Ibiza%20KJ%202017%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=SEAT%20Ibiza%20KJ%202017%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -2685,7 +3284,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Tata%20Nexon%20First%20generation%202017%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Tata%20Nexon%20First%20generation%202017%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -2701,7 +3303,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Tata%20Safari%20First%20generation%201998%E2%80%932019",
+              "researchUrl": "https://www.google.com/search?q=Tata%20Safari%20First%20generation%201998%E2%80%932019%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "tata-safari-second-generation",
@@ -2711,7 +3316,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Tata%20Safari%20Second%20generation%202021%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Tata%20Safari%20Second%20generation%202021%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -2734,7 +3342,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mahindra%20Scorpio%20First%20generation%202002%E2%80%932022",
+              "researchUrl": "https://www.google.com/search?q=Mahindra%20Scorpio%20First%20generation%202002%E2%80%932022%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "mahindra-scorpio-n",
@@ -2744,7 +3355,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mahindra%20Scorpio%20N%202022%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Mahindra%20Scorpio%20N%202022%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -2760,7 +3374,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mahindra%20XUV700%20First%20generation%202021%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Mahindra%20XUV700%20First%20generation%202021%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -2783,7 +3400,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=BYD%20Atto%203%20Yuan%20Plus%202022%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=BYD%20Atto%203%20Yuan%20Plus%202022%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -2799,7 +3419,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=BYD%20Seal%20First%20generation%202022%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=BYD%20Seal%20First%20generation%202022%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -2822,7 +3445,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Geely%20Coolray%20SX11%202018%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Geely%20Coolray%20SX11%202018%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -2838,7 +3464,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Geely%20Monjaro%20KX11%202021%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Geely%20Monjaro%20KX11%202021%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -2861,7 +3490,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Great%20Wall%20Haval%20H6%20First%20generation%202011%E2%80%932017",
+              "researchUrl": "https://www.google.com/search?q=Great%20Wall%20Haval%20H6%20First%20generation%202011%E2%80%932017%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "great-wall-haval-h6-second-generation",
@@ -2871,7 +3503,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Great%20Wall%20Haval%20H6%20Second%20generation%202017%E2%80%932020",
+              "researchUrl": "https://www.google.com/search?q=Great%20Wall%20Haval%20H6%20Second%20generation%202017%E2%80%932020%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "great-wall-haval-h6-third-generation",
@@ -2881,7 +3516,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Great%20Wall%20Haval%20H6%20Third%20generation%202020%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Great%20Wall%20Haval%20H6%20Third%20generation%202020%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -2897,7 +3535,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Great%20Wall%20Tank%20300%20First%20generation%202020%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Great%20Wall%20Tank%20300%20First%20generation%202020%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -2920,7 +3561,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Chery%20Tiggo%207%20First%20generation%202016%E2%80%932020",
+              "researchUrl": "https://www.google.com/search?q=Chery%20Tiggo%207%20First%20generation%202016%E2%80%932020%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "chery-tiggo-7-pro",
@@ -2930,7 +3574,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Chery%20Tiggo%207%20Pro%202020%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Chery%20Tiggo%207%20Pro%202020%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -2946,7 +3593,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Chery%20Tiggo%208%20First%20generation%202018%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Chery%20Tiggo%208%20First%20generation%202018%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -2969,7 +3619,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Lada%20Niva%202121%201977%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Lada%20Niva%202121%201977%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -2985,7 +3638,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Lada%20Granta%20First%20generation%202011%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Lada%20Granta%20First%20generation%202011%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -3001,7 +3657,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Lada%20Vesta%20First%20generation%202015%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Lada%20Vesta%20First%20generation%202015%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -3024,7 +3683,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=UAZ%20Patriot%203163%202005%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=UAZ%20Patriot%203163%202005%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -3040,7 +3702,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=UAZ%20Hunter%203151-based%202003%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=UAZ%20Hunter%203151-based%202003%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -3063,7 +3728,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Dacia%20Duster%20HS%202010%E2%80%932017",
+              "researchUrl": "https://www.google.com/search?q=Dacia%20Duster%20HS%202010%E2%80%932017%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "dacia-duster-hm",
@@ -3073,7 +3741,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Dacia%20Duster%20HM%202017%E2%80%932024",
+              "researchUrl": "https://www.google.com/search?q=Dacia%20Duster%20HM%202017%E2%80%932024%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "dacia-duster-p1310",
@@ -3083,7 +3754,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Dacia%20Duster%20P1310%202024%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Dacia%20Duster%20P1310%202024%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -3099,7 +3773,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Dacia%20Logan%20I%202004%E2%80%932012",
+              "researchUrl": "https://www.google.com/search?q=Dacia%20Logan%20I%202004%E2%80%932012%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "dacia-logan-ii",
@@ -3109,7 +3786,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Dacia%20Logan%20II%202012%E2%80%932020",
+              "researchUrl": "https://www.google.com/search?q=Dacia%20Logan%20II%202012%E2%80%932020%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "dacia-logan-iii",
@@ -3119,7 +3799,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Dacia%20Logan%20III%202020%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Dacia%20Logan%20III%202020%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -3142,7 +3825,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Land%20Rover%20Range%20Rover%20Classic%201970%E2%80%931996",
+              "researchUrl": "https://www.google.com/search?q=Land%20Rover%20Range%20Rover%20Classic%201970%E2%80%931996%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "land-rover-range-rover-p38a",
@@ -3152,7 +3838,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Land%20Rover%20Range%20Rover%20P38A%201994%E2%80%932002",
+              "researchUrl": "https://www.google.com/search?q=Land%20Rover%20Range%20Rover%20P38A%201994%E2%80%932002%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "land-rover-range-rover-l322",
@@ -3162,7 +3851,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Land%20Rover%20Range%20Rover%20L322%202002%E2%80%932012",
+              "researchUrl": "https://www.google.com/search?q=Land%20Rover%20Range%20Rover%20L322%202002%E2%80%932012%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "land-rover-range-rover-l405",
@@ -3172,7 +3864,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Land%20Rover%20Range%20Rover%20L405%202012%E2%80%932022",
+              "researchUrl": "https://www.google.com/search?q=Land%20Rover%20Range%20Rover%20L405%202012%E2%80%932022%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "land-rover-range-rover-l460",
@@ -3182,7 +3877,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Land%20Rover%20Range%20Rover%20L460%202022%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Land%20Rover%20Range%20Rover%20L460%202022%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -3198,7 +3896,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Land%20Rover%20Discovery%20Series%20I%201989%E2%80%931998",
+              "researchUrl": "https://www.google.com/search?q=Land%20Rover%20Discovery%20Series%20I%201989%E2%80%931998%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "land-rover-discovery-series-ii",
@@ -3208,7 +3909,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Land%20Rover%20Discovery%20Series%20II%201998%E2%80%932004",
+              "researchUrl": "https://www.google.com/search?q=Land%20Rover%20Discovery%20Series%20II%201998%E2%80%932004%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "land-rover-discovery-discovery-3",
@@ -3218,7 +3922,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Land%20Rover%20Discovery%20Discovery%203%202004%E2%80%932009",
+              "researchUrl": "https://www.google.com/search?q=Land%20Rover%20Discovery%20Discovery%203%202004%E2%80%932009%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "land-rover-discovery-discovery-4",
@@ -3228,7 +3935,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Land%20Rover%20Discovery%20Discovery%204%202009%E2%80%932016",
+              "researchUrl": "https://www.google.com/search?q=Land%20Rover%20Discovery%20Discovery%204%202009%E2%80%932016%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "land-rover-discovery-discovery-5",
@@ -3238,7 +3948,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Land%20Rover%20Discovery%20Discovery%205%202017%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Land%20Rover%20Discovery%20Discovery%205%202017%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -3261,7 +3974,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Jaguar%20XF%20X250%202007%E2%80%932015",
+              "researchUrl": "https://www.google.com/search?q=Jaguar%20XF%20X250%202007%E2%80%932015%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "jaguar-xf-x260",
@@ -3271,7 +3987,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Jaguar%20XF%20X260%202015%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Jaguar%20XF%20X260%202015%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -3287,7 +4006,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Jaguar%20XJ%20X350%202003%E2%80%932009",
+              "researchUrl": "https://www.google.com/search?q=Jaguar%20XJ%20X350%202003%E2%80%932009%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "jaguar-xj-x351",
@@ -3297,7 +4019,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Jaguar%20XJ%20X351%202009%E2%80%932019",
+              "researchUrl": "https://www.google.com/search?q=Jaguar%20XJ%20X351%202009%E2%80%932019%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -3320,7 +4045,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mini%20Hatch%20R50%2FR53%202001%E2%80%932006",
+              "researchUrl": "https://www.google.com/search?q=Mini%20Hatch%20R50%2FR53%202001%E2%80%932006%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "mini-hatch-r56",
@@ -3330,7 +4058,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mini%20Hatch%20R56%202006%E2%80%932013",
+              "researchUrl": "https://www.google.com/search?q=Mini%20Hatch%20R56%202006%E2%80%932013%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "mini-hatch-f56",
@@ -3340,7 +4071,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mini%20Hatch%20F56%202014%E2%80%932023",
+              "researchUrl": "https://www.google.com/search?q=Mini%20Hatch%20F56%202014%E2%80%932023%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "mini-hatch-f66",
@@ -3350,7 +4084,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mini%20Hatch%20F66%202024%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Mini%20Hatch%20F66%202024%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -3373,7 +4110,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Isuzu%20D-Max%20First%20generation%202002%E2%80%932012",
+              "researchUrl": "https://www.google.com/search?q=Isuzu%20D-Max%20First%20generation%202002%E2%80%932012%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "isuzu-d-max-second-generation",
@@ -3383,7 +4123,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Isuzu%20D-Max%20Second%20generation%202012%E2%80%932019",
+              "researchUrl": "https://www.google.com/search?q=Isuzu%20D-Max%20Second%20generation%202012%E2%80%932019%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "isuzu-d-max-third-generation",
@@ -3393,7 +4136,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Isuzu%20D-Max%20Third%20generation%202019%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Isuzu%20D-Max%20Third%20generation%202019%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -3409,7 +4155,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Isuzu%20Trooper%20UB%201981%E2%80%931991",
+              "researchUrl": "https://www.google.com/search?q=Isuzu%20Trooper%20UB%201981%E2%80%931991%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "isuzu-trooper-ubs",
@@ -3419,7 +4168,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Isuzu%20Trooper%20UBS%201991%E2%80%932002",
+              "researchUrl": "https://www.google.com/search?q=Isuzu%20Trooper%20UBS%201991%E2%80%932002%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -3442,7 +4194,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Acura%20TL%20UA1%E2%80%93UA3%201995%E2%80%931998",
+              "researchUrl": "https://www.google.com/search?q=Acura%20TL%20UA1%E2%80%93UA3%201995%E2%80%931998%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "acura-tl-ua4-ua5",
@@ -3452,7 +4207,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Acura%20TL%20UA4%2FUA5%201998%E2%80%932003",
+              "researchUrl": "https://www.google.com/search?q=Acura%20TL%20UA4%2FUA5%201998%E2%80%932003%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "acura-tl-ua6-ua7",
@@ -3462,7 +4220,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Acura%20TL%20UA6%2FUA7%202003%E2%80%932008",
+              "researchUrl": "https://www.google.com/search?q=Acura%20TL%20UA6%2FUA7%202003%E2%80%932008%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "acura-tl-ua8-ua9",
@@ -3472,7 +4233,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Acura%20TL%20UA8%2FUA9%202008%E2%80%932014",
+              "researchUrl": "https://www.google.com/search?q=Acura%20TL%20UA8%2FUA9%202008%E2%80%932014%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         },
@@ -3488,7 +4252,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Acura%20MDX%20YD1%202000%E2%80%932006",
+              "researchUrl": "https://www.google.com/search?q=Acura%20MDX%20YD1%202000%E2%80%932006%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "acura-mdx-yd2",
@@ -3498,7 +4265,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Acura%20MDX%20YD2%202006%E2%80%932013",
+              "researchUrl": "https://www.google.com/search?q=Acura%20MDX%20YD2%202006%E2%80%932013%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "acura-mdx-yd3",
@@ -3508,7 +4278,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Acura%20MDX%20YD3%202013%E2%80%932020",
+              "researchUrl": "https://www.google.com/search?q=Acura%20MDX%20YD3%202013%E2%80%932020%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "acura-mdx-yd4",
@@ -3518,7 +4291,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Acura%20MDX%20YD4%202021%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Acura%20MDX%20YD4%202021%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -3541,7 +4317,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=GMC%20Yukon%20GMT400%201991%E2%80%931999",
+              "researchUrl": "https://www.google.com/search?q=GMC%20Yukon%20GMT400%201991%E2%80%931999%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "gmc-yukon-gmt800",
@@ -3551,7 +4330,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=GMC%20Yukon%20GMT800%202000%E2%80%932006",
+              "researchUrl": "https://www.google.com/search?q=GMC%20Yukon%20GMT800%202000%E2%80%932006%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "gmc-yukon-gmt900",
@@ -3561,7 +4343,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=GMC%20Yukon%20GMT900%202007%E2%80%932014",
+              "researchUrl": "https://www.google.com/search?q=GMC%20Yukon%20GMT900%202007%E2%80%932014%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "gmc-yukon-k2uc",
@@ -3571,7 +4356,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=GMC%20Yukon%20K2UC%202015%E2%80%932020",
+              "researchUrl": "https://www.google.com/search?q=GMC%20Yukon%20K2UC%202015%E2%80%932020%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "gmc-yukon-t1uc",
@@ -3581,7 +4369,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=GMC%20Yukon%20T1UC%202021%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=GMC%20Yukon%20T1UC%202021%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -3604,7 +4395,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Buick%20Regal%20First%20generation%201973%E2%80%931977",
+              "researchUrl": "https://www.google.com/search?q=Buick%20Regal%20First%20generation%201973%E2%80%931977%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "buick-regal-fourth-generation",
@@ -3614,7 +4408,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Buick%20Regal%20Fourth%20generation%201997%E2%80%932004",
+              "researchUrl": "https://www.google.com/search?q=Buick%20Regal%20Fourth%20generation%201997%E2%80%932004%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "buick-regal-fifth-generation",
@@ -3624,7 +4421,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Buick%20Regal%20Fifth%20generation%202008%E2%80%932017",
+              "researchUrl": "https://www.google.com/search?q=Buick%20Regal%20Fifth%20generation%202008%E2%80%932017%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "buick-regal-sixth-generation",
@@ -3634,7 +4434,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Buick%20Regal%20Sixth%20generation%202017%E2%80%932020",
+              "researchUrl": "https://www.google.com/search?q=Buick%20Regal%20Sixth%20generation%202017%E2%80%932020%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -3657,7 +4460,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Lincoln%20Navigator%20First%20generation%201997%E2%80%932002",
+              "researchUrl": "https://www.google.com/search?q=Lincoln%20Navigator%20First%20generation%201997%E2%80%932002%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "lincoln-navigator-second-generation",
@@ -3667,7 +4473,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Lincoln%20Navigator%20Second%20generation%202002%E2%80%932006",
+              "researchUrl": "https://www.google.com/search?q=Lincoln%20Navigator%20Second%20generation%202002%E2%80%932006%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "lincoln-navigator-third-generation",
@@ -3677,7 +4486,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Lincoln%20Navigator%20Third%20generation%202006%E2%80%932017",
+              "researchUrl": "https://www.google.com/search?q=Lincoln%20Navigator%20Third%20generation%202006%E2%80%932017%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "lincoln-navigator-fourth-generation",
@@ -3687,7 +4499,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Lincoln%20Navigator%20Fourth%20generation%202017%E2%80%93present",
+              "researchUrl": "https://www.google.com/search?q=Lincoln%20Navigator%20Fourth%20generation%202017%E2%80%93present%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
@@ -3710,7 +4525,10 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Chrysler%20300%20LX%202004%E2%80%932010",
+              "researchUrl": "https://www.google.com/search?q=Chrysler%20300%20LX%202004%E2%80%932010%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             },
             {
               "id": "chrysler-300-ld",
@@ -3720,11 +4538,14 @@
                 "To be verified by market"
               ],
               "specifications": [],
-              "images": []
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Chrysler%20300%20LD%202011%E2%80%932023",
+              "researchUrl": "https://www.google.com/search?q=Chrysler%20300%20LD%202011%E2%80%932023%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
             }
           ]
         }
       ]
     }
   ]
-}
+}\n
