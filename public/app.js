@@ -173,24 +173,39 @@ function yearRange(generations) {
 async function loadBrandLogo(brand) {
   if (brandLogoCache.has(brand.id)) return brandLogoCache.get(brand.id);
   const task = (async () => {
-    const endpoint = new URL("https://commons.wikimedia.org/w/api.php");
-    endpoint.search = new URLSearchParams({action:"query",generator:"search",gsrsearch:brand.name+" logo",gsrnamespace:"6",gsrlimit:"12",prop:"imageinfo",iiprop:"url|extmetadata",iiurlwidth:"240",format:"json",origin:"*"}).toString();
     try {
-      const response = await fetch(endpoint.toString()); if (!response.ok) return null;
-      const payload = await response.json(), brandToken = brand.name.toLowerCase().replace(/[^a-z0-9]/g, "");
-      const pages = Object.values(payload.query?.pages || {});
-      const candidate = pages.find(page => {
-        const title = String(page.title || "").toLowerCase().replace(/[^a-z0-9]/g, ""), info = page.imageinfo?.[0], meta = info?.extmetadata || {};
-        const license = meta.LicenseShortName?.value || meta.UsageTerms?.value || "", artist = meta.Artist?.value || meta.Credit?.value || "";
-        return title.includes("logo") && title.includes(brandToken) && (info?.thumburl || info?.url) && license && artist && !/unknown|no license|без лицензии/i.test(license);
-      });
-      if (!candidate) return null;
-      const info = candidate.imageinfo[0], meta = info.extmetadata || {}, clean = key => String(meta[key]?.value || "").replace(/<[^>]*>/g, "").trim();
-      return {url:info.thumburl || info.url,sourceUrl:info.descriptionurl,license:clean("LicenseShortName") || clean("UsageTerms"),licenseUrl:clean("LicenseUrl"),artist:clean("Artist") || clean("Credit") || "Автор указан на странице файла"};
+      // Use Wikidata logo property (P154), never a general image search.
+      const search = new URL("https://www.wikidata.org/w/api.php");
+      search.search = new URLSearchParams({action:"wbsearchentities",search:brand.name,language:"en",format:"json",origin:"*"}).toString();
+      const sr = await fetch(search.toString()); if (!sr.ok) return null;
+      const hits = (await sr.json()).search || [];
+      let filename = "";
+      for (const hit of hits.slice(0, 5)) {
+        const entityUrl = new URL("https://www.wikidata.org/w/api.php");
+        entityUrl.search = new URLSearchParams({action:"wbgetentities",ids:hit.id,props:"claims",format:"json",origin:"*"}).toString();
+        const er = await fetch(entityUrl.toString()); if (!er.ok) continue;
+        const entity = (await er.json()).entities?.[hit.id];
+        const claim = entity?.claims?.P154?.[0]?.mainsnak?.datavalue?.value;
+        if (claim && typeof claim === "string") { filename = claim; break; }
+      }
+      if (!filename) return null;
+      const commons = new URL("https://commons.wikimedia.org/w/api.php");
+      commons.search = new URLSearchParams({action:"query",titles:"File:"+filename,prop:"imageinfo",iiprop:"url|extmetadata",iiurlwidth:"240",format:"json",origin:"*"}).toString();
+      const cr = await fetch(commons.toString()); if (!cr.ok) return null;
+      const pages = Object.values((await cr.json()).query?.pages || {});
+      const page = pages.find(item => item.imageinfo?.[0]); if (!page) return null;
+      const info = page.imageinfo[0], meta = info.extmetadata || {};
+      const clean = key => String(meta[key]?.value || "").replace(/<[^>]*>/g, "").trim();
+      const license = clean("LicenseShortName") || clean("UsageTerms") || "";
+      const licenseKey = license.toLowerCase();
+      const acceptable = /public domain|pd-textlogo|pd-ineligible|cc by|cc-by|cc by-sa|cc-by-sa|creative commons/i.test(licenseKey);
+      if (!acceptable || !(info.thumburl || info.url)) return null;
+      return {url:info.thumburl || info.url,sourceUrl:info.descriptionurl,license:license,licenseUrl:clean("LicenseUrl"),artist:clean("Artist") || clean("Credit") || "Сведения об авторе — на странице файла"};
     } catch { return null; }
   })();
   brandLogoCache.set(brand.id, task); return task;
 }
+
 function monogram(name) { return String(name).replace(/[^A-Za-zА-Яа-я0-9]/g, "").slice(0, 2).toUpperCase(); }
 async function loadCommonsPhoto(card, brandName, modelName, gen) {
   const host = card.querySelector(".generation-info");
