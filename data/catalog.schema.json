@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://auto-razbor.example/schemas/catalog.schema.json",
+  "title": "AUTO_RAZBOR vehicle catalog",
+  "type": "object",
+  "required": ["schemaVersion", "brands"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "note": { "type": "string" },
+    "brands": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "country", "models"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "name": { "type": "string", "minLength": 1 },
+          "country": { "type": "string", "minLength": 1 },
+          "models": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "name", "generations"],
+              "properties": {
+                "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+                "name": { "type": "string", "minLength": 1 },
+                "generations": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["id", "code", "years", "markets"],
+                    "properties": {
+                      "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+                      "code": { "type": "string", "minLength": 1 },
+                      "years": { "type": "string", "minLength": 1 },
+                      "markets": { "type": "array", "items": { "type": "string" } }
+                    },
+                    "additionalProperties": true
+                  }
+                }
+              },
+              "additionalProperties": true
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}
