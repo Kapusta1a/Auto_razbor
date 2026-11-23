@@ -6,7 +6,8 @@ let currentBrand = null;
 
 async function init() {
   try {
-    const response = await fetch("/api/catalog");
+    let response = await fetch("/api/catalog");
+    if (!response.ok) response = await fetch("./catalog.json");
     if (!response.ok) throw new Error("catalog");
     catalog = await response.json();
     $("count").textContent = catalog.brands.length + " марок";
