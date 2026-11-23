@@ -126,21 +126,33 @@ server.listen(PORT, "0.0.0.0", () => console.log(`AUTO_RAZBOR listening on :${PO
 
 async function configureTelegram() {
   if (!BOT_TOKEN) {
-    console.log("BOT_TOKEN missing: running in local preview mode; Telegram connection is disabled.");
+    console.log("BOT_TOKEN missing: running in preview mode; Telegram API setup is disabled.");
     return;
   }
-  if (WEBAPP_URL) {
-    await telegram("setChatMenuButton", { menu_button: { type: "web_app", text: "AUTO_RAZBOR", web_app: { url: WEBAPP_URL } } });
+
+  // Telegram allows only one active webhook per bot. Never replace an existing
+  // webhook merely because the service restarted or was redeployed.
+  if (process.env.ENABLE_TELEGRAM_MENU_BUTTON === "true") {
+    if (!WEBAPP_URL) throw new Error("WEBAPP_URL is required to configure the Mini App menu button");
+    await telegram("setChatMenuButton", {
+      menu_button: { type: "web_app", text: "AUTO_RAZBOR", web_app: { url: WEBAPP_URL } }
+    });
     console.log("Telegram Mini App menu button configured.");
   }
-  const webhookUrl = process.env.TELEGRAM_WEBHOOK_URL || (PUBLIC_URL ? `${PUBLIC_URL}/webhook` : "");
-  if (webhookUrl && WEBHOOK_SECRET) {
+
+  // Webhook changes are deliberately opt-in and must be enabled only after
+  // the current bot host and its commands have been migrated and verified.
+  if (process.env.ENABLE_TELEGRAM_WEBHOOK === "true") {
+    const webhookUrl = process.env.TELEGRAM_WEBHOOK_URL || (PUBLIC_URL ? `${PUBLIC_URL}/webhook` : "");
+    if (!webhookUrl || !WEBHOOK_SECRET) {
+      throw new Error("TELEGRAM_WEBHOOK_URL (or RENDER_EXTERNAL_URL) and TELEGRAM_WEBHOOK_SECRET are required");
+    }
     await telegram("setWebhook", {
       url: webhookUrl,
       secret_token: WEBHOOK_SECRET,
-      allowed_updates: ["message"]
+      allowed_updates: ["message", "pre_checkout_query"]
     });
-    console.log("Telegram webhook configured.");
+    console.log("Telegram webhook configured by explicit opt-in.");
   }
 }
 configureTelegram().catch(error => console.error("Telegram setup failed:", error.message));
