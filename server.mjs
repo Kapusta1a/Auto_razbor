@@ -7,7 +7,8 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.env.PORT || 3000);
 const BOT_TOKEN = process.env.BOT_TOKEN || "";
-const WEBAPP_URL = process.env.WEBAPP_URL || "";
+const PUBLIC_URL = (process.env.RENDER_EXTERNAL_URL || "").replace(/\/$/, "");
+const WEBAPP_URL = process.env.WEBAPP_URL || PUBLIC_URL;
 const WEBHOOK_SECRET = process.env.TELEGRAM_WEBHOOK_SECRET || "";
 const MAX_AGE = Number(process.env.INIT_DATA_MAX_AGE || 86400);
 
@@ -121,7 +122,7 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-server.listen(PORT, () => console.log(`AUTO_RAZBOR listening on :${PORT}`));
+server.listen(PORT, "0.0.0.0", () => console.log(`AUTO_RAZBOR listening on :${PORT}`));
 
 async function configureTelegram() {
   if (!BOT_TOKEN) {
@@ -132,9 +133,10 @@ async function configureTelegram() {
     await telegram("setChatMenuButton", { menu_button: { type: "web_app", text: "AUTO_RAZBOR", web_app: { url: WEBAPP_URL } } });
     console.log("Telegram Mini App menu button configured.");
   }
-  if (process.env.TELEGRAM_WEBHOOK_URL && WEBHOOK_SECRET) {
+  const webhookUrl = process.env.TELEGRAM_WEBHOOK_URL || (PUBLIC_URL ? `${PUBLIC_URL}/webhook` : "");
+  if (webhookUrl && WEBHOOK_SECRET) {
     await telegram("setWebhook", {
-      url: process.env.TELEGRAM_WEBHOOK_URL,
+      url: webhookUrl,
       secret_token: WEBHOOK_SECRET,
       allowed_updates: ["message"]
     });
