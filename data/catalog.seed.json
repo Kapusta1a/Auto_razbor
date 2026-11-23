@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "note": "Глобальная база по рынкам и модификациям. Данные вносятся только при наличии источника; пустые характеристики означают, что версия ещё не проверена. Поиск изображений и технических документов доступен отдельно для каждого поколения.",
+  "note": "Глобальная база по рынкам и модификациям. Данные вносятся только при наличии источника; пустые характеристики означают, что версия ещё не проверена. Поиск изображений и технических документов доступен отдельно для каждого поколения. Дополнительно добавлены новые марки; модели и поколения со статусом needs-verification являются навигационными заготовками и требуют поэтапной проверки по рынкам.",
   "brands": [
     {
       "id": "toyota",
@@ -4514,6 +4514,1280 @@
               "images": [],
               "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Chrysler%20300%20LD%202011%E2%80%932023",
               "researchUrl": "https://www.google.com/search?q=Chrysler%20300%20LD%202011%E2%80%932023%20official%20brochure%20technical%20specifications%20engine%20market",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "opel",
+      "name": "Opel",
+      "country": "Germany",
+      "models": [
+        {
+          "id": "opel-astra",
+          "name": "Astra",
+          "generations": [
+            {
+              "id": "opel-astra-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Opel%20Astra",
+              "researchUrl": "https://www.google.com/search?q=Opel%20Astra%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vauxhall",
+      "name": "Vauxhall",
+      "country": "United Kingdom",
+      "models": [
+        {
+          "id": "vauxhall-corsa",
+          "name": "Corsa",
+          "generations": [
+            {
+              "id": "vauxhall-corsa-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Vauxhall%20Corsa",
+              "researchUrl": "https://www.google.com/search?q=Vauxhall%20Corsa%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bentley",
+      "name": "Bentley",
+      "country": "United Kingdom",
+      "models": [
+        {
+          "id": "bentley-continental-gt",
+          "name": "Continental GT",
+          "generations": [
+            {
+              "id": "bentley-continental-gt-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Bentley%20Continental%20GT",
+              "researchUrl": "https://www.google.com/search?q=Bentley%20Continental%20GT%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rolls-royce",
+      "name": "Rolls-Royce",
+      "country": "United Kingdom",
+      "models": [
+        {
+          "id": "rolls-royce-ghost",
+          "name": "Ghost",
+          "generations": [
+            {
+              "id": "rolls-royce-ghost-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Rolls-Royce%20Ghost",
+              "researchUrl": "https://www.google.com/search?q=Rolls-Royce%20Ghost%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aston-martin",
+      "name": "Aston Martin",
+      "country": "United Kingdom",
+      "models": [
+        {
+          "id": "aston-martin-db9",
+          "name": "DB9",
+          "generations": [
+            {
+              "id": "aston-martin-db9-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Aston%20Martin%20DB9",
+              "researchUrl": "https://www.google.com/search?q=Aston%20Martin%20DB9%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mclaren",
+      "name": "McLaren",
+      "country": "United Kingdom",
+      "models": [
+        {
+          "id": "mclaren-720s",
+          "name": "720S",
+          "generations": [
+            {
+              "id": "mclaren-720s-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=McLaren%20720S",
+              "researchUrl": "https://www.google.com/search?q=McLaren%20720S%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lotus",
+      "name": "Lotus",
+      "country": "United Kingdom",
+      "models": [
+        {
+          "id": "lotus-elise",
+          "name": "Elise",
+          "generations": [
+            {
+              "id": "lotus-elise-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Lotus%20Elise",
+              "researchUrl": "https://www.google.com/search?q=Lotus%20Elise%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maserati",
+      "name": "Maserati",
+      "country": "Italy",
+      "models": [
+        {
+          "id": "maserati-ghibli",
+          "name": "Ghibli",
+          "generations": [
+            {
+              "id": "maserati-ghibli-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Maserati%20Ghibli",
+              "researchUrl": "https://www.google.com/search?q=Maserati%20Ghibli%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bugatti",
+      "name": "Bugatti",
+      "country": "France",
+      "models": [
+        {
+          "id": "bugatti-veyron",
+          "name": "Veyron",
+          "generations": [
+            {
+              "id": "bugatti-veyron-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Bugatti%20Veyron",
+              "researchUrl": "https://www.google.com/search?q=Bugatti%20Veyron%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pagani",
+      "name": "Pagani",
+      "country": "Italy",
+      "models": [
+        {
+          "id": "pagani-zonda",
+          "name": "Zonda",
+          "generations": [
+            {
+              "id": "pagani-zonda-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Pagani%20Zonda",
+              "researchUrl": "https://www.google.com/search?q=Pagani%20Zonda%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "koenigsegg",
+      "name": "Koenigsegg",
+      "country": "Sweden",
+      "models": [
+        {
+          "id": "koenigsegg-agera",
+          "name": "Agera",
+          "generations": [
+            {
+              "id": "koenigsegg-agera-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Koenigsegg%20Agera",
+              "researchUrl": "https://www.google.com/search?q=Koenigsegg%20Agera%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "smart",
+      "name": "Smart",
+      "country": "Germany",
+      "models": [
+        {
+          "id": "smart-fortwo",
+          "name": "fortwo",
+          "generations": [
+            {
+              "id": "smart-fortwo-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Smart%20fortwo",
+              "researchUrl": "https://www.google.com/search?q=Smart%20fortwo%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "polestar",
+      "name": "Polestar",
+      "country": "Sweden",
+      "models": [
+        {
+          "id": "polestar-polestar-2",
+          "name": "Polestar 2",
+          "generations": [
+            {
+              "id": "polestar-polestar-2-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Polestar%20Polestar%202",
+              "researchUrl": "https://www.google.com/search?q=Polestar%20Polestar%202%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cupra",
+      "name": "Cupra",
+      "country": "Spain",
+      "models": [
+        {
+          "id": "cupra-formentor",
+          "name": "Formentor",
+          "generations": [
+            {
+              "id": "cupra-formentor-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Cupra%20Formentor",
+              "researchUrl": "https://www.google.com/search?q=Cupra%20Formentor%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alpine",
+      "name": "Alpine",
+      "country": "France",
+      "models": [
+        {
+          "id": "alpine-a110",
+          "name": "A110",
+          "generations": [
+            {
+              "id": "alpine-a110-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Alpine%20A110",
+              "researchUrl": "https://www.google.com/search?q=Alpine%20A110%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lancia",
+      "name": "Lancia",
+      "country": "Italy",
+      "models": [
+        {
+          "id": "lancia-delta",
+          "name": "Delta",
+          "generations": [
+            {
+              "id": "lancia-delta-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Lancia%20Delta",
+              "researchUrl": "https://www.google.com/search?q=Lancia%20Delta%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ds-automobiles",
+      "name": "DS Automobiles",
+      "country": "France",
+      "models": [
+        {
+          "id": "ds-automobiles-ds-7",
+          "name": "DS 7",
+          "generations": [
+            {
+              "id": "ds-automobiles-ds-7-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=DS%20Automobiles%20DS%207",
+              "researchUrl": "https://www.google.com/search?q=DS%20Automobiles%20DS%207%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "holden",
+      "name": "Holden",
+      "country": "Australia",
+      "models": [
+        {
+          "id": "holden-commodore",
+          "name": "Commodore",
+          "generations": [
+            {
+              "id": "holden-commodore-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Holden%20Commodore",
+              "researchUrl": "https://www.google.com/search?q=Holden%20Commodore%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rivian",
+      "name": "Rivian",
+      "country": "United States",
+      "models": [
+        {
+          "id": "rivian-r1t",
+          "name": "R1T",
+          "generations": [
+            {
+              "id": "rivian-r1t-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Rivian%20R1T",
+              "researchUrl": "https://www.google.com/search?q=Rivian%20R1T%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lucid",
+      "name": "Lucid",
+      "country": "United States",
+      "models": [
+        {
+          "id": "lucid-air",
+          "name": "Air",
+          "generations": [
+            {
+              "id": "lucid-air-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Lucid%20Air",
+              "researchUrl": "https://www.google.com/search?q=Lucid%20Air%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cadillac",
+      "name": "Cadillac",
+      "country": "United States",
+      "models": [
+        {
+          "id": "cadillac-escalade",
+          "name": "Escalade",
+          "generations": [
+            {
+              "id": "cadillac-escalade-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Cadillac%20Escalade",
+              "researchUrl": "https://www.google.com/search?q=Cadillac%20Escalade%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pontiac",
+      "name": "Pontiac",
+      "country": "United States",
+      "models": [
+        {
+          "id": "pontiac-firebird",
+          "name": "Firebird",
+          "generations": [
+            {
+              "id": "pontiac-firebird-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Pontiac%20Firebird",
+              "researchUrl": "https://www.google.com/search?q=Pontiac%20Firebird%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oldsmobile",
+      "name": "Oldsmobile",
+      "country": "United States",
+      "models": [
+        {
+          "id": "oldsmobile-cutlass",
+          "name": "Cutlass",
+          "generations": [
+            {
+              "id": "oldsmobile-cutlass-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Oldsmobile%20Cutlass",
+              "researchUrl": "https://www.google.com/search?q=Oldsmobile%20Cutlass%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saturn",
+      "name": "Saturn",
+      "country": "United States",
+      "models": [
+        {
+          "id": "saturn-s-series",
+          "name": "S-Series",
+          "generations": [
+            {
+              "id": "saturn-s-series-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Saturn%20S-Series",
+              "researchUrl": "https://www.google.com/search?q=Saturn%20S-Series%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ram",
+      "name": "RAM",
+      "country": "United States",
+      "models": [
+        {
+          "id": "ram-1500",
+          "name": "1500",
+          "generations": [
+            {
+              "id": "ram-1500-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=RAM%201500",
+              "researchUrl": "https://www.google.com/search?q=RAM%201500%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plymouth",
+      "name": "Plymouth",
+      "country": "United States",
+      "models": [
+        {
+          "id": "plymouth-barracuda",
+          "name": "Barracuda",
+          "generations": [
+            {
+              "id": "plymouth-barracuda-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Plymouth%20Barracuda",
+              "researchUrl": "https://www.google.com/search?q=Plymouth%20Barracuda%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mercury",
+      "name": "Mercury",
+      "country": "United States",
+      "models": [
+        {
+          "id": "mercury-grand-marquis",
+          "name": "Grand Marquis",
+          "generations": [
+            {
+              "id": "mercury-grand-marquis-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mercury%20Grand%20Marquis",
+              "researchUrl": "https://www.google.com/search?q=Mercury%20Grand%20Marquis%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hummer",
+      "name": "Hummer",
+      "country": "United States",
+      "models": [
+        {
+          "id": "hummer-h2",
+          "name": "H2",
+          "generations": [
+            {
+              "id": "hummer-h2-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Hummer%20H2",
+              "researchUrl": "https://www.google.com/search?q=Hummer%20H2%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scion",
+      "name": "Scion",
+      "country": "Japan",
+      "models": [
+        {
+          "id": "scion-tc",
+          "name": "tC",
+          "generations": [
+            {
+              "id": "scion-tc-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Scion%20tC",
+              "researchUrl": "https://www.google.com/search?q=Scion%20tC%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fisker",
+      "name": "Fisker",
+      "country": "United States",
+      "models": [
+        {
+          "id": "fisker-ocean",
+          "name": "Ocean",
+          "generations": [
+            {
+              "id": "fisker-ocean-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Fisker%20Ocean",
+              "researchUrl": "https://www.google.com/search?q=Fisker%20Ocean%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vinfast",
+      "name": "VinFast",
+      "country": "Vietnam",
+      "models": [
+        {
+          "id": "vinfast-vf-8",
+          "name": "VF 8",
+          "generations": [
+            {
+              "id": "vinfast-vf-8-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=VinFast%20VF%208",
+              "researchUrl": "https://www.google.com/search?q=VinFast%20VF%208%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "proton",
+      "name": "Proton",
+      "country": "Malaysia",
+      "models": [
+        {
+          "id": "proton-saga",
+          "name": "Saga",
+          "generations": [
+            {
+              "id": "proton-saga-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Proton%20Saga",
+              "researchUrl": "https://www.google.com/search?q=Proton%20Saga%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "perodua",
+      "name": "Perodua",
+      "country": "Malaysia",
+      "models": [
+        {
+          "id": "perodua-myvi",
+          "name": "Myvi",
+          "generations": [
+            {
+              "id": "perodua-myvi-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Perodua%20Myvi",
+              "researchUrl": "https://www.google.com/search?q=Perodua%20Myvi%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kgm",
+      "name": "KGM",
+      "country": "South Korea",
+      "models": [
+        {
+          "id": "kgm-rexton",
+          "name": "Rexton",
+          "generations": [
+            {
+              "id": "kgm-rexton-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=KGM%20Rexton",
+              "researchUrl": "https://www.google.com/search?q=KGM%20Rexton%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daewoo",
+      "name": "Daewoo",
+      "country": "South Korea",
+      "models": [
+        {
+          "id": "daewoo-nexia",
+          "name": "Nexia",
+          "generations": [
+            {
+              "id": "daewoo-nexia-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Daewoo%20Nexia",
+              "researchUrl": "https://www.google.com/search?q=Daewoo%20Nexia%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daihatsu",
+      "name": "Daihatsu",
+      "country": "Japan",
+      "models": [
+        {
+          "id": "daihatsu-terios",
+          "name": "Terios",
+          "generations": [
+            {
+              "id": "daihatsu-terios-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Daihatsu%20Terios",
+              "researchUrl": "https://www.google.com/search?q=Daihatsu%20Terios%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hino",
+      "name": "Hino",
+      "country": "Japan",
+      "models": [
+        {
+          "id": "hino-dutro",
+          "name": "Dutro",
+          "generations": [
+            {
+              "id": "hino-dutro-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Hino%20Dutro",
+              "researchUrl": "https://www.google.com/search?q=Hino%20Dutro%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faw",
+      "name": "FAW",
+      "country": "China",
+      "models": [
+        {
+          "id": "faw-bestune-b70",
+          "name": "Bestune B70",
+          "generations": [
+            {
+              "id": "faw-bestune-b70-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=FAW%20Bestune%20B70",
+              "researchUrl": "https://www.google.com/search?q=FAW%20Bestune%20B70%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hongqi",
+      "name": "Hongqi",
+      "country": "China",
+      "models": [
+        {
+          "id": "hongqi-h9",
+          "name": "H9",
+          "generations": [
+            {
+              "id": "hongqi-h9-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Hongqi%20H9",
+              "researchUrl": "https://www.google.com/search?q=Hongqi%20H9%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dongfeng",
+      "name": "Dongfeng",
+      "country": "China",
+      "models": [
+        {
+          "id": "dongfeng-aeolus-a9",
+          "name": "Aeolus A9",
+          "generations": [
+            {
+              "id": "dongfeng-aeolus-a9-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Dongfeng%20Aeolus%20A9",
+              "researchUrl": "https://www.google.com/search?q=Dongfeng%20Aeolus%20A9%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gac",
+      "name": "GAC",
+      "country": "China",
+      "models": [
+        {
+          "id": "gac-gs8",
+          "name": "GS8",
+          "generations": [
+            {
+              "id": "gac-gs8-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=GAC%20GS8",
+              "researchUrl": "https://www.google.com/search?q=GAC%20GS8%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nio",
+      "name": "NIO",
+      "country": "China",
+      "models": [
+        {
+          "id": "nio-et5",
+          "name": "ET5",
+          "generations": [
+            {
+              "id": "nio-et5-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=NIO%20ET5",
+              "researchUrl": "https://www.google.com/search?q=NIO%20ET5%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xpeng",
+      "name": "XPeng",
+      "country": "China",
+      "models": [
+        {
+          "id": "xpeng-p7",
+          "name": "P7",
+          "generations": [
+            {
+              "id": "xpeng-p7-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=XPeng%20P7",
+              "researchUrl": "https://www.google.com/search?q=XPeng%20P7%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "li-auto",
+      "name": "Li Auto",
+      "country": "China",
+      "models": [
+        {
+          "id": "li-auto-l9",
+          "name": "L9",
+          "generations": [
+            {
+              "id": "li-auto-l9-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Li%20Auto%20L9",
+              "researchUrl": "https://www.google.com/search?q=Li%20Auto%20L9%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zeekr",
+      "name": "Zeekr",
+      "country": "China",
+      "models": [
+        {
+          "id": "zeekr-001",
+          "name": "001",
+          "generations": [
+            {
+              "id": "zeekr-001-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Zeekr%20001",
+              "researchUrl": "https://www.google.com/search?q=Zeekr%20001%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leapmotor",
+      "name": "Leapmotor",
+      "country": "China",
+      "models": [
+        {
+          "id": "leapmotor-c10",
+          "name": "C10",
+          "generations": [
+            {
+              "id": "leapmotor-c10-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Leapmotor%20C10",
+              "researchUrl": "https://www.google.com/search?q=Leapmotor%20C10%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wuling",
+      "name": "Wuling",
+      "country": "China",
+      "models": [
+        {
+          "id": "wuling-hongguang-mini-ev",
+          "name": "Hongguang Mini EV",
+          "generations": [
+            {
+              "id": "wuling-hongguang-mini-ev-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Wuling%20Hongguang%20Mini%20EV",
+              "researchUrl": "https://www.google.com/search?q=Wuling%20Hongguang%20Mini%20EV%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roewe",
+      "name": "Roewe",
+      "country": "China",
+      "models": [
+        {
+          "id": "roewe-rx5",
+          "name": "RX5",
+          "generations": [
+            {
+              "id": "roewe-rx5-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Roewe%20RX5",
+              "researchUrl": "https://www.google.com/search?q=Roewe%20RX5%20model%20generations%20years%20official%20history",
+              "researchStatus": "needs-verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mg",
+      "name": "MG",
+      "country": "United Kingdom",
+      "models": [
+        {
+          "id": "mg-mg4",
+          "name": "MG4",
+          "generations": [
+            {
+              "id": "mg-mg4-history",
+              "code": "История поколений",
+              "years": "По годам и рынкам — уточняется",
+              "markets": [
+                "Разные рынки"
+              ],
+              "specifications": [],
+              "images": [],
+              "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=MG%20MG4",
+              "researchUrl": "https://www.google.com/search?q=MG%20MG4%20model%20generations%20years%20official%20history",
               "researchStatus": "needs-verification"
             }
           ]
