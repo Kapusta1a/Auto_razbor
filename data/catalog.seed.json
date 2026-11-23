@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "note": "Стартовый демонстрационный набор. Не полный мировой каталог; перед публикацией данные следует сверить по рынкам и источникам.",
+  "note": "Расширенный стартовый набор для разработки. Это не исчерпывающая и не окончательно проверенная мировая база; годы, коды поколений и региональные различия нужно валидировать по надежным источникам перед публикацией.",
   "brands": [
     {
       "id": "toyota",
@@ -468,6 +468,2637 @@
               "years": "2014–present",
               "markets": [
                 "Japan"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "audi",
+      "name": "Audi",
+      "country": "Germany",
+      "models": [
+        {
+          "id": "audi-a4",
+          "name": "A4",
+          "generations": [
+            {
+              "id": "audi-a4-b5",
+              "code": "B5",
+              "years": "1994–2001",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "audi-a4-b6",
+              "code": "B6",
+              "years": "2000–2006",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "audi-a4-b7",
+              "code": "B7",
+              "years": "2004–2009",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "audi-a4-b8",
+              "code": "B8",
+              "years": "2007–2016",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "audi-a4-b9",
+              "code": "B9",
+              "years": "2015–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "audi-a6",
+          "name": "A6",
+          "generations": [
+            {
+              "id": "audi-a6-c5",
+              "code": "C5",
+              "years": "1997–2004",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "audi-a6-c6",
+              "code": "C6",
+              "years": "2004–2011",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "audi-a6-c7",
+              "code": "C7",
+              "years": "2011–2018",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "audi-a6-c8",
+              "code": "C8",
+              "years": "2018–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "porsche",
+      "name": "Porsche",
+      "country": "Germany",
+      "models": [
+        {
+          "id": "porsche-911",
+          "name": "911",
+          "generations": [
+            {
+              "id": "porsche-911-930",
+              "code": "930",
+              "years": "1975–1989",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "porsche-911-964",
+              "code": "964",
+              "years": "1989–1994",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "porsche-911-993",
+              "code": "993",
+              "years": "1994–1998",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "porsche-911-996",
+              "code": "996",
+              "years": "1997–2006",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "porsche-911-997",
+              "code": "997",
+              "years": "2004–2012",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "porsche-911-991",
+              "code": "991",
+              "years": "2011–2019",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "porsche-911-992",
+              "code": "992",
+              "years": "2018–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "porsche-cayenne",
+          "name": "Cayenne",
+          "generations": [
+            {
+              "id": "porsche-cayenne-955-957",
+              "code": "955/957",
+              "years": "2002–2010",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "porsche-cayenne-958",
+              "code": "958",
+              "years": "2010–2017",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "porsche-cayenne-9ya-9yb",
+              "code": "9YA/9YB",
+              "years": "2017–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mazda",
+      "name": "Mazda",
+      "country": "Japan",
+      "models": [
+        {
+          "id": "mazda-mazda3",
+          "name": "Mazda3",
+          "generations": [
+            {
+              "id": "mazda-mazda3-bk",
+              "code": "BK",
+              "years": "2003–2009",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "mazda-mazda3-bl",
+              "code": "BL",
+              "years": "2008–2013",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "mazda-mazda3-bm-bn",
+              "code": "BM/BN",
+              "years": "2013–2019",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "mazda-mazda3-bp",
+              "code": "BP",
+              "years": "2019–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mazda-cx-5",
+          "name": "CX-5",
+          "generations": [
+            {
+              "id": "mazda-cx-5-ke",
+              "code": "KE",
+              "years": "2012–2017",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "mazda-cx-5-kf",
+              "code": "KF",
+              "years": "2017–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "subaru",
+      "name": "Subaru",
+      "country": "Japan",
+      "models": [
+        {
+          "id": "subaru-impreza",
+          "name": "Impreza",
+          "generations": [
+            {
+              "id": "subaru-impreza-gc-gf",
+              "code": "GC/GF",
+              "years": "1992–2000",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "subaru-impreza-gd-gg",
+              "code": "GD/GG",
+              "years": "2000–2007",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "subaru-impreza-ge-gh",
+              "code": "GE/GH",
+              "years": "2007–2011",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "subaru-impreza-gp-gj",
+              "code": "GP/GJ",
+              "years": "2011–2016",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "subaru-impreza-gk-gt",
+              "code": "GK/GT",
+              "years": "2016–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "subaru-forester",
+          "name": "Forester",
+          "generations": [
+            {
+              "id": "subaru-forester-sf",
+              "code": "SF",
+              "years": "1997–2002",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "subaru-forester-sg",
+              "code": "SG",
+              "years": "2002–2008",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "subaru-forester-sh",
+              "code": "SH",
+              "years": "2008–2013",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "subaru-forester-sj",
+              "code": "SJ",
+              "years": "2012–2018",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "subaru-forester-sk",
+              "code": "SK",
+              "years": "2018–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mitsubishi",
+      "name": "Mitsubishi",
+      "country": "Japan",
+      "models": [
+        {
+          "id": "mitsubishi-lancer",
+          "name": "Lancer",
+          "generations": [
+            {
+              "id": "mitsubishi-lancer-c6-c7",
+              "code": "C6/C7",
+              "years": "1988–1992",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "mitsubishi-lancer-cedia",
+              "code": "Cedia",
+              "years": "2000–2007",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "mitsubishi-lancer-cy",
+              "code": "CY",
+              "years": "2007–2017",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitsubishi-outlander",
+          "name": "Outlander",
+          "generations": [
+            {
+              "id": "mitsubishi-outlander-cu",
+              "code": "CU",
+              "years": "2001–2006",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "mitsubishi-outlander-cw",
+              "code": "CW",
+              "years": "2006–2012",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "mitsubishi-outlander-gf-gg",
+              "code": "GF/GG",
+              "years": "2012–2021",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "mitsubishi-outlander-gn",
+              "code": "GN",
+              "years": "2021–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "suzuki",
+      "name": "Suzuki",
+      "country": "Japan",
+      "models": [
+        {
+          "id": "suzuki-swift",
+          "name": "Swift",
+          "generations": [
+            {
+              "id": "suzuki-swift-sf",
+              "code": "SF",
+              "years": "1983–1989",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "suzuki-swift-ma-ea",
+              "code": "MA/EA",
+              "years": "1989–2004",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "suzuki-swift-rs",
+              "code": "RS",
+              "years": "2004–2010",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "suzuki-swift-azg",
+              "code": "AZG",
+              "years": "2010–2017",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "suzuki-swift-a2l",
+              "code": "A2L",
+              "years": "2017–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "suzuki-vitara",
+          "name": "Vitara",
+          "generations": [
+            {
+              "id": "suzuki-vitara-et-ta",
+              "code": "ET/TA",
+              "years": "1988–1998",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "suzuki-vitara-ft-gt",
+              "code": "FT/GT",
+              "years": "1998–2005",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "suzuki-vitara-ly",
+              "code": "LY",
+              "years": "2015–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lexus",
+      "name": "Lexus",
+      "country": "Japan",
+      "models": [
+        {
+          "id": "lexus-is",
+          "name": "IS",
+          "generations": [
+            {
+              "id": "lexus-is-xe10",
+              "code": "XE10",
+              "years": "1998–2005",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "lexus-is-xe20",
+              "code": "XE20",
+              "years": "2005–2013",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "lexus-is-xe30",
+              "code": "XE30",
+              "years": "2013–2020",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "lexus-is-xe40",
+              "code": "XE40",
+              "years": "2020–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lexus-rx",
+          "name": "RX",
+          "generations": [
+            {
+              "id": "lexus-rx-xu10",
+              "code": "XU10",
+              "years": "1998–2003",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "lexus-rx-xu30",
+              "code": "XU30",
+              "years": "2003–2009",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "lexus-rx-al10",
+              "code": "AL10",
+              "years": "2008–2015",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "lexus-rx-al20",
+              "code": "AL20",
+              "years": "2015–2022",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "lexus-rx-al30",
+              "code": "AL30",
+              "years": "2022–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "infiniti",
+      "name": "Infiniti",
+      "country": "Japan",
+      "models": [
+        {
+          "id": "infiniti-q50",
+          "name": "Q50",
+          "generations": [
+            {
+              "id": "infiniti-q50-v37",
+              "code": "V37",
+              "years": "2013–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "infiniti-fx",
+          "name": "FX",
+          "generations": [
+            {
+              "id": "infiniti-fx-s50",
+              "code": "S50",
+              "years": "2002–2008",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "infiniti-fx-s51",
+              "code": "S51",
+              "years": "2008–2017",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kia",
+      "name": "Kia",
+      "country": "South Korea",
+      "models": [
+        {
+          "id": "kia-sportage",
+          "name": "Sportage",
+          "generations": [
+            {
+              "id": "kia-sportage-ja",
+              "code": "JA",
+              "years": "1993–2004",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "kia-sportage-je-km",
+              "code": "JE/KM",
+              "years": "2004–2010",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "kia-sportage-sl",
+              "code": "SL",
+              "years": "2010–2015",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "kia-sportage-ql",
+              "code": "QL",
+              "years": "2015–2021",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "kia-sportage-nq5",
+              "code": "NQ5",
+              "years": "2021–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kia-rio",
+          "name": "Rio",
+          "generations": [
+            {
+              "id": "kia-rio-dc",
+              "code": "DC",
+              "years": "1999–2005",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "kia-rio-jb",
+              "code": "JB",
+              "years": "2005–2011",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "kia-rio-ub",
+              "code": "UB",
+              "years": "2011–2017",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "kia-rio-yb",
+              "code": "YB",
+              "years": "2017–2023",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "genesis",
+      "name": "Genesis",
+      "country": "South Korea",
+      "models": [
+        {
+          "id": "genesis-g80",
+          "name": "G80",
+          "generations": [
+            {
+              "id": "genesis-g80-dh",
+              "code": "DH",
+              "years": "2016–2020",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "genesis-g80-rg3",
+              "code": "RG3",
+              "years": "2020–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "genesis-gv80",
+          "name": "GV80",
+          "generations": [
+            {
+              "id": "genesis-gv80-jx1",
+              "code": "JX1",
+              "years": "2020–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chevrolet",
+      "name": "Chevrolet",
+      "country": "United States",
+      "models": [
+        {
+          "id": "chevrolet-camaro",
+          "name": "Camaro",
+          "generations": [
+            {
+              "id": "chevrolet-camaro-first-generation",
+              "code": "First generation",
+              "years": "1966–1969",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "chevrolet-camaro-second-generation",
+              "code": "Second generation",
+              "years": "1970–1981",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "chevrolet-camaro-third-generation",
+              "code": "Third generation",
+              "years": "1982–1992",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "chevrolet-camaro-fourth-generation",
+              "code": "Fourth generation",
+              "years": "1993–2002",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "chevrolet-camaro-fifth-generation",
+              "code": "Fifth generation",
+              "years": "2009–2015",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "chevrolet-camaro-sixth-generation",
+              "code": "Sixth generation",
+              "years": "2016–2024",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chevrolet-corvette",
+          "name": "Corvette",
+          "generations": [
+            {
+              "id": "chevrolet-corvette-c4",
+              "code": "C4",
+              "years": "1983–1996",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "chevrolet-corvette-c5",
+              "code": "C5",
+              "years": "1997–2004",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "chevrolet-corvette-c6",
+              "code": "C6",
+              "years": "2005–2013",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "chevrolet-corvette-c7",
+              "code": "C7",
+              "years": "2014–2019",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "chevrolet-corvette-c8",
+              "code": "C8",
+              "years": "2020–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dodge",
+      "name": "Dodge",
+      "country": "United States",
+      "models": [
+        {
+          "id": "dodge-charger",
+          "name": "Charger",
+          "generations": [
+            {
+              "id": "dodge-charger-lx",
+              "code": "LX",
+              "years": "2005–2010",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "dodge-charger-ld",
+              "code": "LD",
+              "years": "2011–2023",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dodge-challenger",
+          "name": "Challenger",
+          "generations": [
+            {
+              "id": "dodge-challenger-third-generation",
+              "code": "Third generation",
+              "years": "2008–2023",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jeep",
+      "name": "Jeep",
+      "country": "United States",
+      "models": [
+        {
+          "id": "jeep-wrangler",
+          "name": "Wrangler",
+          "generations": [
+            {
+              "id": "jeep-wrangler-yj",
+              "code": "YJ",
+              "years": "1986–1995",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "jeep-wrangler-tj",
+              "code": "TJ",
+              "years": "1996–2006",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "jeep-wrangler-jk",
+              "code": "JK",
+              "years": "2006–2018",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "jeep-wrangler-jl",
+              "code": "JL",
+              "years": "2017–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jeep-grand-cherokee",
+          "name": "Grand Cherokee",
+          "generations": [
+            {
+              "id": "jeep-grand-cherokee-zj",
+              "code": "ZJ",
+              "years": "1992–1998",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "jeep-grand-cherokee-wj",
+              "code": "WJ",
+              "years": "1998–2004",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "jeep-grand-cherokee-wk",
+              "code": "WK",
+              "years": "2004–2010",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "jeep-grand-cherokee-wk2",
+              "code": "WK2",
+              "years": "2010–2022",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "jeep-grand-cherokee-wl",
+              "code": "WL",
+              "years": "2021–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tesla",
+      "name": "Tesla",
+      "country": "United States",
+      "models": [
+        {
+          "id": "tesla-model-s",
+          "name": "Model S",
+          "generations": [
+            {
+              "id": "tesla-model-s-first-generation",
+              "code": "First generation",
+              "years": "2012–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tesla-model-3",
+          "name": "Model 3",
+          "generations": [
+            {
+              "id": "tesla-model-3-first-generation",
+              "code": "First generation",
+              "years": "2017–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tesla-model-y",
+          "name": "Model Y",
+          "generations": [
+            {
+              "id": "tesla-model-y-first-generation",
+              "code": "First generation",
+              "years": "2020–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "volvo",
+      "name": "Volvo",
+      "country": "Sweden",
+      "models": [
+        {
+          "id": "volvo-xc90",
+          "name": "XC90",
+          "generations": [
+            {
+              "id": "volvo-xc90-first-generation",
+              "code": "First generation",
+              "years": "2002–2014",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "volvo-xc90-second-generation",
+              "code": "Second generation",
+              "years": "2014–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "volvo-s60",
+          "name": "S60",
+          "generations": [
+            {
+              "id": "volvo-s60-p2",
+              "code": "P2",
+              "years": "2000–2009",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "volvo-s60-p3",
+              "code": "P3",
+              "years": "2010–2018",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "volvo-s60-spa",
+              "code": "SPA",
+              "years": "2018–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saab",
+      "name": "Saab",
+      "country": "Sweden",
+      "models": [
+        {
+          "id": "saab-9-3",
+          "name": "9-3",
+          "generations": [
+            {
+              "id": "saab-9-3-first-generation",
+              "code": "First generation",
+              "years": "1998–2002",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "saab-9-3-second-generation",
+              "code": "Second generation",
+              "years": "2002–2014",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "saab-9-5",
+          "name": "9-5",
+          "generations": [
+            {
+              "id": "saab-9-5-first-generation",
+              "code": "First generation",
+              "years": "1997–2010",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "saab-9-5-second-generation",
+              "code": "Second generation",
+              "years": "2010–2012",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "renault",
+      "name": "Renault",
+      "country": "France",
+      "models": [
+        {
+          "id": "renault-clio",
+          "name": "Clio",
+          "generations": [
+            {
+              "id": "renault-clio-i",
+              "code": "I",
+              "years": "1990–1998",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "renault-clio-ii",
+              "code": "II",
+              "years": "1998–2012",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "renault-clio-iii",
+              "code": "III",
+              "years": "2005–2014",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "renault-clio-iv",
+              "code": "IV",
+              "years": "2012–2019",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "renault-clio-v",
+              "code": "V",
+              "years": "2019–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "renault-megane",
+          "name": "Megane",
+          "generations": [
+            {
+              "id": "renault-megane-i",
+              "code": "I",
+              "years": "1995–2002",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "renault-megane-ii",
+              "code": "II",
+              "years": "2002–2009",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "renault-megane-iii",
+              "code": "III",
+              "years": "2008–2016",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "renault-megane-iv",
+              "code": "IV",
+              "years": "2016–2024",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peugeot",
+      "name": "Peugeot",
+      "country": "France",
+      "models": [
+        {
+          "id": "peugeot-308",
+          "name": "308",
+          "generations": [
+            {
+              "id": "peugeot-308-t7",
+              "code": "T7",
+              "years": "2007–2013",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "peugeot-308-t9",
+              "code": "T9",
+              "years": "2013–2021",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "peugeot-308-p5",
+              "code": "P5",
+              "years": "2021–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "peugeot-208",
+          "name": "208",
+          "generations": [
+            {
+              "id": "peugeot-208-a9",
+              "code": "A9",
+              "years": "2012–2019",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "peugeot-208-p21",
+              "code": "P21",
+              "years": "2019–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "citroen",
+      "name": "Citroen",
+      "country": "France",
+      "models": [
+        {
+          "id": "citroen-c4",
+          "name": "C4",
+          "generations": [
+            {
+              "id": "citroen-c4-first-generation",
+              "code": "First generation",
+              "years": "2004–2010",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "citroen-c4-second-generation",
+              "code": "Second generation",
+              "years": "2010–2018",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "citroen-c4-third-generation",
+              "code": "Third generation",
+              "years": "2020–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "citroen-c5",
+          "name": "C5",
+          "generations": [
+            {
+              "id": "citroen-c5-first-generation",
+              "code": "First generation",
+              "years": "2001–2008",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "citroen-c5-second-generation",
+              "code": "Second generation",
+              "years": "2008–2017",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "citroen-c5-c5-x",
+              "code": "C5 X",
+              "years": "2021–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fiat",
+      "name": "Fiat",
+      "country": "Italy",
+      "models": [
+        {
+          "id": "fiat-panda",
+          "name": "Panda",
+          "generations": [
+            {
+              "id": "fiat-panda-141",
+              "code": "141",
+              "years": "1980–2003",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "fiat-panda-169",
+              "code": "169",
+              "years": "2003–2012",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "fiat-panda-319",
+              "code": "319",
+              "years": "2011–2024",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fiat-500",
+          "name": "500",
+          "generations": [
+            {
+              "id": "fiat-500-312",
+              "code": "312",
+              "years": "2007–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alfa-romeo",
+      "name": "Alfa Romeo",
+      "country": "Italy",
+      "models": [
+        {
+          "id": "alfa-romeo-giulia",
+          "name": "Giulia",
+          "generations": [
+            {
+              "id": "alfa-romeo-giulia-type-952",
+              "code": "Type 952",
+              "years": "2015–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "alfa-romeo-156",
+          "name": "156",
+          "generations": [
+            {
+              "id": "alfa-romeo-156-type-932",
+              "code": "Type 932",
+              "years": "1997–2007",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ferrari",
+      "name": "Ferrari",
+      "country": "Italy",
+      "models": [
+        {
+          "id": "ferrari-488",
+          "name": "488",
+          "generations": [
+            {
+              "id": "ferrari-488-f142m",
+              "code": "F142M",
+              "years": "2015–2019",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ferrari-f8-tributo",
+          "name": "F8 Tributo",
+          "generations": [
+            {
+              "id": "ferrari-f8-tributo-f142m-fl",
+              "code": "F142M FL",
+              "years": "2019–2023",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lamborghini",
+      "name": "Lamborghini",
+      "country": "Italy",
+      "models": [
+        {
+          "id": "lamborghini-huracan",
+          "name": "Huracan",
+          "generations": [
+            {
+              "id": "lamborghini-huracan-lb-near-series",
+              "code": "LB near-series",
+              "years": "2014–2024",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lamborghini-aventador",
+          "name": "Aventador",
+          "generations": [
+            {
+              "id": "lamborghini-aventador-lb834",
+              "code": "LB834",
+              "years": "2011–2022",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skoda",
+      "name": "Skoda",
+      "country": "Czech Republic",
+      "models": [
+        {
+          "id": "skoda-octavia",
+          "name": "Octavia",
+          "generations": [
+            {
+              "id": "skoda-octavia-1u",
+              "code": "1U",
+              "years": "1996–2010",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "skoda-octavia-1z",
+              "code": "1Z",
+              "years": "2004–2013",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "skoda-octavia-5e",
+              "code": "5E",
+              "years": "2012–2020",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "skoda-octavia-nx",
+              "code": "NX",
+              "years": "2019–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "skoda-superb",
+          "name": "Superb",
+          "generations": [
+            {
+              "id": "skoda-superb-3u",
+              "code": "3U",
+              "years": "2001–2008",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "skoda-superb-3t",
+              "code": "3T",
+              "years": "2008–2015",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "skoda-superb-3v",
+              "code": "3V",
+              "years": "2015–2024",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "skoda-superb-b9",
+              "code": "B9",
+              "years": "2024–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seat",
+      "name": "SEAT",
+      "country": "Spain",
+      "models": [
+        {
+          "id": "seat-leon",
+          "name": "Leon",
+          "generations": [
+            {
+              "id": "seat-leon-1m",
+              "code": "1M",
+              "years": "1999–2005",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "seat-leon-1p",
+              "code": "1P",
+              "years": "2005–2012",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "seat-leon-5f",
+              "code": "5F",
+              "years": "2012–2020",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "seat-leon-kl",
+              "code": "KL",
+              "years": "2020–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seat-ibiza",
+          "name": "Ibiza",
+          "generations": [
+            {
+              "id": "seat-ibiza-6k",
+              "code": "6K",
+              "years": "1993–2002",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "seat-ibiza-6l",
+              "code": "6L",
+              "years": "2002–2008",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "seat-ibiza-6j",
+              "code": "6J",
+              "years": "2008–2017",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "seat-ibiza-kj",
+              "code": "KJ",
+              "years": "2017–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tata",
+      "name": "Tata",
+      "country": "India",
+      "models": [
+        {
+          "id": "tata-nexon",
+          "name": "Nexon",
+          "generations": [
+            {
+              "id": "tata-nexon-first-generation",
+              "code": "First generation",
+              "years": "2017–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tata-safari",
+          "name": "Safari",
+          "generations": [
+            {
+              "id": "tata-safari-first-generation",
+              "code": "First generation",
+              "years": "1998–2019",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "tata-safari-second-generation",
+              "code": "Second generation",
+              "years": "2021–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mahindra",
+      "name": "Mahindra",
+      "country": "India",
+      "models": [
+        {
+          "id": "mahindra-scorpio",
+          "name": "Scorpio",
+          "generations": [
+            {
+              "id": "mahindra-scorpio-first-generation",
+              "code": "First generation",
+              "years": "2002–2022",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "mahindra-scorpio-n",
+              "code": "N",
+              "years": "2022–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mahindra-xuv700",
+          "name": "XUV700",
+          "generations": [
+            {
+              "id": "mahindra-xuv700-first-generation",
+              "code": "First generation",
+              "years": "2021–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "byd",
+      "name": "BYD",
+      "country": "China",
+      "models": [
+        {
+          "id": "byd-atto-3",
+          "name": "Atto 3",
+          "generations": [
+            {
+              "id": "byd-atto-3-yuan-plus",
+              "code": "Yuan Plus",
+              "years": "2022–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "byd-seal",
+          "name": "Seal",
+          "generations": [
+            {
+              "id": "byd-seal-first-generation",
+              "code": "First generation",
+              "years": "2022–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geely",
+      "name": "Geely",
+      "country": "China",
+      "models": [
+        {
+          "id": "geely-coolray",
+          "name": "Coolray",
+          "generations": [
+            {
+              "id": "geely-coolray-sx11",
+              "code": "SX11",
+              "years": "2018–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "geely-monjaro",
+          "name": "Monjaro",
+          "generations": [
+            {
+              "id": "geely-monjaro-kx11",
+              "code": "KX11",
+              "years": "2021–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "great-wall",
+      "name": "Great Wall",
+      "country": "China",
+      "models": [
+        {
+          "id": "great-wall-haval-h6",
+          "name": "Haval H6",
+          "generations": [
+            {
+              "id": "great-wall-haval-h6-first-generation",
+              "code": "First generation",
+              "years": "2011–2017",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "great-wall-haval-h6-second-generation",
+              "code": "Second generation",
+              "years": "2017–2020",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "great-wall-haval-h6-third-generation",
+              "code": "Third generation",
+              "years": "2020–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "great-wall-tank-300",
+          "name": "Tank 300",
+          "generations": [
+            {
+              "id": "great-wall-tank-300-first-generation",
+              "code": "First generation",
+              "years": "2020–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chery",
+      "name": "Chery",
+      "country": "China",
+      "models": [
+        {
+          "id": "chery-tiggo-7",
+          "name": "Tiggo 7",
+          "generations": [
+            {
+              "id": "chery-tiggo-7-first-generation",
+              "code": "First generation",
+              "years": "2016–2020",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "chery-tiggo-7-pro",
+              "code": "Pro",
+              "years": "2020–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chery-tiggo-8",
+          "name": "Tiggo 8",
+          "generations": [
+            {
+              "id": "chery-tiggo-8-first-generation",
+              "code": "First generation",
+              "years": "2018–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lada",
+      "name": "Lada",
+      "country": "Russia",
+      "models": [
+        {
+          "id": "lada-niva",
+          "name": "Niva",
+          "generations": [
+            {
+              "id": "lada-niva-2121",
+              "code": "2121",
+              "years": "1977–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lada-granta",
+          "name": "Granta",
+          "generations": [
+            {
+              "id": "lada-granta-first-generation",
+              "code": "First generation",
+              "years": "2011–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lada-vesta",
+          "name": "Vesta",
+          "generations": [
+            {
+              "id": "lada-vesta-first-generation",
+              "code": "First generation",
+              "years": "2015–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uaz",
+      "name": "UAZ",
+      "country": "Russia",
+      "models": [
+        {
+          "id": "uaz-patriot",
+          "name": "Patriot",
+          "generations": [
+            {
+              "id": "uaz-patriot-3163",
+              "code": "3163",
+              "years": "2005–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "uaz-hunter",
+          "name": "Hunter",
+          "generations": [
+            {
+              "id": "uaz-hunter-3151-based",
+              "code": "3151-based",
+              "years": "2003–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dacia",
+      "name": "Dacia",
+      "country": "Romania",
+      "models": [
+        {
+          "id": "dacia-duster",
+          "name": "Duster",
+          "generations": [
+            {
+              "id": "dacia-duster-hs",
+              "code": "HS",
+              "years": "2010–2017",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "dacia-duster-hm",
+              "code": "HM",
+              "years": "2017–2024",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "dacia-duster-p1310",
+              "code": "P1310",
+              "years": "2024–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dacia-logan",
+          "name": "Logan",
+          "generations": [
+            {
+              "id": "dacia-logan-i",
+              "code": "I",
+              "years": "2004–2012",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "dacia-logan-ii",
+              "code": "II",
+              "years": "2012–2020",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "dacia-logan-iii",
+              "code": "III",
+              "years": "2020–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "land-rover",
+      "name": "Land Rover",
+      "country": "United Kingdom",
+      "models": [
+        {
+          "id": "land-rover-range-rover",
+          "name": "Range Rover",
+          "generations": [
+            {
+              "id": "land-rover-range-rover-classic",
+              "code": "Classic",
+              "years": "1970–1996",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "land-rover-range-rover-p38a",
+              "code": "P38A",
+              "years": "1994–2002",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "land-rover-range-rover-l322",
+              "code": "L322",
+              "years": "2002–2012",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "land-rover-range-rover-l405",
+              "code": "L405",
+              "years": "2012–2022",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "land-rover-range-rover-l460",
+              "code": "L460",
+              "years": "2022–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "land-rover-discovery",
+          "name": "Discovery",
+          "generations": [
+            {
+              "id": "land-rover-discovery-series-i",
+              "code": "Series I",
+              "years": "1989–1998",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "land-rover-discovery-series-ii",
+              "code": "Series II",
+              "years": "1998–2004",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "land-rover-discovery-discovery-3",
+              "code": "Discovery 3",
+              "years": "2004–2009",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "land-rover-discovery-discovery-4",
+              "code": "Discovery 4",
+              "years": "2009–2016",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "land-rover-discovery-discovery-5",
+              "code": "Discovery 5",
+              "years": "2017–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jaguar",
+      "name": "Jaguar",
+      "country": "United Kingdom",
+      "models": [
+        {
+          "id": "jaguar-xf",
+          "name": "XF",
+          "generations": [
+            {
+              "id": "jaguar-xf-x250",
+              "code": "X250",
+              "years": "2007–2015",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "jaguar-xf-x260",
+              "code": "X260",
+              "years": "2015–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jaguar-xj",
+          "name": "XJ",
+          "generations": [
+            {
+              "id": "jaguar-xj-x350",
+              "code": "X350",
+              "years": "2003–2009",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "jaguar-xj-x351",
+              "code": "X351",
+              "years": "2009–2019",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mini",
+      "name": "Mini",
+      "country": "United Kingdom",
+      "models": [
+        {
+          "id": "mini-hatch",
+          "name": "Hatch",
+          "generations": [
+            {
+              "id": "mini-hatch-r50-r53",
+              "code": "R50/R53",
+              "years": "2001–2006",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "mini-hatch-r56",
+              "code": "R56",
+              "years": "2006–2013",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "mini-hatch-f56",
+              "code": "F56",
+              "years": "2014–2023",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "mini-hatch-f66",
+              "code": "F66",
+              "years": "2024–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "isuzu",
+      "name": "Isuzu",
+      "country": "Japan",
+      "models": [
+        {
+          "id": "isuzu-d-max",
+          "name": "D-Max",
+          "generations": [
+            {
+              "id": "isuzu-d-max-first-generation",
+              "code": "First generation",
+              "years": "2002–2012",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "isuzu-d-max-second-generation",
+              "code": "Second generation",
+              "years": "2012–2019",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "isuzu-d-max-third-generation",
+              "code": "Third generation",
+              "years": "2019–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "isuzu-trooper",
+          "name": "Trooper",
+          "generations": [
+            {
+              "id": "isuzu-trooper-ub",
+              "code": "UB",
+              "years": "1981–1991",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "isuzu-trooper-ubs",
+              "code": "UBS",
+              "years": "1991–2002",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acura",
+      "name": "Acura",
+      "country": "Japan",
+      "models": [
+        {
+          "id": "acura-tl",
+          "name": "TL",
+          "generations": [
+            {
+              "id": "acura-tl-ua1-ua3",
+              "code": "UA1–UA3",
+              "years": "1995–1998",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "acura-tl-ua4-ua5",
+              "code": "UA4/UA5",
+              "years": "1998–2003",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "acura-tl-ua6-ua7",
+              "code": "UA6/UA7",
+              "years": "2003–2008",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "acura-tl-ua8-ua9",
+              "code": "UA8/UA9",
+              "years": "2008–2014",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "acura-mdx",
+          "name": "MDX",
+          "generations": [
+            {
+              "id": "acura-mdx-yd1",
+              "code": "YD1",
+              "years": "2000–2006",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "acura-mdx-yd2",
+              "code": "YD2",
+              "years": "2006–2013",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "acura-mdx-yd3",
+              "code": "YD3",
+              "years": "2013–2020",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "acura-mdx-yd4",
+              "code": "YD4",
+              "years": "2021–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gmc",
+      "name": "GMC",
+      "country": "United States",
+      "models": [
+        {
+          "id": "gmc-yukon",
+          "name": "Yukon",
+          "generations": [
+            {
+              "id": "gmc-yukon-gmt400",
+              "code": "GMT400",
+              "years": "1991–1999",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "gmc-yukon-gmt800",
+              "code": "GMT800",
+              "years": "2000–2006",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "gmc-yukon-gmt900",
+              "code": "GMT900",
+              "years": "2007–2014",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "gmc-yukon-k2uc",
+              "code": "K2UC",
+              "years": "2015–2020",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "gmc-yukon-t1uc",
+              "code": "T1UC",
+              "years": "2021–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "buick",
+      "name": "Buick",
+      "country": "United States",
+      "models": [
+        {
+          "id": "buick-regal",
+          "name": "Regal",
+          "generations": [
+            {
+              "id": "buick-regal-first-generation",
+              "code": "First generation",
+              "years": "1973–1977",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "buick-regal-fourth-generation",
+              "code": "Fourth generation",
+              "years": "1997–2004",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "buick-regal-fifth-generation",
+              "code": "Fifth generation",
+              "years": "2008–2017",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "buick-regal-sixth-generation",
+              "code": "Sixth generation",
+              "years": "2017–2020",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lincoln",
+      "name": "Lincoln",
+      "country": "United States",
+      "models": [
+        {
+          "id": "lincoln-navigator",
+          "name": "Navigator",
+          "generations": [
+            {
+              "id": "lincoln-navigator-first-generation",
+              "code": "First generation",
+              "years": "1997–2002",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "lincoln-navigator-second-generation",
+              "code": "Second generation",
+              "years": "2002–2006",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "lincoln-navigator-third-generation",
+              "code": "Third generation",
+              "years": "2006–2017",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "lincoln-navigator-fourth-generation",
+              "code": "Fourth generation",
+              "years": "2017–present",
+              "markets": [
+                "To be verified by market"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chrysler",
+      "name": "Chrysler",
+      "country": "United States",
+      "models": [
+        {
+          "id": "chrysler-300",
+          "name": "300",
+          "generations": [
+            {
+              "id": "chrysler-300-lx",
+              "code": "LX",
+              "years": "2004–2010",
+              "markets": [
+                "To be verified by market"
+              ]
+            },
+            {
+              "id": "chrysler-300-ld",
+              "code": "LD",
+              "years": "2011–2023",
+              "markets": [
+                "To be verified by market"
               ]
             }
           ]
