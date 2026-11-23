@@ -12,6 +12,81 @@ const WEBAPP_URL = process.env.WEBAPP_URL || PUBLIC_URL;
 const WEBHOOK_SECRET = process.env.TELEGRAM_WEBHOOK_SECRET || "";
 const MAX_AGE = Number(process.env.INIT_DATA_MAX_AGE || 86400);
 
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "";
+const ADMIN_SESSION_SECRET = process.env.ADMIN_SESSION_SECRET || "";
+const ADMIN_SESSION_TTL = 8 * 60 * 60;
+const adminLoginAttempts = new Map();
+
+function signAdminSession(payload) {
+  const data = Buffer.from(JSON.stringify(payload)).toString("base64url");
+  const signature = crypto.createHmac("sha256", ADMIN_SESSION_SECRET).update(data).digest("base64url");
+  return data + "." + signature;
+}
+function validAdminSession(req) {
+  if (!ADMIN_SESSION_SECRET) return false;
+  const cookie = (req.headers.cookie || "").split(";").map(v => v.trim()).find(v => v.startsWith("ar_admin="));
+  if (!cookie) return false;
+  const token = cookie.slice("ar_admin=".length);
+  const [data, signature] = token.split(".");
+  if (!data || !signature) return false;
+  const expected = crypto.createHmac("sha256", ADMIN_SESSION_SECRET).update(data).digest();
+  let actual;
+  try { actual = Buffer.from(signature, "base64url"); } catch { return false; }
+  if (actual.length !== expected.length || !crypto.timingSafeEqual(actual, expected)) return false;
+  try {
+    const payload = JSON.parse(Buffer.from(data, "base64url").toString("utf8"));
+    return payload.role === "admin" && Number.isFinite(payload.exp) && payload.exp > Date.now() / 1000;
+  } catch { return false; }
+}
+function adminCookie(req, value, maxAge) {
+  const secure = req.headers["x-forwarded-proto"] === "https" ? "; Secure" : "";
+  return "ar_admin=" + value + "; HttpOnly; SameSite=Strict; Path=/; Max-Age=" + maxAge + secure;
+}
+function requireAdmin(req, res) {
+  if (validAdminSession(req)) return true;
+  json(res, 401, { error: "Требуется вход администратора" });
+  return false;
+}
+function validateCatalogForSave(catalog) {
+  if (!catalog || ![1, 2].includes(catalog.schemaVersion) || !Array.isArray(catalog.brands)) return "Неверный формат каталога";
+  if (catalog.brands.length > 1000) return "Слишком много марок";
+  const ids = new Set();
+  const check = (item, type) => {
+    if (!item || typeof item.id !== "string" || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(item.id)) return type + ": неверный ID";
+    if (ids.has(item.id)) return "Повторяется ID: " + item.id;
+    ids.add(item.id);
+    return "";
+  };
+  for (const brand of catalog.brands) {
+    const error = check(brand, "Марка");
+    if (error) return error;
+    if (!brand.name || !brand.country || !Array.isArray(brand.models)) return "У марки нужны название, страна и список моделей";
+    for (const model of brand.models) {
+      const error = check(model, "Модель");
+      if (error) return error;
+      if (!model.name || !Array.isArray(model.generations)) return "У модели нужны название и список поколений";
+      for (const gen of model.generations) {
+        const error = check(gen, "Поколение");
+        if (error) return error;
+        if (!gen.code || !gen.years || !Array.isArray(gen.markets)) return "У поколения нужны код, годы и список рынков";
+        if (gen.images != null && !Array.isArray(gen.images)) return "Фотографии должны быть списком";
+        if (gen.specifications != null && !Array.isArray(gen.specifications)) return "Характеристики должны быть списком";
+      }
+    }
+  }
+  return "";
+}
+async function saveAdminCatalog(catalog) {
+  const error = validateCatalogForSave(catalog);
+  if (error) throw new Error(error);
+  const target = path.resolve(process.env.CATALOG_FILE || path.join(ROOT, "data/catalog.seed.json"));
+  await fs.promises.mkdir(path.dirname(target), { recursive: true });
+  const temp = target + ".tmp";
+  await fs.promises.writeFile(temp, JSON.stringify(catalog, null, 2) + "\n", "utf8");
+  await fs.promises.rename(temp, target);
+}
+
+
 const json = (res, status, body) => {
   res.writeHead(status, { "content-type": "application/json; charset=utf-8", "cache-control": "no-store" });
   res.end(JSON.stringify(body));
@@ -108,6 +183,45 @@ const server = http.createServer(async (req, res) => {
     if (req.method === "GET" && url.pathname === "/api/catalog") {
       const catalog = JSON.parse(await fs.promises.readFile(path.join(ROOT, "data/catalog.seed.json"), "utf8"));
       return json(res, 200, catalog);
+    }
+    if (req.method === "POST" && url.pathname === "/api/admin/login") {
+      if (!ADMIN_PASSWORD || !ADMIN_SESSION_SECRET) return json(res, 503, { error: "Админ-доступ не настроен на сервере" });
+      const ip = req.headers["x-forwarded-for"]?.split(",")[0]?.trim() || req.socket.remoteAddress || "unknown";
+      const attempt = adminLoginAttempts.get(ip) || { count: 0, until: 0 };
+      if (attempt.until > Date.now() && attempt.count >= 8) return json(res, 429, { error: "Слишком много попыток. Попробуйте через 15 минут." });
+      const body = JSON.parse(await readBody(req, 8 * 1024));
+      const supplied = Buffer.from(String(body.password || ""));
+      const expected = Buffer.from(ADMIN_PASSWORD);
+      const valid = supplied.length === expected.length && crypto.timingSafeEqual(supplied, expected);
+      if (!valid) {
+        const next = attempt.until > Date.now() ? attempt : { count: 0, until: Date.now() + 15 * 60 * 1000 };
+        next.count++;
+        adminLoginAttempts.set(ip, next);
+        return json(res, 401, { error: "Неверный пароль" });
+      }
+      adminLoginAttempts.delete(ip);
+      const token = signAdminSession({ role: "admin", exp: Math.floor(Date.now() / 1000) + ADMIN_SESSION_TTL });
+      res.setHeader("Set-Cookie", adminCookie(req, token, ADMIN_SESSION_TTL));
+      return json(res, 200, { ok: true, expiresIn: ADMIN_SESSION_TTL });
+    }
+    if (req.method === "POST" && url.pathname === "/api/admin/logout") {
+      res.setHeader("Set-Cookie", adminCookie(req, "", 0));
+      return json(res, 200, { ok: true });
+    }
+    if (req.method === "GET" && url.pathname === "/api/admin/session") {
+      return json(res, 200, { authenticated: validAdminSession(req), configured: Boolean(ADMIN_PASSWORD && ADMIN_SESSION_SECRET) });
+    }
+    if (req.method === "GET" && url.pathname === "/api/admin/catalog") {
+      if (!requireAdmin(req, res)) return;
+      const target = path.resolve(process.env.CATALOG_FILE || path.join(ROOT, "data/catalog.seed.json"));
+      const catalog = JSON.parse(await fs.promises.readFile(target, "utf8"));
+      return json(res, 200, catalog);
+    }
+    if (req.method === "PUT" && url.pathname === "/api/admin/catalog") {
+      if (!requireAdmin(req, res)) return;
+      const body = JSON.parse(await readBody(req, 12 * 1024 * 1024));
+      await saveAdminCatalog(body);
+      return json(res, 200, { ok: true, brands: body.brands.length });
     }
     if (req.method === "POST" && url.pathname === "/api/telegram/auth") {
       const body = JSON.parse(await readBody(req, 32 * 1024));
