@@ -32,12 +32,13 @@ jobs:
         run: |
           node --check server.mjs
           node --check public/admin.js
+          node --check public/config.js
           node --check public/generation.js
           npm run validate:data
       - name: Prepare static site
         run: |
           mkdir -p _site
-          cp public/index.html public/style.css public/app.js public/generation.html public/generation.js _site/
+          cp public/index.html public/style.css public/app.js public/config.js public/generation.html public/generation.js _site/
           cp data/catalog.seed.json _site/catalog.json
           touch _site/.nojekyll
       - name: Upload Pages artifact
