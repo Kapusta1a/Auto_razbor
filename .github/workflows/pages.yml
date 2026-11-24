@@ -7,6 +7,12 @@ on:
       - "public/**"
       - "data/catalog.seed.json"
       - ".github/workflows/pages.yml"
+      - "server.mjs"
+      - "scripts/**"
+      - "package.json"
+      - "render.yaml"
+      - ".env.example"
+      - "ADMIN_PANEL_SETUP.md"
   workflow_dispatch:
 
 permissions:
