@@ -2,7 +2,11 @@ const tg = window.Telegram?.WebApp;
 if (tg) { tg.ready(); tg.expand(); }
 
 const $ = (id) => document.getElementById(id);
-const API_BASE_URL = String(window.AUTO_RAZBOR_API_BASE || "").trim().replace(/\\/+$/, "");
+const API_BASE_URL = (() => {
+  let value = String(window.AUTO_RAZBOR_API_BASE || "").trim();
+  while (value.endsWith("/")) value = value.slice(0, -1);
+  return value;
+})();
 const apiUrl = (path) => API_BASE_URL ? `${API_BASE_URL}${path}` : path;
 let catalog = { brands: [] };
 let activeBrand = null;
