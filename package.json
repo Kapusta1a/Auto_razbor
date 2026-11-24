@@ -7,6 +7,7 @@
   "scripts": {
     "start": "node server.mjs",
     "dev": "node --watch server.mjs",
-    "validate:data": "node scripts/validate-catalog.mjs"
+    "validate:data": "node scripts/validate-catalog.mjs",
+    "test:admin": "node scripts/test-admin-api.mjs"
   }
 }
