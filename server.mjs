@@ -107,6 +107,23 @@ async function saveAdminCatalog(catalog) {
   await fs.promises.rename(temp, target);
 }
 
+async function loadCatalogFromDisk() {
+  const seedPath = path.resolve(ROOT, "data/catalog.seed.json");
+  const target = path.resolve(process.env.CATALOG_FILE || seedPath);
+  try {
+    return JSON.parse(await fs.promises.readFile(target, "utf8"));
+  } catch (error) {
+    if (error.code !== "ENOENT" || target === seedPath) throw error;
+    await fs.promises.mkdir(path.dirname(target), { recursive: true });
+    try {
+      await fs.promises.copyFile(seedPath, target, fs.constants.COPYFILE_EXCL);
+    } catch (copyError) {
+      if (copyError.code !== "EEXIST") throw copyError;
+    }
+    return JSON.parse(await fs.promises.readFile(target, "utf8"));
+  }
+}
+
 
 const json = (res, status, body) => {
   res.writeHead(status, { "content-type": "application/json; charset=utf-8", "cache-control": "no-store" });
@@ -204,8 +221,7 @@ const server = http.createServer(async (req, res) => {
     if (req.method === "OPTIONS") { res.writeHead(204, { "cache-control": "no-store" }); return res.end(); }
     if (req.method === "GET" && url.pathname === "/health") return json(res, 200, { ok: true, app: "AUTO_RAZBOR" });
     if (req.method === "GET" && url.pathname === "/api/catalog") {
-      const catalogPath = path.resolve(process.env.CATALOG_FILE || path.join(ROOT, "data/catalog.seed.json"));
-      const catalog = JSON.parse(await fs.promises.readFile(catalogPath, "utf8"));
+      const catalog = await loadCatalogFromDisk();
       return json(res, 200, catalog);
     }
     if (req.method === "POST" && url.pathname === "/api/admin/login") {
@@ -237,8 +253,7 @@ const server = http.createServer(async (req, res) => {
     }
     if (req.method === "GET" && url.pathname === "/api/admin/catalog") {
       if (!requireAdmin(req, res)) return;
-      const target = path.resolve(process.env.CATALOG_FILE || path.join(ROOT, "data/catalog.seed.json"));
-      const catalog = JSON.parse(await fs.promises.readFile(target, "utf8"));
+      const catalog = await loadCatalogFromDisk();
       return json(res, 200, catalog);
     }
     if (req.method === "PUT" && url.pathname === "/api/admin/catalog") {
