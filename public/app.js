@@ -2,6 +2,8 @@ const tg = window.Telegram?.WebApp;
 if (tg) { tg.ready(); tg.expand(); }
 
 const $ = (id) => document.getElementById(id);
+const API_BASE_URL = String(window.AUTO_RAZBOR_API_BASE || "").trim().replace(/\\/+$/, "");
+const apiUrl = (path) => API_BASE_URL ? `${API_BASE_URL}${path}` : path;
 let catalog = { brands: [] };
 let activeBrand = null;
 let activeModel = null;
@@ -10,8 +12,8 @@ const brandLogoCache = new Map();
 
 async function init() {
   try {
-    let response = await fetch("/api/catalog");
-    if (!response.ok) response = await fetch("./catalog.json");
+    let response = await fetch(apiUrl("/api/catalog"));
+    if (!response.ok && !API_BASE_URL) response = await fetch("./catalog.json");
     if (!response.ok) throw new Error("catalog");
     catalog = await response.json();
     const stats = catalog.brands.reduce((a, b) => {
@@ -24,7 +26,7 @@ async function init() {
     const initData = tg?.initData;
     if (initData) {
       try {
-        const auth = await fetch("/api/telegram/auth", {
+        const auth = await fetch(apiUrl("/api/telegram/auth"), {
           method: "POST",
           headers: { "content-type": "application/json" },
           body: JSON.stringify({ initData })
