@@ -35,6 +35,7 @@ jobs:
           node --check public/config.js
           node --check public/generation.js
           npm run validate:data
+          npm run test:admin
       - name: Prepare static site
         run: |
           mkdir -p _site
