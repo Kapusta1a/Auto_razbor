@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { spawn } from "node:child_process";
-import { mkdtemp, cp, readFile, rm } from "node:fs/promises";
+import { mkdtemp, readFile, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import net from "node:net";
@@ -38,7 +38,6 @@ const child = spawn(process.execPath, ["server.mjs"], {
 });
 
 try {
-  await cp("data/catalog.seed.json", catalogFile);
   let ready = false;
   for (let attempt = 0; attempt < 60; attempt++) {
     if (child.exitCode !== null) throw new Error("Server exited before becoming ready");
@@ -49,6 +48,14 @@ try {
     await delay(250);
   }
   assert.equal(ready, true, "Server should become healthy");
+
+  const initialCatalogResponse = await fetch(baseUrl + "/api/catalog", {
+    headers: { origin: "https://kapusta1a.github.io" }
+  });
+  assert.equal(initialCatalogResponse.status, 200, "An empty mounted catalog should initialize from the seed");
+  const initialCatalog = await initialCatalogResponse.json();
+  assert.ok(initialCatalog.brands.length > 0, "Seed catalog should be copied to the persistent path");
+  assert.ok((await readFile(catalogFile, "utf8")).length > 0, "CATALOG_FILE should be initialized on first read");
 
   const sessionBefore = await fetch(baseUrl + "/api/admin/session").then(r => r.json());
   assert.equal(sessionBefore.configured, true);
