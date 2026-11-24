@@ -12,6 +12,22 @@ const WEBAPP_URL = process.env.WEBAPP_URL || PUBLIC_URL;
 const WEBHOOK_SECRET = process.env.TELEGRAM_WEBHOOK_SECRET || "";
 const MAX_AGE = Number(process.env.INIT_DATA_MAX_AGE || 86400);
 
+const CORS_ALLOWED_ORIGINS = new Set(
+  (process.env.CORS_ALLOWED_ORIGINS || "https://kapusta1a.github.io")
+    .split(",").map(origin => origin.trim().replace(/\\/$/, "")).filter(Boolean)
+);
+function applyCors(req, res) {
+  const origin = req.headers.origin;
+  if (!origin) return;
+  const normalized = origin.replace(/\\/$/, "");
+  if (normalized !== PUBLIC_URL && !CORS_ALLOWED_ORIGINS.has(normalized)) return;
+  res.setHeader("Access-Control-Allow-Origin", normalized);
+  res.setHeader("Vary", "Origin");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  res.setHeader("Access-Control-Max-Age", "600");
+}
+
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "";
 const ADMIN_SESSION_SECRET = process.env.ADMIN_SESSION_SECRET || "";
 const ADMIN_SESSION_TTL = 8 * 60 * 60;
@@ -179,6 +195,8 @@ async function serveStatic(req, res, pathname) {
 const server = http.createServer(async (req, res) => {
   try {
     const url = new URL(req.url, "http://localhost");
+    applyCors(req, res);
+    if (req.method === "OPTIONS") { res.writeHead(204, { "cache-control": "no-store" }); return res.end(); }
     if (req.method === "GET" && url.pathname === "/health") return json(res, 200, { ok: true, app: "AUTO_RAZBOR" });
     if (req.method === "GET" && url.pathname === "/api/catalog") {
       const catalogPath = path.resolve(process.env.CATALOG_FILE || path.join(ROOT, "data/catalog.seed.json"));
