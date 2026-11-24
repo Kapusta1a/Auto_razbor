@@ -12,14 +12,19 @@ const WEBAPP_URL = process.env.WEBAPP_URL || PUBLIC_URL;
 const WEBHOOK_SECRET = process.env.TELEGRAM_WEBHOOK_SECRET || "";
 const MAX_AGE = Number(process.env.INIT_DATA_MAX_AGE || 86400);
 
+function stripTrailingSlashes(value) {
+  let result = String(value || "").trim();
+  while (result.endsWith("/")) result = result.slice(0, -1);
+  return result;
+}
 const CORS_ALLOWED_ORIGINS = new Set(
   (process.env.CORS_ALLOWED_ORIGINS || "https://kapusta1a.github.io")
-    .split(",").map(origin => origin.trim().replace(/\\/$/, "")).filter(Boolean)
+    .split(",").map(stripTrailingSlashes).filter(Boolean)
 );
 function applyCors(req, res) {
   const origin = req.headers.origin;
   if (!origin) return;
-  const normalized = origin.replace(/\\/$/, "");
+  const normalized = stripTrailingSlashes(origin);
   if (normalized !== PUBLIC_URL && !CORS_ALLOWED_ORIGINS.has(normalized)) return;
   res.setHeader("Access-Control-Allow-Origin", normalized);
   res.setHeader("Vary", "Origin");
