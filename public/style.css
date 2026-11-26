@@ -112,3 +112,19 @@ footer{color:#697686;font-size:10px;text-align:center;padding:40px 0 25px;line-h
 .profile-panel .plan-button{grid-column:1/-1}
 body.profile-open{overflow:hidden}
 @media(min-width:700px){.profile-panel{border-radius:22px 0 0 22px}}
+
+
+/* Main platform navigation and upcoming sections */
+body{padding-bottom:calc(82px + env(safe-area-inset-bottom))}
+.bottom-nav{position:fixed;left:50%;bottom:0;transform:translateX(-50%);z-index:15;width:min(100%,940px);display:grid;grid-template-columns:repeat(5,1fr);gap:4px;padding:9px 10px calc(9px + env(safe-area-inset-bottom));border:1px solid #2a3542;border-bottom:0;border-radius:17px 17px 0 0;background:#101720f2;backdrop-filter:blur(18px);box-shadow:0 -12px 35px #0005}
+.bottom-nav-item{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-width:0;padding:5px 2px;border:1px solid transparent;border-radius:10px;background:transparent;color:#8492a1;font-size:10px;font-weight:750;cursor:pointer}
+.bottom-nav-item .nav-icon{font-size:20px;line-height:1.1}
+.bottom-nav-item.is-active{color:var(--accent);background:#d9ff5510;border-color:#64723a}
+.coming-soon-view{min-height:58vh;padding:55px 10px 35px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.coming-soon-mark{display:grid;place-items:center;width:66px;height:66px;margin-bottom:24px;border-radius:20px;background:var(--accent);color:#101318;font-size:24px;font-weight:950;box-shadow:0 10px 35px #d9ff5520}
+.coming-soon-view h2{max-width:520px;margin:8px 0;font-size:clamp(27px,6vw,42px);line-height:1.1;letter-spacing:-1px}
+.coming-soon-view>p:not(.eyebrow){max-width:430px;color:#9ba8b6;font-size:13px}
+.coming-soon-badge{display:inline-flex;margin-top:15px;padding:8px 13px;border:1px solid #64723a;border-radius:999px;background:#d9ff5512;color:var(--accent);font-size:10px;font-weight:900;letter-spacing:1.2px}
+.coming-soon-preview{display:flex;flex-direction:column;align-items:center;gap:5px;width:min(100%,360px);margin-top:35px;padding:22px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,#1c2631,#121820)}
+.coming-soon-preview>span{color:var(--accent);font-size:24px}.coming-soon-preview b{letter-spacing:1.5px}.coming-soon-preview small{font-size:10px}
+@media(min-width:700px){.bottom-nav{bottom:14px;border-bottom:1px solid #2a3542;border-radius:17px}.bottom-nav-item{padding:8px}}
