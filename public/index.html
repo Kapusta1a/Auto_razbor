@@ -17,7 +17,7 @@
     <button type="button" id="profileButton" class="profile-button" aria-label="Открыть профиль"><span id="profileAvatar" class="profile-avatar">?</span></button>
   </header>
   <main>
-    <section class="hero">
+    <section class="hero" id="heroSection">
       <p class="eyebrow">АВТОМОБИЛЬНЫЙ СПРАВОЧНИК</p>
       <h1>Найди свой<br><em>автомобиль.</em></h1>
       <p class="sub">Изучай марки, модели и поколения. Ищи по названию или коду кузова.</p>
@@ -48,6 +48,25 @@
     </section>
       </section>
     </div>
+
+    <section id="comingSoonView" class="coming-soon-view" hidden aria-live="polite">
+      <div class="coming-soon-mark">AR</div>
+      <p class="eyebrow">АВТОМОБИЛЬНЫЙ МИР</p>
+      <h2 id="comingSoonTitle">Скоро здесь появится новое</h2>
+      <p id="comingSoonDescription">Мы готовим этот раздел AUTO_RAZBOR.</p>
+      <span class="coming-soon-badge">В РАЗРАБОТКЕ</span>
+      <div class="coming-soon-preview">
+        <span>✦</span><b>AUTO_RAZBOR</b>
+        <small>Больше автомобильного контента — совсем скоро</small>
+      </div>
+    </section>
+    <nav class="bottom-nav" aria-label="Главная навигация">
+      <button type="button" class="bottom-nav-item is-active" data-main-tab="catalog"><span class="nav-icon">⌕</span><span>Каталог</span></button>
+      <button type="button" class="bottom-nav-item" data-main-tab="feed"><span class="nav-icon">▤</span><span>Лента</span></button>
+      <button type="button" class="bottom-nav-item" data-main-tab="video"><span class="nav-icon">▶</span><span>Видео</span></button>
+      <button type="button" class="bottom-nav-item" data-main-tab="events"><span class="nav-icon">⌖</span><span>События</span></button>
+      <button type="button" class="bottom-nav-item" data-main-tab="profile"><span class="nav-icon">◉</span><span>Профиль</span></button>
+    </nav>
     <footer>Каталог постепенно расширяется и проходит проверку. Данные могут отличаться по рынкам и модификациям.<br>AUTO_RAZBOR © 2026</footer>
   </main>
 </body>
