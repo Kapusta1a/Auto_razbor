@@ -199,7 +199,7 @@ function showGeneration(generationId) {
     </section>`;
   $("backToModel").addEventListener("click", () => showModel(activeModel.id));
   $("modelDetails").querySelector("[data-subscriptions]")?.addEventListener("click", () => {
-    $("subscriptions").scrollIntoView({behavior:"smooth",block:"start"});
+    switchMainTab("subscriptions");
   });
   if (!gen.images?.length) loadCommonsPhoto($("generationPhotoLookup"), activeBrand.name, activeModel.name, gen);
   $("modelDetails").scrollIntoView({behavior:"smooth",block:"start"});
@@ -340,6 +340,23 @@ function escapeHtml(value) {
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
   }[char]));
 }
+
+function switchMainTab(tab) {
+  const showSubscriptions = tab === "subscriptions";
+  $("subscriptions").hidden = !showSubscriptions;
+  $("catalogView").hidden = showSubscriptions;
+  document.querySelectorAll("[data-main-tab]").forEach(button => {
+    const active = button.dataset.mainTab === tab;
+    button.classList.toggle("is-active", active);
+    button.setAttribute("aria-selected", String(active));
+  });
+  if (showSubscriptions) $("subscriptions").scrollIntoView({behavior:"smooth",block:"start"});
+  else window.scrollTo({top:0,behavior:"smooth"});
+}
+document.querySelectorAll("[data-main-tab]").forEach(button =>
+  button.addEventListener("click", () => switchMainTab(button.dataset.mainTab))
+);
+if (window.location.hash === "#subscriptions") switchMainTab("subscriptions");
 
 $("search").addEventListener("input", () => {
   closeDetails();
