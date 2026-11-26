@@ -86,45 +86,79 @@
               "specifications": [
                 {
                   "market": "США",
-                  "variant": "2.5 бензин, базовые комплектации (2018)",
-                  "engine": "A25A-FKS, рядный 4-цилиндровый",
+                  "variant": "2.5 бензин, 2018 (LE/SE/XLE)",
+                  "engine": "A25A-FKS, рядный 4-цилиндровый Dynamic Force",
                   "displacement": "2 487 см³",
                   "fuel": "Бензин",
-                  "power": "203 л.с. (LE/SE/XLE)",
+                  "power": "203 л.с. при 6 600 об/мин",
                   "torque": "184 lb-ft (≈249 Н·м)",
                   "transmission": "8-ступенчатый автомат Direct Shift",
                   "drivetrain": "Передний привод",
+                  "length": "4 880 мм (LE/XLE); 4 895 мм (SE/XSE)",
+                  "width": "1 839 мм",
+                  "height": "1 445 мм",
+                  "wheelbase": "2 824 мм",
+                  "fuelTank": "60,6 л (кроме L; по руководству владельца)",
                   "source": "https://pressroom.toyota.com/all-new-2018-toyota-camry-launch/",
-                  "sourceLabel": "Toyota USA Newsroom — 2018 Camry"
+                  "sourceLabel": "Toyota USA Newsroom — 2018 Camry; габариты и силовые установки",
+                  "secondarySource": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2018-camry.pdf",
+                  "secondarySourceLabel": "Руководство владельца Toyota Camry 2018 — объём топливного бака"
                 },
                 {
                   "market": "США",
-                  "variant": "3.5 V6 бензин (2018)",
-                  "engine": "2GR-FKS, V6",
+                  "variant": "3.5 V6 бензин, 2018 (XLE V6/XSE V6)",
+                  "engine": "2GR-FKS, V6 DOHC 24 клапана, D-4S",
                   "displacement": "3 456 см³",
                   "fuel": "Бензин",
-                  "power": "301 л.с.",
-                  "torque": "267 lb-ft (≈362 Н·м)",
+                  "power": "301 л.с. при 6 600 об/мин",
+                  "torque": "267 lb-ft (≈362 Н·м) при 4 700 об/мин",
                   "transmission": "8-ступенчатый автомат Direct Shift",
                   "drivetrain": "Передний привод",
+                  "length": "4 880 мм (LE/XLE); 4 895 мм (SE/XSE)",
+                  "width": "1 839 мм",
+                  "height": "1 445 мм",
+                  "wheelbase": "2 824 мм",
+                  "fuelTank": "60,6 л (кроме L; по руководству владельца)",
                   "source": "https://pressroom.toyota.com/all-new-2018-toyota-camry-launch/",
-                  "sourceLabel": "Toyota USA Newsroom — 2018 Camry"
+                  "sourceLabel": "Toyota USA Newsroom — 2018 Camry; характеристики V6",
+                  "secondarySource": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2018-camry.pdf",
+                  "secondarySourceLabel": "Руководство владельца Toyota Camry 2018 — объём топливного бака"
                 },
                 {
                   "market": "США",
-                  "variant": "2.5 Hybrid (2018)",
-                  "engine": "2.5 бензиновый + электромотор",
+                  "variant": "2.5 Hybrid, 2018 (LE/SE/XLE)",
+                  "engine": "A25A-FXS, 2.5 бензиновый + электромоторы, THS II",
                   "displacement": "2 487 см³",
                   "fuel": "Гибрид, бензин/электричество",
                   "power": "208 л.с. суммарно",
-                  "torque": "163 lb-ft для ДВС (≈221 Н·м)",
                   "transmission": "Электронная бесступенчатая трансмиссия (eCVT)",
                   "drivetrain": "Передний привод",
+                  "length": "4 880 мм (LE/XLE); 4 895 мм (SE/XSE)",
+                  "width": "1 839 мм",
+                  "height": "1 445 мм",
+                  "wheelbase": "2 824 мм",
                   "source": "https://pressroom.toyota.com/all-new-2018-toyota-camry-launch/",
-                  "sourceLabel": "Toyota USA Newsroom — 2018 Camry"
+                  "sourceLabel": "Toyota USA Newsroom — 2018 Camry Hybrid"
                 }
               ],
-              "images": [],
+              "images": [
+                {
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/2018_Toyota_Camry.jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Toyota_Camry.jpg",
+                  "author": "Bull-Doser",
+                  "license": "Public domain",
+                  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+                  "caption": "Toyota Camry XV70, 2018, Северная Америка"
+                },
+                {
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/2018%2B_Toyota_Camry_%28XV70%29_SE%2C_United_States.jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018%2B_Toyota_Camry_(XV70)_SE,_United_States.jpg",
+                  "author": "Ghostofakina",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "caption": "Toyota Camry XV70 SE, США"
+                }
+              ],
               "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Toyota%20Camry%20XV70%202017%E2%80%932024",
               "researchUrl": "https://www.google.com/search?q=Toyota%20Camry%20XV70%202017%E2%80%932024%20official%20brochure%20technical%20specifications%20engine%20market",
               "researchStatus": "partially-sourced"
