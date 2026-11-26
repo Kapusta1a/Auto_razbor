@@ -380,3 +380,36 @@ document.querySelectorAll("[data-buy-plan]").forEach(button => {
 });
 setTelegramProfile(tg?.initDataUnsafe?.user);
 init();
+
+
+const upcomingTabs = {
+  feed: {title:"Автомобильная лента",description:"Новости автопрома, фотографии, истории владельцев и интересные материалы — готовим для тебя."},
+  video: {title:"Видео",description:"Обзоры, тест-драйвы, проекты и автомобильные видео появятся в этом разделе."},
+  events: {title:"Автособытия",description:"Выставки, встречи, концерты автомобильной культуры, дрифт и соревнования — скоро здесь."}
+};
+function activateMainTab(tab) {
+  document.querySelectorAll("[data-main-tab]").forEach(button => button.classList.toggle("is-active", button.dataset.mainTab === tab));
+  const isCatalog = tab === "catalog" || tab === "profile";
+  $("heroSection").hidden = !isCatalog;
+  $("catalogView").hidden = !isCatalog;
+  $("comingSoonView").hidden = isCatalog;
+  if (tab === "profile") {
+    document.querySelector('[data-main-tab="catalog"]').classList.remove("is-active");
+    document.querySelector('[data-main-tab="profile"]').classList.add("is-active");
+    openProfile();
+    return;
+  }
+  if (tab === "catalog") {
+    window.scrollTo({top:0,behavior:"smooth"});
+    return;
+  }
+  const section = upcomingTabs[tab];
+  if (section) {
+    $("comingSoonTitle").textContent = section.title;
+    $("comingSoonDescription").textContent = section.description;
+    window.scrollTo({top:0,behavior:"smooth"});
+  }
+}
+document.querySelectorAll("[data-main-tab]").forEach(button => {
+  button.addEventListener("click", () => activateMainTab(button.dataset.mainTab));
+});
