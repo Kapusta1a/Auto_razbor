@@ -32,11 +32,17 @@ function render(brand,model,gen) {
     {id:"practical",label:"Багажник и практичность",fields:[["Объём багажника", "bootVolume"],["Объём бака", "fuelTank"],["Снаряжённая масса", "curbWeight"],["Количество мест", "seats"],["Количество дверей", "doors"]]}
   ];
   const specifications=gen.specifications||[];
-  const specs=specifications.length?'<div class="spec-tabs" role="tablist" aria-label="Разделы характеристик">'+specGroups.map((g,i)=>'<button class="spec-tab'+(i===0?' is-active':'')+'" type="button" role="tab" aria-selected="'+(i===0?'true':'false')+'" data-spec-tab="'+g.id+'">'+g.label+'</button>').join('')+'</div>'+specGroups.map((g,i)=>'<section class="spec-panel'+(i===0?' is-active':'')+'" data-spec-panel="'+g.id+'" '+(i===0?'':'hidden')+'>'+specifications.map(s=>{
-    const rows=g.fields.filter(([label,key])=>s[key]).map(([label,key])=>'<div><dt>'+label+'</dt><dd>'+esc(s[key])+'</dd></div>').join('');
-    if(!rows)return '';
-    return '<article class="spec-card"><b>'+esc(s.variant||'Версия двигателя')+'</b><small>'+esc(s.market||'Рынок не указан')+'</small><dl>'+rows+'</dl>'+(s.source?'<a class="spec-source" href="'+safe(s.source)+'" target="_blank" rel="noopener">'+esc(s.sourceLabel||'Источник данных')+'</a>':'')+'</article>';
-  }).join('')||'<p class="pending-data">Подтверждённые данные для этого раздела пока не добавлены.</p>'+'</section>').join(''):'<p class="pending-data">Подтверждённые характеристики для этого поколения пока не добавлены. <a href="'+safe(gen.researchUrl)+'" target="_blank" rel="noopener">Открыть источники для проверки ↗</a></p>';
+  const specs=specifications.length
+    ? '<div class="spec-tabs" role="tablist" aria-label="Разделы характеристик">'+specGroups.map((g,i)=>'<button class="spec-tab'+(i===0?' is-active':'')+'" type="button" role="tab" aria-selected="'+(i===0?'true':'false')+'" data-spec-tab="'+g.id+'">'+g.label+'</button>').join('')+'</div>'
+      + specGroups.map((g,i)=>{
+        const cards=specifications.map(spec=>{
+          const rows=g.fields.filter(([label,key])=>spec[key]).map(([label,key])=>'<div><dt>'+label+'</dt><dd>'+esc(spec[key])+'</dd></div>').join('');
+          if(!rows)return '';
+          return '<article class="spec-card"><b>'+esc(spec.variant||'Версия двигателя')+'</b><small>'+esc(spec.market||'Рынок не указан')+'</small><dl>'+rows+'</dl>'+(spec.source?'<a class="spec-source" href="'+safe(spec.source)+'" target="_blank" rel="noopener">'+esc(spec.sourceLabel||'Источник данных')+'</a>':'')+'</article>';
+        }).join('');
+        return '<section class="spec-panel'+(i===0?' is-active':'')+'" data-spec-panel="'+g.id+'" '+(i===0?'':'hidden')+'>'+(cards||'<p class="pending-data">Подтверждённые данные для этого раздела пока не добавлены.</p>')+'</section>';
+      }).join('')
+    : '<p class="pending-data">Подтверждённые характеристики для этого поколения пока не добавлены. <a href="'+safe(gen.researchUrl)+'" target="_blank" rel="noopener">Открыть источники для проверки ↗</a></p>';
   const premium=gen.premiumContent||{};
   const hasPremium=["weaknesses","bestEngines","worstEngines","pros","cons","buyingTips"].some(k=>Array.isArray(premium[k])&&premium[k].length);
   const premiumHtml=hasPremium?`
