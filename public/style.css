@@ -76,3 +76,11 @@ footer{color:#697686;font-size:10px;text-align:center;padding:40px 0 25px;line-h
 .premium-section h4{margin:0 0 8px}
 .premium-section ul{margin:0;padding-left:18px;color:#c6d0d9;font-size:12px}
 @media(max-width:620px){.subscription-plans{grid-template-columns:1fr}.plan-card{display:grid;grid-template-columns:1fr auto;align-items:center;gap:4px 12px}.plan-period,.plan-card small{grid-column:1}.plan-card strong{grid-column:2;grid-row:1/3}.plan-button{grid-column:1/-1}.subscriptions{padding:15px}}
+
+
+/* Compact, touch-friendly specification tabs */
+.spec-tabs{display:flex;gap:7px;overflow-x:auto;padding:2px 1px 10px;margin:4px 0 8px;scrollbar-width:thin}
+.spec-tab{flex:0 0 auto;border:1px solid var(--line);border-radius:9px;padding:9px 12px;background:#151d26;color:#aeb9c5;font:inherit;font-size:11px;font-weight:750;cursor:pointer}
+.spec-tab.is-active{background:#d9ff5518;border-color:#a9c746;color:var(--accent)}
+.spec-panel[hidden]{display:none}
+.spec-panel .spec-card{margin:8px 0}
