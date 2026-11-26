@@ -27,7 +27,7 @@ function render(brand,model,gen) {
   const photos=(gen.images||[]).map(p=>photoMarkup(p,model,gen)).join("");
   const specs=(gen.specifications||[]).map(s=>`
     <section class="spec-card"><b>${esc(s.variant)}</b><small>${esc(s.market)}</small><dl>
-      ${[["Двигатель",s.engine],["Объём",s.displacement],["Топливо",s.fuel],["Мощность",s.power],["Крутящий момент",s.torque],["КПП",s.transmission],["Привод",s.drivetrain],["Максимальная скорость",s.topSpeed],["Разгон 0–100 км/ч",s.acceleration],["Расход топлива",s.fuelConsumption]].filter(x=>x[1]).map(x=>`<div><dt>${x[0]}</dt><dd>${esc(x[1])}</dd></div>`).join("")}
+      ${[["Двигатель",s.engine],["Объём",s.displacement],["Топливо",s.fuel],["Мощность",s.power],["Крутящий момент",s.torque],["КПП",s.transmission],["Привод",s.drivetrain],["Разгон 0–100 км/ч",s.acceleration],["Максимальная скорость",s.topSpeed],["Расход в городе",s.fuelConsumptionCity],["Расход на трассе",s.fuelConsumptionHighway],["Смешанный расход",s.fuelConsumptionCombined],["Объём бака",s.fuelTank],["Объём багажника",s.bootVolume],["Длина",s.length],["Ширина",s.width],["Высота",s.height],["Колёсная база",s.wheelbase],["Дорожный просвет",s.groundClearance],["Снаряжённая масса",s.curbWeight],["Количество мест",s.seats],["Количество дверей",s.doors]].filter(x=>x[1]).map(x=>`<div><dt>${x[0]}</dt><dd>${esc(x[1])}</dd></div>`).join("")}
     </dl><a class="spec-source" href="${safe(s.source)}" target="_blank" rel="noopener">${esc(s.sourceLabel||"Источник данных")}</a></section>`).join("");
   const premium=gen.premiumContent||{};
   const hasPremium=["weaknesses","bestEngines","worstEngines","pros","cons","buyingTips"].some(k=>Array.isArray(premium[k])&&premium[k].length);
