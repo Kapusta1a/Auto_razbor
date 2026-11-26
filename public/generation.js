@@ -72,6 +72,19 @@ function render(brand,model,gen) {
     <p class="data-note">Параметры зависят от рынка, года выпуска и комплектации. Для точного подбора запчастей сверяйте VIN и код двигателя.</p>
     <h4>Подробный экспертный разбор</h4>
     ${premiumHtml}`;
+  root.querySelectorAll("[data-spec-tab]").forEach(button=>button.addEventListener("click",()=>{
+    const target=button.dataset.specTab;
+    root.querySelectorAll("[data-spec-tab]").forEach(tab=>{
+      const active=tab===button;
+      tab.classList.toggle("is-active",active);
+      tab.setAttribute("aria-selected",String(active));
+    });
+    root.querySelectorAll("[data-spec-panel]").forEach(panel=>{
+      const active=panel.dataset.specPanel===target;
+      panel.hidden=!active;
+      panel.classList.toggle("is-active",active);
+    });
+  }));
 }
 
 function photoMarkup(p,model,gen) {
