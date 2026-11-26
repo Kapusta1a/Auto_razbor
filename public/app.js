@@ -58,7 +58,7 @@ async function init() {
         });
         if (auth.ok) {
           const result = await auth.json();
-          setTelegramProfile(result.user || tg?.initDataUnsafe?.user);
+          setTelegramProfile({ ...(tg?.initDataUnsafe?.user || {}), ...(result.user || {}) });
         } else setTelegramProfile(tg?.initDataUnsafe?.user);
       } catch { setTelegramProfile(tg?.initDataUnsafe?.user); }
     }
@@ -220,7 +220,7 @@ function showGeneration(generationId) {
     </section>`;
   $("backToModel").addEventListener("click", () => showModel(activeModel.id));
   $("modelDetails").querySelector("[data-subscriptions]")?.addEventListener("click", () => {
-    switchMainTab("subscriptions");
+    openProfile();
   });
   if (!gen.images?.length) loadCommonsPhoto($("generationPhotoLookup"), activeBrand.name, activeModel.name, gen);
   $("modelDetails").scrollIntoView({behavior:"smooth",block:"start"});
