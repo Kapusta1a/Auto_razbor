@@ -88,7 +88,8 @@ function render(brand,model,gen) {
 }
 
 function photoMarkup(p,model,gen) {
-  return `<figure class="generation-photo"><img src="${safe(p.url)}" alt="${esc(p.caption||model.name+" "+gen.code)}" loading="lazy"><figcaption>Фото: <a href="${safe(p.sourceUrl)}" target="_blank" rel="noopener">источник</a> · ${esc(p.author||"Автор не указан")} · ${esc(p.license||"Лицензия не указана")}</figcaption></figure>`;
+  const license=p.licenseUrl?` · <a href="${safe(p.licenseUrl)}" target="_blank" rel="noopener">${esc(p.license||"Условия лицензии")}</a>`:` · ${esc(p.license||"Лицензия не указана")}`;
+  return `<figure class="generation-photo"><img src="${safe(p.url)}" alt="${esc(p.caption||model.name+" "+gen.code)}" loading="lazy"><figcaption>Фото: <a href="${safe(p.sourceUrl)}" target="_blank" rel="noopener">источник</a> · ${esc(p.author||"Автор не указан")}${license}</figcaption></figure>`;
 }
 function section(title,items) {
   if(!Array.isArray(items)||!items.length)return "";
