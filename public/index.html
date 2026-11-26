@@ -14,7 +14,7 @@
 <body>
   <header class="top">
     <div class="brand"><span class="mark">AR</span><div><b>AUTO_RAZBOR</b><small>АВТОМОБИЛЬНАЯ ЭНЦИКЛОПЕДИЯ</small></div></div>
-    <span id="account" class="account">ГОСТЬ</span>
+    <button type="button" id="profileButton" class="profile-button" aria-label="Открыть профиль"><span id="profileAvatar" class="profile-avatar">?</span></button>
   </header>
   <main>
     <section class="hero">
@@ -24,8 +24,19 @@
       <div class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="Например: BMW, Camry, E46…" autocomplete="off"></div>
       <p class="search-hint">Поиск по марке, модели и обозначению поколения</p>
     </section>
-    <nav class="main-tabs" aria-label="Разделы приложения"><button type="button" class="main-tab is-active" data-main-tab="catalog">Каталог</button><button type="button" class="main-tab" data-main-tab="subscriptions">Подписки</button></nav>
-    <section id="subscriptions" class="subscriptions" hidden>
+    <div id="catalogView">
+      <section class="section-head">
+        <div><p class="eyebrow">БАЗА АВТОМОБИЛЕЙ</p><h2>Выбери марку</h2></div>
+        <span id="count" class="muted">Загрузка…</span>
+      </section>
+      <div id="catalog" class="catalog"><div class="loading">Загружаем каталог…</div></div>
+      <section id="details" class="details hidden"></section>
+    </div>
+    <div id="profileOverlay" class="profile-overlay" hidden>
+      <section class="profile-panel" role="dialog" aria-modal="true" aria-labelledby="profileTitle">
+        <button type="button" id="closeProfile" class="profile-close" aria-label="Закрыть профиль">×</button>
+        <div class="profile-heading"><span id="profileAvatarLarge" class="profile-avatar profile-avatar-large">?</span><div><p class="eyebrow">ЛИЧНЫЙ КАБИНЕТ</p><h2 id="profileTitle">Профиль</h2><p id="profileName" class="muted">Пользователь Telegram</p></div></div>
+        <section id="subscriptions" class="subscriptions">
       <div class="section-head"><div><p class="eyebrow">ДОСТУП К ЭКСПЕРТНЫМ МАТЕРИАЛАМ</p><h2>Подписки</h2></div><span class="muted">Без дорогих тарифов</span></div>
       <p class="subscription-intro">Открывай подробные разборы поколений: типичные неисправности, удачные и неудачные двигатели, плюсы, минусы и советы перед покупкой.</p>
       <div class="subscription-plans">
@@ -35,13 +46,7 @@
       </div>
       <p class="payment-note" id="paymentNote">Оплата пока не подключена. Покупка не спишет деньги — подключим безопасную оплату Telegram Stars следующим этапом.</p>
     </section>
-    <div id="catalogView">
-      <section class="section-head">
-        <div><p class="eyebrow">БАЗА АВТОМОБИЛЕЙ</p><h2>Выбери марку</h2></div>
-        <span id="count" class="muted">Загрузка…</span>
       </section>
-      <div id="catalog" class="catalog"><div class="loading">Загружаем каталог…</div></div>
-      <section id="details" class="details hidden"></section>
     </div>
     <footer>Каталог постепенно расширяется и проходит проверку. Данные могут отличаться по рынкам и модификациям.<br>AUTO_RAZBOR © 2026</footer>
   </main>
