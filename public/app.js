@@ -14,6 +14,27 @@ let activeModel = null;
 let favorites = new Set(JSON.parse(localStorage.getItem("ar-favorites") || "[]"));
 const brandLogoCache = new Map();
 
+function setTelegramProfile(user) {
+  const name = [user?.first_name, user?.last_name].filter(Boolean).join(" ") || user?.username || "Гость";
+  $("profileName").textContent = name;
+  $("profileTitle").textContent = user?.first_name ? "Профиль" : "Профиль гостя";
+  const initials = name === "Гость" ? "?" : name.trim().split(/\\s+/).slice(0,2).map(part => part[0]).join("").toUpperCase();
+  ["profileAvatar","profileAvatarLarge"].forEach(id => {
+    const host = $(id);
+    if (!host) return;
+    host.textContent = initials;
+    if (user?.photo_url) {
+      const img = document.createElement("img");
+      img.src = user.photo_url;
+      img.alt = "Фото профиля Telegram";
+      img.referrerPolicy = "no-referrer";
+      host.replaceChildren(img);
+    }
+  });
+}
+function openProfile() { $("profileOverlay").hidden = false; document.body.classList.add("profile-open"); }
+function closeProfile() { $("profileOverlay").hidden = true; document.body.classList.remove("profile-open"); }
+
 async function init() {
   try {
     let response = await fetch(apiUrl("/api/catalog"));
@@ -37,9 +58,9 @@ async function init() {
         });
         if (auth.ok) {
           const result = await auth.json();
-          $("account").textContent = result.user.first_name || "ПОЛЬЗОВАТЕЛЬ";
-        } else $("account").textContent = "ГОСТЬ";
-      } catch { $("account").textContent = "ГОСТЬ"; }
+          setTelegramProfile(result.user || tg?.initDataUnsafe?.user);
+        } else setTelegramProfile(tg?.initDataUnsafe?.user);
+      } catch { setTelegramProfile(tg?.initDataUnsafe?.user); }
     }
   } catch {
     $("catalog").innerHTML = '<p class="loading">Не удалось загрузить каталог. Попробуйте обновить приложение.</p>';
@@ -341,22 +362,10 @@ function escapeHtml(value) {
   }[char]));
 }
 
-function switchMainTab(tab) {
-  const showSubscriptions = tab === "subscriptions";
-  $("subscriptions").hidden = !showSubscriptions;
-  $("catalogView").hidden = showSubscriptions;
-  document.querySelectorAll("[data-main-tab]").forEach(button => {
-    const active = button.dataset.mainTab === tab;
-    button.classList.toggle("is-active", active);
-    button.setAttribute("aria-selected", String(active));
-  });
-  if (showSubscriptions) $("subscriptions").scrollIntoView({behavior:"smooth",block:"start"});
-  else window.scrollTo({top:0,behavior:"smooth"});
-}
-document.querySelectorAll("[data-main-tab]").forEach(button =>
-  button.addEventListener("click", () => switchMainTab(button.dataset.mainTab))
-);
-if (window.location.hash === "#subscriptions") switchMainTab("subscriptions");
+$("profileButton").addEventListener("click", openProfile);
+$("closeProfile").addEventListener("click", closeProfile);
+$("profileOverlay").addEventListener("click", event => { if (event.target === $("profileOverlay")) closeProfile(); });
+document.addEventListener("keydown", event => { if (event.key === "Escape") closeProfile(); });
 
 $("search").addEventListener("input", () => {
   closeDetails();
@@ -366,7 +375,8 @@ document.querySelectorAll("[data-buy-plan]").forEach(button => {
   button.addEventListener("click", () => {
     const note = $("paymentNote");
     if (note) note.textContent = "Тариф выбран: " + button.dataset.buyPlan + ". Приём оплаты ещё не подключён — деньги не списываются. Следующим шагом настроим оплату Telegram Stars и автоматическую выдачу доступа.";
-    $("subscriptions").scrollIntoView({behavior:"smooth",block:"start"});
+    $("paymentNote").scrollIntoView({behavior:"smooth",block:"nearest"});
   });
 });
+setTelegramProfile(tg?.initDataUnsafe?.user);
 init();
