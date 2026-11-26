@@ -24,7 +24,8 @@
       <div class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="Например: BMW, Camry, E46…" autocomplete="off"></div>
       <p class="search-hint">Поиск по марке, модели и обозначению поколения</p>
     </section>
-    <section id="subscriptions" class="subscriptions">
+    <nav class="main-tabs" aria-label="Разделы приложения"><button type="button" class="main-tab is-active" data-main-tab="catalog">Каталог</button><button type="button" class="main-tab" data-main-tab="subscriptions">Подписки</button></nav>
+    <section id="subscriptions" class="subscriptions" hidden>
       <div class="section-head"><div><p class="eyebrow">ДОСТУП К ЭКСПЕРТНЫМ МАТЕРИАЛАМ</p><h2>Подписки</h2></div><span class="muted">Без дорогих тарифов</span></div>
       <p class="subscription-intro">Открывай подробные разборы поколений: типичные неисправности, удачные и неудачные двигатели, плюсы, минусы и советы перед покупкой.</p>
       <div class="subscription-plans">
@@ -34,12 +35,14 @@
       </div>
       <p class="payment-note" id="paymentNote">Оплата пока не подключена. Покупка не спишет деньги — подключим безопасную оплату Telegram Stars следующим этапом.</p>
     </section>
-    <section class="section-head">
-      <div><p class="eyebrow">БАЗА АВТОМОБИЛЕЙ</p><h2>Выбери марку</h2></div>
-      <span id="count" class="muted">Загрузка…</span>
-    </section>
-    <div id="catalog" class="catalog"><div class="loading">Загружаем каталог…</div></div>
-    <section id="details" class="details hidden"></section>
+    <div id="catalogView">
+      <section class="section-head">
+        <div><p class="eyebrow">БАЗА АВТОМОБИЛЕЙ</p><h2>Выбери марку</h2></div>
+        <span id="count" class="muted">Загрузка…</span>
+      </section>
+      <div id="catalog" class="catalog"><div class="loading">Загружаем каталог…</div></div>
+      <section id="details" class="details hidden"></section>
+    </div>
     <footer>Каталог постепенно расширяется и проходит проверку. Данные могут отличаться по рынкам и модификациям.<br>AUTO_RAZBOR © 2026</footer>
   </main>
 </body>
