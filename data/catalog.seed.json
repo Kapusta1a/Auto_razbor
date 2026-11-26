@@ -162,11 +162,71 @@
               "markets": [
                 "Global"
               ],
-              "specifications": [],
-              "images": [],
+              "specifications": [
+                {
+                  "market": "Германия",
+                  "variant": "318i (до обновления 1987 года, без катализатора)",
+                  "engine": "M10, рядный 4-цилиндровый",
+                  "displacement": "1 766 см³",
+                  "fuel": "Бензин",
+                  "power": "105 л.с. (77 кВт) при 5 800 об/мин",
+                  "topSpeed": "185 км/ч",
+                  "source": "https://www.bmwgroup-classic.com/en/models/bmw-classics/product-description-page.ad-80-1.bmw-318i-e30.html",
+                  "sourceLabel": "BMW Group Classic — 318i E30"
+                },
+                {
+                  "market": "Германия",
+                  "variant": "320i",
+                  "engine": "M20B20, рядный 6-цилиндровый",
+                  "displacement": "1 990 см³",
+                  "fuel": "Бензин",
+                  "power": "125 л.с. (92 кВт) при 5 800 об/мин",
+                  "topSpeed": "196 км/ч",
+                  "source": "https://www.bmwgroup-classic.com/en/models/bmw-classics/product-description-page.ad-92-1.bmw-320i-e30.html",
+                  "sourceLabel": "BMW Group Classic — 320i E30"
+                },
+                {
+                  "market": "Германия",
+                  "variant": "323i (1982–1986)",
+                  "engine": "M20B23, рядный 6-цилиндровый",
+                  "displacement": "2 316 см³",
+                  "fuel": "Бензин",
+                  "power": "139 л.с. (102 кВт) при 5 300 об/мин",
+                  "topSpeed": "202 км/ч",
+                  "source": "https://www.bmwgroup-classic.com/en/models/bmw-classics/product-description-page.ad-103-1.bmw-323i-e30.html",
+                  "sourceLabel": "BMW Group Classic — 323i E30"
+                },
+                {
+                  "market": "Германия",
+                  "variant": "325i (без катализатора)",
+                  "engine": "M20B25, рядный 6-цилиндровый",
+                  "displacement": "2 494 см³",
+                  "fuel": "Бензин",
+                  "power": "171 л.с. (126 кВт) при 5 800 об/мин",
+                  "topSpeed": "220 км/ч",
+                  "source": "https://www.bmwgroup-classic.com/en/models/bmw-classics/product-description-page.ad-110-1.bmw-325i-e30.html",
+                  "sourceLabel": "BMW Group Classic — 325i E30"
+                }
+              ],
+              "images": [
+                {
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/BMW_3_Series_%28E30%29%2C_Germany.jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_3_Series_(E30),_Germany.jpg",
+                  "author": "Rutger van der Maar",
+                  "license": "CC BY 2.0",
+                  "caption": "BMW 3 Series E30, Frankfurt am Main"
+                },
+                {
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/BMW_3_Series_%28E30%29.jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_3_Series_(E30).jpg",
+                  "author": "Rutger van der Maar",
+                  "license": "CC BY 2.0",
+                  "caption": "BMW 3 Series E30, Hong Kong"
+                }
+              ],
               "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=BMW%203%20Series%20E30%201982%E2%80%931994",
               "researchUrl": "https://www.google.com/search?q=BMW%203%20Series%20E30%201982%E2%80%931994%20official%20brochure%20technical%20specifications%20engine%20market",
-              "researchStatus": "needs-verification"
+              "researchStatus": "partially-sourced"
             },
             {
               "id": "bmw-3-e36",
