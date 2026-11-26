@@ -99,17 +99,28 @@ async function loadCommonsPhoto(brand,model,gen) {
   const year=(String(gen.years||"").match(/(?:19|20)\d{2}/)||[])[0]||"";
   const q=[brand,model,gen.code,year].filter(Boolean).join(" ");
   const url=new URL("https://commons.wikimedia.org/w/api.php");
-  url.search=new URLSearchParams({action:"query",generator:"search",gsrsearch:q,gsrnamespace:"6",gsrlimit:"8",prop:"imageinfo",iiprop:"url|extmetadata",iiurlwidth:"1200",format:"json",origin:"*"}).toString();
+  url.search=new URLSearchParams({action:"query",generator:"search",gsrsearch:q,gsrnamespace:"6",gsrlimit:"20",prop:"imageinfo",iiprop:"url|extmetadata",iiurlwidth:"1200",format:"json",origin:"*"}).toString();
   try {
     const r=await fetch(url); if(!r.ok)throw new Error();
     const pages=Object.values((await r.json()).query?.pages||{});
-    const item=pages.find(p=>{const m=p.imageinfo?.[0]?.extmetadata||{};return (p.imageinfo?.[0]?.thumburl||p.imageinfo?.[0]?.url)&&m.LicenseShortName?.value&&m.Artist?.value;});
-    if(!item){host.innerHTML='<p class="pending-data">Фото с подтверждённой лицензией пока не найдено. <a href="'+safe(gen.photoSearchUrl)+'" target="_blank" rel="noopener">Посмотреть варианты ↗</a></p>';return;}
-    const info=item.imageinfo[0],m=info.extmetadata||{};
-    const clean=k=>String(m[k]?.value||"").replace(/<[^>]*>/g,"").trim();
-    host.innerHTML=photoMarkup({url:info.thumburl||info.url,sourceUrl:info.descriptionurl,author:clean("Artist")||clean("Credit"),license:clean("LicenseShortName")||clean("UsageTerms")}, {name:model},gen);
-    const caption=host.querySelector("figcaption");
-    if(clean("LicenseUrl")){caption.append(" · ");const a=document.createElement("a");a.href=clean("LicenseUrl");a.target="_blank";a.rel="noopener";a.textContent="условия лицензии";caption.append(a);}
+    const seen=new Set();
+    const items=pages.map(p=>p.imageinfo?.[0]).filter(info=>{
+      const m=info?.extmetadata||{};
+      const imageUrl=info?.thumburl||info?.url;
+      if(!imageUrl||!info.descriptionurl||!m.LicenseShortName?.value||!m.Artist?.value||seen.has(info.descriptionurl))return false;
+      seen.add(info.descriptionurl);
+      return true;
+    }).slice(0,4);
+    if(!items.length){host.innerHTML='<p class="pending-data">Фото с подтверждённой лицензией пока не найдено. <a href="'+safe(gen.photoSearchUrl)+'" target="_blank" rel="noopener">Посмотреть варианты ↗</a></p>';return;}
+    const clean=(m,k)=>String(m[k]?.value||"").replace(/<[^>]*>/g,"").trim();
+    host.innerHTML=items.map(info=>{
+      const m=info.extmetadata||{};
+      return photoMarkup({url:info.thumburl||info.url,sourceUrl:info.descriptionurl,author:clean(m,"Artist")||clean(m,"Credit"),license:clean(m,"LicenseShortName")||clean(m,"UsageTerms"),licenseUrl:clean(m,"LicenseUrl")}, {name:model},gen);
+    }).join("");
+    host.querySelectorAll("figcaption").forEach((caption,index)=>{
+      const info=items[index],licenseUrl=clean(info.extmetadata||{},"LicenseUrl");
+      if(licenseUrl){caption.append(" · ");const a=document.createElement("a");a.href=safe(licenseUrl);a.target="_blank";a.rel="noopener";a.textContent="условия лицензии";caption.append(a);}
+    });
   } catch {host.innerHTML='<p class="pending-data">Не удалось загрузить фото сейчас. <a href="'+safe(gen.photoSearchUrl)+'" target="_blank" rel="noopener">Открыть поиск фотографий ↗</a></p>';}
 }
 start();
