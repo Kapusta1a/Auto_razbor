@@ -274,7 +274,7 @@ async function loadBrandLogo(brand) {
 
 function monogram(name) { return String(name).replace(/[^A-Za-zА-Яа-я0-9]/g, "").slice(0, 2).toUpperCase(); }
 async function loadCommonsPhoto(card, brandName, modelName, gen) {
-  const host = card.querySelector(".generation-info") || card;
+  const host = card.querySelector(".generation-card-image");
   if (!host || card.dataset.photoLookup === "done") return;
   card.dataset.photoLookup = "done";
   const yearMatch = String(gen.years || "").match(/(?:19|20)\\d{2}/);
@@ -298,42 +298,19 @@ async function loadCommonsPhoto(card, brandName, modelName, gen) {
       const url = page.imageinfo?.[0]?.thumburl || page.imageinfo?.[0]?.url;
       return url && license && artist && !/unknown|no license|без лицензии/i.test(license);
     });
-    if (!candidate) {
-      const note = document.createElement("small");
-      note.className = "pending-data";
-      note.textContent = "Подходящее фото с подтверждённой лицензией пока не найдено.";
-      host.append(note);
-      return;
-    }
+    if (!candidate || !card.isConnected) return;
     const info = candidate.imageinfo[0], meta = info.extmetadata || {};
     const value = key => String(meta[key]?.value || "").replace(/<[^>]*>/g, "").trim();
     const license = value("LicenseShortName") || value("UsageTerms");
-    const licenseUrl = value("LicenseUrl");
     const artist = value("Artist") || value("Credit") || "Автор указан на странице файла";
-    const figure = document.createElement("figure");
-    figure.className = "generation-photo";
     const img = document.createElement("img");
     img.src = info.thumburl || info.url;
     img.alt = brandName + " " + modelName + " " + gen.code;
     img.loading = "lazy";
-    const caption = document.createElement("figcaption");
-    const source = document.createElement("a");
-    source.href = info.descriptionurl; source.target = "_blank"; source.rel = "noopener";
-    source.textContent = "Страница фотографии";
-    caption.append("Источник: ", source, " · Автор: " + artist + " · Лицензия: ");
-    if (licenseUrl) {
-      const link = document.createElement("a");
-      link.href = licenseUrl; link.target = "_blank"; link.rel = "noopener"; link.textContent = license;
-      caption.append(link);
-    } else caption.append(license);
-    figure.append(img, caption);
-    const existing = host.querySelector(".generation-photo");
-    if (!existing) host.insertBefore(figure, host.querySelector(".spec-list") || host.firstChild?.nextSibling || null);
-  } catch (error) {
-    const note = document.createElement("small");
-    note.className = "pending-data";
-    note.textContent = "Не удалось проверить фотографии сейчас. Попробуйте открыть карточку позже.";
-    host.append(note);
+    img.title = "Фото: " + artist + " · Лицензия: " + license + " · Источник: Wikimedia Commons";
+    host.replaceChildren(img);
+  } catch {
+    // Keep the neutral placeholder if a licensed photo cannot be verified.
   }
 }
 
