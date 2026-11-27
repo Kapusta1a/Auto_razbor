@@ -18,11 +18,49 @@
               "markets": [
                 "Global"
               ],
-              "specifications": [],
-              "images": [],
+              "specifications": [
+                {
+                  "market": "Великобритания",
+                  "variant": "2.2 бензин, седан/универсал, запуск 1991",
+                  "engine": "5S-FE, рядный 4-цилиндровый",
+                  "displacement": "2,2 л",
+                  "fuel": "Бензин",
+                  "power": "136 л.с. (134 bhp)",
+                  "transmission": "5-ступенчатая механика или 4-ступенчатый электронный автомат",
+                  "topSpeed": "204 км/ч (127 mph)",
+                  "bootVolume": "518 л (18,3 cu ft; седан)",
+                  "wheelbase": "2 620 мм",
+                  "source": "https://media.toyota.co.uk/wp-content/uploads/sites/5/pdf/Camry-Gen3-archive-launch-pack-1991.pdf",
+                  "sourceLabel": "Toyota GB — пресс-пакет Camry, сентябрь 1991, страницы 1–2 и 10"
+                },
+                {
+                  "market": "Великобритания",
+                  "variant": "3.0 V6 бензин, седан/универсал, запуск 1991",
+                  "engine": "3VZ-FE, V6",
+                  "displacement": "3,0 л",
+                  "fuel": "Бензин",
+                  "power": "188 л.с. (185 bhp)",
+                  "transmission": "4-ступенчатый электронный автомат",
+                  "topSpeed": "216 км/ч (134 mph)",
+                  "bootVolume": "518 л (18,3 cu ft; седан)",
+                  "wheelbase": "2 620 мм",
+                  "source": "https://media.toyota.co.uk/wp-content/uploads/sites/5/pdf/Camry-Gen3-archive-launch-pack-1991.pdf",
+                  "sourceLabel": "Toyota GB — пресс-пакет Camry, сентябрь 1991, страницы 1–2 и 10"
+                }
+              ],
+              "images": [
+                {
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Toyota_Camry_%28XV10%29_in_Thailand_01.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyota_Camry_(XV10)_in_Thailand_01.jpg",
+                  "author": "M.rJirapat",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "caption": "Toyota Camry XV10, Таиланд, 2017"
+                }
+              ],
               "photoSearchUrl": "https://commons.wikimedia.org/wiki/Category%3AToyota_Camry_(XV10)",
-              "researchUrl": "https://www.google.com/search?q=Toyota%20Camry%20XV10%201991%E2%80%931996%20official%20brochure%20technical%20specifications%20engine%20market",
-              "researchStatus": "needs-verification"
+              "researchUrl": "https://media.toyota.co.uk/vehicles/camry-archive-1991/",
+              "researchStatus": "partially-sourced"
             },
             {
               "id": "toyota-camry-xv20",
@@ -31,11 +69,56 @@
               "markets": [
                 "Global"
               ],
-              "specifications": [],
-              "images": [],
+              "specifications": [
+                {
+                  "market": "Япония",
+                  "variant": "2.2 бензин, Camry Gracia Sedan, 1996",
+                  "engine": "5S-FE, рядный 4-цилиндровый DOHC",
+                  "displacement": "2 163 см³",
+                  "power": "140 PS",
+                  "drivetrain": "Передний привод (седан, исходная версия 1996 года)",
+                  "length": "4 760 мм",
+                  "width": "1 785 мм",
+                  "height": "1 420 мм",
+                  "wheelbase": "2 670 мм",
+                  "curbWeight": "1 390 кг",
+                  "seats": "5",
+                  "doors": "4",
+                  "source": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60002190A/",
+                  "sourceLabel": "Toyota Motor Corporation — Camry Gracia Sedan, спецификация 2.2, 16.12.1996"
+                },
+                {
+                  "market": "Япония",
+                  "variant": "2.5 V6 бензин, Camry Gracia Sedan, 1996",
+                  "engine": "2MZ-FE, V6 DOHC",
+                  "displacement": "2 496 см³",
+                  "power": "200 PS",
+                  "transmission": "ECT-i, автоматическая",
+                  "drivetrain": "Передний привод (седан, исходная версия 1996 года)",
+                  "length": "4 760 мм",
+                  "width": "1 785 мм",
+                  "height": "1 420 мм",
+                  "wheelbase": "2 670 мм",
+                  "curbWeight": "1 440 кг",
+                  "seats": "5",
+                  "doors": "4",
+                  "source": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60002190A/",
+                  "sourceLabel": "Toyota Motor Corporation — Camry Gracia Sedan, спецификация 2.5, 16.12.1996"
+                }
+              ],
+              "images": [
+                {
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Toyota_camry_xv20_1.jpg/1280px-Toyota_camry_xv20_1.jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyota_camry_xv20_1.jpg",
+                  "author": "MusicUnity",
+                  "license": "CC BY-SA 3.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+                  "caption": "Toyota Camry XV20, 2000"
+                }
+              ],
               "photoSearchUrl": "https://commons.wikimedia.org/wiki/Category%3AToyota_Camry_(XV20)",
-              "researchUrl": "https://www.google.com/search?q=Toyota%20Camry%20XV20%201996%E2%80%932001%20official%20brochure%20technical%20specifications%20engine%20market",
-              "researchStatus": "needs-verification"
+              "researchUrl": "https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60002190A/",
+              "researchStatus": "partially-sourced"
             },
             {
               "id": "toyota-camry-xv30",
