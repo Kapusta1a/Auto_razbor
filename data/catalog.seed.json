@@ -346,11 +346,39 @@
               "markets": [
                 "Global"
               ],
-              "specifications": [],
+              "specifications": [
+                {
+                  "market": "Германия",
+                  "variant": "328i, седан, механика (1995–1998)",
+                  "engine": "M52B28, рядный 6-цилиндровый",
+                  "displacement": "2 793 см³",
+                  "fuel": "Бензин",
+                  "power": "193 л.с. (142 кВт)",
+                  "torque": "280 Н·м",
+                  "transmission": "5-ступенчатая механическая",
+                  "drivetrain": "Задний привод",
+                  "acceleration": "7,3 с (0–100 км/ч)",
+                  "topSpeed": "236 км/ч",
+                  "fuelConsumptionCity": "13,5 л/100 км",
+                  "fuelConsumptionHighway": "6,7 л/100 км",
+                  "fuelConsumptionCombined": "9,2 л/100 км",
+                  "length": "4 433 мм",
+                  "width": "1 698 мм",
+                  "height": "1 393 мм",
+                  "wheelbase": "2 700 мм",
+                  "bootVolume": "435 л",
+                  "fuelTank": "62 л",
+                  "curbWeight": "1 320 кг",
+                  "seats": "5",
+                  "doors": "4",
+                  "source": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/bmw/3er-reihe/e36/983365/",
+                  "sourceLabel": "ADAC — BMW 328i E36, технические данные"
+                }
+              ],
               "images": [],
               "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=BMW%203%20Series%20E36%201990%E2%80%932000",
               "researchUrl": "https://www.google.com/search?q=BMW%203%20Series%20E36%201990%E2%80%932000%20official%20brochure%20technical%20specifications%20engine%20market",
-              "researchStatus": "needs-verification"
+              "researchStatus": "partially-sourced"
             },
             {
               "id": "bmw-3-e46",
@@ -359,11 +387,39 @@
               "markets": [
                 "Global"
               ],
-              "specifications": [],
+              "specifications": [
+                {
+                  "market": "Германия",
+                  "variant": "320i, седан, механика, рестайлинг (2001–2005)",
+                  "engine": "M54B22, рядный 6-цилиндровый",
+                  "displacement": "2 171 см³",
+                  "fuel": "Бензин Super Plus",
+                  "power": "170 л.с. (125 кВт)",
+                  "torque": "210 Н·м",
+                  "transmission": "5-ступенчатая механическая",
+                  "drivetrain": "Задний привод",
+                  "acceleration": "8,3 с (0–100 км/ч)",
+                  "topSpeed": "226 км/ч",
+                  "fuelConsumptionCity": "12,2 л/100 км",
+                  "fuelConsumptionHighway": "6,9 л/100 км",
+                  "fuelConsumptionCombined": "8,9 л/100 км",
+                  "length": "4 471 мм",
+                  "width": "1 739 мм",
+                  "height": "1 415 мм",
+                  "wheelbase": "2 725 мм",
+                  "bootVolume": "440 л",
+                  "fuelTank": "63 л",
+                  "curbWeight": "1 470 кг",
+                  "seats": "5",
+                  "doors": "4",
+                  "source": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/bmw/3er-reihe/e46-facelift/992052/",
+                  "sourceLabel": "ADAC — BMW 320i E46, технические данные"
+                }
+              ],
               "images": [],
               "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=BMW%203%20Series%20E46%201997%E2%80%932006",
               "researchUrl": "https://www.google.com/search?q=BMW%203%20Series%20E46%201997%E2%80%932006%20official%20brochure%20technical%20specifications%20engine%20market",
-              "researchStatus": "needs-verification"
+              "researchStatus": "partially-sourced"
             },
             {
               "id": "bmw-3-e90",
@@ -541,11 +597,79 @@
               "markets": [
                 "Global"
               ],
-              "specifications": [],
+              "specifications": [
+                {
+                  "market": "Германия",
+                  "variant": "C 180, седан, автомат",
+                  "engine": "M111, рядный 4-цилиндровый",
+                  "displacement": "1 799 см³",
+                  "fuel": "Бензин",
+                  "power": "122 л.с. (90 кВт)",
+                  "torque": "170 Н·м",
+                  "transmission": "4-ступенчатый автомат",
+                  "drivetrain": "Задний привод",
+                  "acceleration": "13,0 с (0–100 км/ч)",
+                  "topSpeed": "190 км/ч",
+                  "fuelConsumptionCombined": "9,3 л/100 км",
+                  "length": "4 487 мм",
+                  "width": "1 720 мм",
+                  "height": "1 427 мм",
+                  "bootVolume": "430 л",
+                  "fuelTank": "62 л",
+                  "seats": "5",
+                  "doors": "4",
+                  "source": "https://assets.adac.de/image/upload/Autodatenbank/GWInfo/gw0364-mercedes-benz-c-klasse-1993-2001-benziner-bericht.pdf",
+                  "sourceLabel": "ADAC — Mercedes-Benz C-Кlasse W202, бензиновые версии и размеры"
+                },
+                {
+                  "market": "Германия",
+                  "variant": "C 200, седан",
+                  "engine": "M111, рядный 4-цилиндровый",
+                  "displacement": "1 998 см³",
+                  "fuel": "Бензин",
+                  "power": "136 л.с. (100 кВт)",
+                  "torque": "190 Н·м",
+                  "drivetrain": "Задний привод",
+                  "acceleration": "11,3 с (0–100 км/ч)",
+                  "topSpeed": "200 км/ч",
+                  "fuelConsumptionCombined": "9,4 л/100 км",
+                  "length": "4 487 мм",
+                  "width": "1 720 мм",
+                  "height": "1 427 мм",
+                  "bootVolume": "430 л",
+                  "fuelTank": "62 л",
+                  "seats": "5",
+                  "doors": "4",
+                  "source": "https://assets.adac.de/image/upload/Autodatenbank/GWInfo/gw0364-mercedes-benz-c-klasse-1993-2001-benziner-bericht.pdf",
+                  "sourceLabel": "ADAC — Mercedes-Benz C-Кlasse W202, бензиновые версии и размеры"
+                },
+                {
+                  "market": "Германия",
+                  "variant": "C 280, седан, V6",
+                  "engine": "M104, рядный 6-цилиндровый (до рестайлинга); M112 V6 (после рестайлинга — отдельная модификация)",
+                  "displacement": "2 799 см³",
+                  "fuel": "Бензин",
+                  "power": "197 л.с. (145 кВт)",
+                  "torque": "265 Н·м",
+                  "drivetrain": "Задний привод",
+                  "acceleration": "8,3 с (0–100 км/ч)",
+                  "topSpeed": "232 км/ч",
+                  "fuelConsumptionCombined": "10,1 л/100 км",
+                  "length": "4 487 мм",
+                  "width": "1 720 мм",
+                  "height": "1 427 мм",
+                  "bootVolume": "430 л",
+                  "fuelTank": "62 л",
+                  "seats": "5",
+                  "doors": "4",
+                  "source": "https://assets.adac.de/image/upload/Autodatenbank/GWInfo/gw0364-mercedes-benz-c-klasse-1993-2001-benziner-bericht.pdf",
+                  "sourceLabel": "ADAC — Mercedes-Benz C-Кlasse W202, бензиновые версии и размеры"
+                }
+              ],
               "images": [],
               "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mercedes-Benz%20C-Class%20W202%201993%E2%80%932000",
               "researchUrl": "https://www.google.com/search?q=Mercedes-Benz%20C-Class%20W202%201993%E2%80%932000%20official%20brochure%20technical%20specifications%20engine%20market",
-              "researchStatus": "needs-verification"
+              "researchStatus": "partially-sourced"
             },
             {
               "id": "mb-c-w203",
@@ -554,11 +678,39 @@
               "markets": [
                 "Global"
               ],
-              "specifications": [],
+              "specifications": [
+                {
+                  "market": "Германия",
+                  "variant": "C 200 Kompressor Classic, седан, рестайлинг (2004–2007)",
+                  "engine": "M271.940, рядный 4-цилиндровый с компрессором",
+                  "displacement": "1 796 см³",
+                  "fuel": "Бензин Super",
+                  "power": "163 л.с. (120 кВт)",
+                  "torque": "240 Н·м",
+                  "transmission": "6-ступенчатая механическая",
+                  "drivetrain": "Задний привод",
+                  "acceleration": "9,1 с (0–100 км/ч)",
+                  "topSpeed": "234 км/ч",
+                  "fuelConsumptionCity": "11,9 л/100 км",
+                  "fuelConsumptionHighway": "6,4 л/100 км",
+                  "fuelConsumptionCombined": "8,4 л/100 км",
+                  "length": "4 526 мм",
+                  "width": "1 728 мм",
+                  "height": "1 426 мм",
+                  "wheelbase": "2 715 мм",
+                  "bootVolume": "455 л",
+                  "fuelTank": "62 л",
+                  "curbWeight": "1 485 кг",
+                  "seats": "5",
+                  "doors": "4",
+                  "source": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/mercedes-benz/c-klasse/203-facelift/997935/",
+                  "sourceLabel": "ADAC — Mercedes-Benz C 200 Kompressor W203, технические данные"
+                }
+              ],
               "images": [],
               "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mercedes-Benz%20C-Class%20W203%202000%E2%80%932007",
               "researchUrl": "https://www.google.com/search?q=Mercedes-Benz%20C-Class%20W203%202000%E2%80%932007%20official%20brochure%20technical%20specifications%20engine%20market",
-              "researchStatus": "needs-verification"
+              "researchStatus": "partially-sourced"
             },
             {
               "id": "mb-c-w204",
