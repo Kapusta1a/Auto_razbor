@@ -428,11 +428,28 @@
               "markets": [
                 "Global"
               ],
-              "specifications": [],
+              "specifications": [
+                {
+                  "market": "Германия",
+                  "variant": "320i, седан, 170 л.с. (2007–2013; одна из версий E90)",
+                  "engine": "N43B20, рядный 4-цилиндровый",
+                  "displacement": "1 995 см³",
+                  "fuel": "Бензин Super Plus",
+                  "power": "170 л.с. (125 кВт)",
+                  "torque": "210 Н·м",
+                  "transmission": "6-ступенчатая механическая",
+                  "drivetrain": "Задний привод",
+                  "acceleration": "8,2 с (0–100 км/ч)",
+                  "topSpeed": "228 км/ч",
+                  "fuelConsumptionCombined": "6,1 л/100 км (NEFZ)",
+                  "source": "https://assets.adac.de/Autodatenbank/GWInfo/gw0079-bmw-3er-reihe-2005-2013-benziner-bericht.pdf",
+                  "sourceLabel": "ADAC — BMW 3 Series E90, обзор и таблица основных бензиновых моторов"
+                }
+              ],
               "images": [],
               "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=BMW%203%20Series%20E90%2FE91%2FE92%2FE93%202004%E2%80%932013",
               "researchUrl": "https://www.google.com/search?q=BMW%203%20Series%20E90%2FE91%2FE92%2FE93%202004%E2%80%932013%20official%20brochure%20technical%20specifications%20engine%20market",
-              "researchStatus": "needs-verification"
+              "researchStatus": "partially-sourced"
             },
             {
               "id": "bmw-3-f30",
@@ -519,11 +536,39 @@
               "markets": [
                 "Global"
               ],
-              "specifications": [],
+              "specifications": [
+                {
+                  "market": "Германия",
+                  "variant": "1.6 FSI, 5-дверный хэтчбек, 110 л.с. (2002–2003)",
+                  "engine": "BAD, рядный 4-цилиндровый FSI",
+                  "displacement": "1 598 см³",
+                  "fuel": "Бензин Super Plus",
+                  "power": "110 л.с. (81 кВт)",
+                  "torque": "155 Н·м",
+                  "transmission": "5-ступенчатая механическая",
+                  "drivetrain": "Передний привод",
+                  "acceleration": "10,6 с (0–100 км/ч)",
+                  "topSpeed": "194 км/ч",
+                  "fuelConsumptionCity": "7,9 л/100 км (NEFZ)",
+                  "fuelConsumptionHighway": "5,2 л/100 км (NEFZ)",
+                  "fuelConsumptionCombined": "6,2 л/100 км (NEFZ)",
+                  "length": "4 149 мм",
+                  "width": "1 735 мм",
+                  "height": "1 444 мм",
+                  "wheelbase": "2 511 мм",
+                  "bootVolume": "330 л",
+                  "fuelTank": "55 л",
+                  "curbWeight": "1 117 кг",
+                  "seats": "5",
+                  "doors": "5",
+                  "source": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/vw/golf/iv/108683/",
+                  "sourceLabel": "ADAC — VW Golf IV 1.6 FSI, технические данные"
+                }
+              ],
               "images": [],
               "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Volkswagen%20Golf%20Mk4%201997%E2%80%932006",
               "researchUrl": "https://www.google.com/search?q=Volkswagen%20Golf%20Mk4%201997%E2%80%932006%20official%20brochure%20technical%20specifications%20engine%20market",
-              "researchStatus": "needs-verification"
+              "researchStatus": "partially-sourced"
             },
             {
               "id": "vw-golf-mk5",
@@ -823,11 +868,40 @@
               "markets": [
                 "Global"
               ],
-              "specifications": [],
+              "specifications": [
+                {
+                  "market": "Германия",
+                  "variant": "1.8 i-VTEC Executive, 5-дверный хэтчбек (2005–2008)",
+                  "engine": "R18A2, рядный 4-цилиндровый",
+                  "displacement": "1 799 см³",
+                  "fuel": "Бензин Super",
+                  "power": "140 л.с. (103 кВт)",
+                  "torque": "174 Н·м",
+                  "transmission": "6-ступенчатая механическая",
+                  "drivetrain": "Передний привод",
+                  "acceleration": "8,9 с (0–100 км/ч)",
+                  "topSpeed": "205 км/ч",
+                  "fuelConsumptionCity": "8,4 л/100 км (NEFZ)",
+                  "fuelConsumptionHighway": "5,5 л/100 км (NEFZ)",
+                  "fuelConsumptionCombined": "6,6 л/100 км (NEFZ)",
+                  "length": "4 245 мм",
+                  "width": "1 765 мм",
+                  "height": "1 460 мм",
+                  "wheelbase": "2 620 мм",
+                  "groundClearance": "140 мм",
+                  "bootVolume": "456 л",
+                  "fuelTank": "50 л",
+                  "curbWeight": "1 265 кг",
+                  "seats": "5",
+                  "doors": "5",
+                  "source": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/honda/civic/8generation/204320/",
+                  "sourceLabel": "ADAC — Honda Civic VIII 1.8 Executive, технические данные"
+                }
+              ],
               "images": [],
               "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Honda%20Civic%208th%20generation%202005%E2%80%932011",
               "researchUrl": "https://www.google.com/search?q=Honda%20Civic%208th%20generation%202005%E2%80%932011%20official%20brochure%20technical%20specifications%20engine%20market",
-              "researchStatus": "needs-verification"
+              "researchStatus": "partially-sourced"
             },
             {
               "id": "honda-civic-9",
@@ -1109,11 +1183,39 @@
               "markets": [
                 "To be verified by market"
               ],
-              "specifications": [],
+              "specifications": [
+                {
+                  "market": "Германия",
+                  "variant": "1.8 T quattro, седан, 6-ступенчатая МКПП (данные на сентябрь 2004)",
+                  "engine": "1.8T, рядный 4-цилиндровый турбомотор",
+                  "displacement": "1 781 см³",
+                  "fuel": "Бензин Super (95 RON)",
+                  "power": "163 л.с. (120 кВт)",
+                  "torque": "225 Н·м",
+                  "transmission": "6-ступенчатая механическая",
+                  "drivetrain": "Полный привод quattro",
+                  "acceleration": "8,7 с (0–100 км/ч)",
+                  "topSpeed": "226 км/ч",
+                  "fuelConsumptionCity": "12,8 л/100 км",
+                  "fuelConsumptionHighway": "7,1 л/100 км",
+                  "fuelConsumptionCombined": "9,2 л/100 км",
+                  "length": "4 586 мм",
+                  "width": "1 772 мм",
+                  "height": "1 427 мм",
+                  "wheelbase": "2 648 мм",
+                  "bootVolume": "460 л",
+                  "fuelTank": "63 л",
+                  "curbWeight": "1 470 кг",
+                  "seats": "5",
+                  "doors": "4",
+                  "source": "https://www.audi.de/dam/nemo/customer-area/more-information/predecessor-models/a4/pdf/a4b7/2004_09_a4_b7_18t.pdf",
+                  "sourceLabel": "Audi AG — оригинальные технические данные A4 1.8 T, Германия, 09/2004"
+                }
+              ],
               "images": [],
               "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Audi%20A4%20B7%202004%E2%80%932009",
               "researchUrl": "https://www.google.com/search?q=Audi%20A4%20B7%202004%E2%80%932009%20official%20brochure%20technical%20specifications%20engine%20market",
-              "researchStatus": "needs-verification"
+              "researchStatus": "partially-sourced"
             },
             {
               "id": "audi-a4-b8",
