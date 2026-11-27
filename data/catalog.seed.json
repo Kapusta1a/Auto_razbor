@@ -764,11 +764,39 @@
               "markets": [
                 "Global"
               ],
-              "specifications": [],
+              "specifications": [
+                {
+                  "market": "Германия",
+                  "variant": "C 180 Kompressor Elegance, седан, 6MT (08/2007–01/2009)",
+                  "engine": "M271.952, рядный 4-цилиндровый с компрессором",
+                  "displacement": "1 796 см³",
+                  "fuel": "Бензин Super",
+                  "power": "156 л.с. (115 кВт)",
+                  "torque": "230 Н·м",
+                  "transmission": "6-ступенчатая механическая",
+                  "drivetrain": "Задний привод",
+                  "acceleration": "9,5 с (0–100 км/ч)",
+                  "topSpeed": "223 км/ч",
+                  "fuelConsumptionCity": "10,6 л/100 км (NEFZ)",
+                  "fuelConsumptionHighway": "5,7 л/100 км (NEFZ)",
+                  "fuelConsumptionCombined": "7,5 л/100 км (NEFZ)",
+                  "length": "4 586 мм",
+                  "width": "1 770 мм",
+                  "height": "1 447 мм",
+                  "wheelbase": "2 760 мм",
+                  "bootVolume": "475 л",
+                  "fuelTank": "66 л",
+                  "curbWeight": "1 485 кг",
+                  "seats": "5",
+                  "doors": "4",
+                  "source": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/mercedes-benz/c-klasse/204/209340/",
+                  "sourceLabel": "ADAC — Mercedes-Benz C 180 Kompressor W204, технические данные"
+                }
+              ],
               "images": [],
               "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mercedes-Benz%20C-Class%20W204%202007%E2%80%932014",
               "researchUrl": "https://www.google.com/search?q=Mercedes-Benz%20C-Class%20W204%202007%E2%80%932014%20official%20brochure%20technical%20specifications%20engine%20market",
-              "researchStatus": "needs-verification"
+              "researchStatus": "partially-sourced"
             },
             {
               "id": "mb-c-w205",
@@ -1470,11 +1498,66 @@
               "markets": [
                 "To be verified by market"
               ],
-              "specifications": [],
+              "specifications": [
+                {
+                  "market": "Германия",
+                  "variant": "1.6 Sport, 5-дверный хэтчбек (10/2003–06/2006)",
+                  "engine": "Z6, рядный 4-цилиндровый",
+                  "displacement": "1 598 см³",
+                  "fuel": "Бензин Super",
+                  "power": "105 л.с. (77 кВт)",
+                  "torque": "145 Н·м",
+                  "transmission": "5-ступенчатая механическая",
+                  "drivetrain": "Передний привод",
+                  "acceleration": "11,0 с (0–100 км/ч)",
+                  "topSpeed": "182 км/ч",
+                  "fuelConsumptionCity": "9,3 л/100 км (NEFZ)",
+                  "fuelConsumptionHighway": "6,0 л/100 км (NEFZ)",
+                  "fuelConsumptionCombined": "7,2 л/100 км (NEFZ)",
+                  "length": "4 420 мм",
+                  "width": "1 755 мм",
+                  "height": "1 465 мм",
+                  "wheelbase": "2 640 мм",
+                  "bootVolume": "346 л",
+                  "fuelTank": "55 л",
+                  "curbWeight": "1 260 кг",
+                  "seats": "5",
+                  "doors": "5",
+                  "source": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/mazda/3/bk/996781/",
+                  "sourceLabel": "ADAC — Mazda 3 BK 1.6 Sport, технические данные"
+                },
+                {
+                  "market": "Германия",
+                  "variant": "1.6 Sport Active, рестайлинг, 5-дверный хэтчбек (08/2006–03/2009)",
+                  "engine": "Z6, рядный 4-цилиндровый",
+                  "displacement": "1 598 см³",
+                  "fuel": "Бензин Super",
+                  "power": "105 л.с. (77 кВт)",
+                  "torque": "145 Н·м",
+                  "transmission": "5-ступенчатая механическая",
+                  "drivetrain": "Передний привод",
+                  "acceleration": "11,2 с (0–100 км/ч)",
+                  "topSpeed": "182 км/ч",
+                  "fuelConsumptionCity": "8,9 л/100 км (NEFZ)",
+                  "fuelConsumptionHighway": "5,7 л/100 км (NEFZ)",
+                  "fuelConsumptionCombined": "6,9 л/100 км (NEFZ)",
+                  "length": "4 415 мм",
+                  "width": "1 755 мм",
+                  "height": "1 465 мм",
+                  "wheelbase": "2 640 мм",
+                  "bootVolume": "346 л",
+                  "fuelTank": "55 л",
+                  "curbWeight": "1 265 кг",
+                  "seats": "5",
+                  "doors": "5",
+                  "source": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/mazda/3/bk-facelift/206922/",
+                  "sourceLabel": "ADAC — Mazda 3 BK facelift 1.6 Active, технические данные"
+                }
+              ],
               "images": [],
               "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Mazda%20Mazda3%20BK%202003%E2%80%932009",
               "researchUrl": "https://www.google.com/search?q=Mazda%20Mazda3%20BK%202003%E2%80%932009%20official%20brochure%20technical%20specifications%20engine%20market",
-              "researchStatus": "needs-verification"
+              "researchStatus": "partially-sourced"
             },
             {
               "id": "mazda-mazda3-bl",
@@ -2156,11 +2239,26 @@
               "markets": [
                 "To be verified by market"
               ],
-              "specifications": [],
+              "specifications": [
+                {
+                  "market": "Германия",
+                  "variant": "2.0 CRDi EX 4WD, рестайлинг (09/2008–07/2010)",
+                  "engine": "D4EA, рядный 4-цилиндровый турбодизель",
+                  "displacement": "1 991 см³",
+                  "fuel": "Дизель",
+                  "power": "150 л.с. (110 кВт)",
+                  "torque": "305 Н·м",
+                  "transmission": "6-ступенчатая механическая",
+                  "drivetrain": "Полный привод",
+                  "fuelConsumptionCombined": "7,1 л/100 км",
+                  "source": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/kia/sportage/je-facelift-2/215606/",
+                  "sourceLabel": "ADAC — Kia Sportage JE facelift 2.0 CRDi EX 4WD"
+                }
+              ],
               "images": [],
               "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Kia%20Sportage%20JE%2FKM%202004%E2%80%932010",
               "researchUrl": "https://www.google.com/search?q=Kia%20Sportage%20JE%2FKM%202004%E2%80%932010%20official%20brochure%20technical%20specifications%20engine%20market",
-              "researchStatus": "needs-verification"
+              "researchStatus": "partially-sourced"
             },
             {
               "id": "kia-sportage-sl",
@@ -2938,11 +3036,40 @@
               "markets": [
                 "To be verified by market"
               ],
-              "specifications": [],
+              "specifications": [
+                {
+                  "market": "Германия",
+                  "variant": "1.2 16V Authentique, 3-дверный хэтчбек (09/2005–12/2008)",
+                  "engine": "D4F L7, рядный 4-цилиндровый",
+                  "displacement": "1 149 см³",
+                  "fuel": "Бензин Super",
+                  "power": "75 л.с. (55 кВт)",
+                  "torque": "105 Н·м",
+                  "transmission": "5-ступенчатая механическая",
+                  "drivetrain": "Передний привод",
+                  "acceleration": "13,4 с (0–100 км/ч)",
+                  "topSpeed": "167 км/ч",
+                  "fuelConsumptionCity": "7,6 л/100 км (NEFZ)",
+                  "fuelConsumptionHighway": "4,9 л/100 км (NEFZ)",
+                  "fuelConsumptionCombined": "5,9 л/100 км (NEFZ)",
+                  "length": "3 986 мм",
+                  "width": "1 719 мм",
+                  "height": "1 495 мм",
+                  "wheelbase": "2 575 мм",
+                  "groundClearance": "120 мм",
+                  "bootVolume": "288 л",
+                  "fuelTank": "55 л",
+                  "curbWeight": "1 155 кг",
+                  "seats": "5",
+                  "doors": "3",
+                  "source": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/renault/clio/iii/203507/",
+                  "sourceLabel": "ADAC — Renault Clio III 1.2 16V, технические данные"
+                }
+              ],
               "images": [],
               "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Renault%20Clio%20III%202005%E2%80%932014",
               "researchUrl": "https://www.google.com/search?q=Renault%20Clio%20III%202005%E2%80%932014%20official%20brochure%20technical%20specifications%20engine%20market",
-              "researchStatus": "needs-verification"
+              "researchStatus": "partially-sourced"
             },
             {
               "id": "renault-clio-iv",
@@ -3048,11 +3175,40 @@
               "markets": [
                 "To be verified by market"
               ],
-              "specifications": [],
+              "specifications": [
+                {
+                  "market": "Германия",
+                  "variant": "120 VTi Sport, 5-дверный хэтчбек (09/2007–12/2009)",
+                  "engine": "5FW (EP6), рядный 4-цилиндровый",
+                  "displacement": "1 598 см³",
+                  "fuel": "Бензин Super",
+                  "power": "120 л.с. (88 кВт)",
+                  "torque": "160 Н·м",
+                  "transmission": "5-ступенчатая механическая",
+                  "drivetrain": "Передний привод",
+                  "acceleration": "10,8 с (0–100 км/ч)",
+                  "topSpeed": "195 км/ч",
+                  "fuelConsumptionCity": "9,3 л/100 км (NEFZ)",
+                  "fuelConsumptionHighway": "5,2 л/100 км (NEFZ)",
+                  "fuelConsumptionCombined": "6,7 л/100 км (NEFZ)",
+                  "length": "4 276 мм",
+                  "width": "1 815 мм",
+                  "height": "1 498 мм",
+                  "wheelbase": "2 608 мм",
+                  "groundClearance": "100 мм",
+                  "bootVolume": "348 л",
+                  "fuelTank": "60 л",
+                  "curbWeight": "1 362 кг",
+                  "seats": "5",
+                  "doors": "5",
+                  "source": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/peugeot/308/1generation/211441/",
+                  "sourceLabel": "ADAC — Peugeot 308 T7 120 VTi, технические данные"
+                }
+              ],
               "images": [],
               "photoSearchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Peugeot%20308%20T7%202007%E2%80%932013",
               "researchUrl": "https://www.google.com/search?q=Peugeot%20308%20T7%202007%E2%80%932013%20official%20brochure%20technical%20specifications%20engine%20market",
-              "researchStatus": "needs-verification"
+              "researchStatus": "partially-sourced"
             },
             {
               "id": "peugeot-308-t9",
