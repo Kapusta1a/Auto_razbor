@@ -110,10 +110,9 @@ function showBrand(id) {
     <div class="detail-kicker">МАРКА · ${escapeHtml(activeBrand.country)}</div>
     <div class="detail-heading"><div><h2>${escapeHtml(activeBrand.name)}</h2><p>${activeBrand.models.length} моделей в каталоге</p><p id="brandLogoCredit" class="brand-logo-credit">Поиск логотипа с указанием лицензии…</p></div><span class="detail-monogram" id="brandDetailLogo">${escapeHtml(monogram(activeBrand.name))}</span></div>
     <div class="model-list">${activeBrand.models.map(model => `
-      <button class="model-card" data-model="${escapeHtml(model.id)}">
-        <b>${escapeHtml(model.name)}</b>
-        <small>${model.generations.length} поколений</small>
-        <span class="model-years">${escapeHtml(yearRange(model.generations))}</span>
+      <button class="model-card model-card-rich" data-model="${escapeHtml(model.id)}">
+        <span class="model-card-image">${model.generations.find(gen => gen.images?.length)?.images?.[0] ? `<img src="${safeUrl(model.generations.find(gen => gen.images?.length).images[0].url)}" alt="${escapeHtml(activeBrand.name + " " + model.name)}" loading="lazy">` : `<span class="model-image-placeholder"><b>${escapeHtml(monogram(model.name))}</b></span>`}</span>
+        <span class="model-card-copy"><b>${escapeHtml(model.name)}</b><small>${model.generations.length} поколений</small><span class="model-years">${escapeHtml(yearRange(model.generations))}</span><span class="model-card-link">Смотреть модель <span aria-hidden="true">↗</span></span></span>
       </button>`).join("")}</div>
     <div id="modelDetails"></div>`;
   $("backBrands").addEventListener("click", closeDetails);
@@ -139,36 +138,22 @@ function showModel(id) {
         <div><p class="detail-kicker">КАРТОЧКА МОДЕЛИ</p><h3>${escapeHtml(activeBrand.name)} ${escapeHtml(activeModel.name)}</h3></div>
         <button class="favorite-btn ${isFavorite ? "is-favorite" : ""}" id="favoriteBtn" aria-label="Добавить в избранное">${isFavorite ? "★ В избранном" : "☆ В избранное"}</button>
       </div>
-      <p class="model-summary">Поколения и обозначения кузова, представленные в каталоге AUTO_RAZBOR.</p>
-      <div class="generation-list">${activeModel.generations.map((gen, index) => `
-        <article class="generation-card generation-card-rich generation-open" data-generation="${escapeHtml(gen.id)}" role="button" tabindex="0">
-          <div class="generation-number">${String(index + 1).padStart(2, "0")}</div>
-          <div class="generation-info">
-            <b>${escapeHtml(gen.code)} <span class="generation-open-label">Открыть карточку ↗</span></b>
+      <p class="model-summary">Выбери поколение, чтобы посмотреть фотографии, характеристики и подробный разбор.</p>
+      <div class="generation-list">${activeModel.generations.map((gen, index) => {
+        const photo = gen.images?.[0];
+        return `
+        <button type="button" class="generation-card generation-card-rich generation-open" data-generation="${escapeHtml(gen.id)}">
+          <span class="generation-card-image">${photo ? `<img src="${safeUrl(photo.url)}" alt="${escapeHtml(photo.caption || activeModel.name + " " + gen.code)}" loading="lazy">` : `<span class="generation-image-placeholder"><b>${escapeHtml(gen.code)}</b><small>AUTO_RAZBOR</small></span>`}</span>
+          <span class="generation-info">
+            <span class="generation-card-kicker">ПОКОЛЕНИЕ ${String(index + 1).padStart(2, "0")}</span>
+            <b>${escapeHtml(activeModel.name)} · ${escapeHtml(gen.code)}</b>
             <span class="generation-years">${escapeHtml(gen.years)}</span>
-            <small>Рынки: ${escapeHtml((gen.markets || []).join(", ") || "не указаны")}</small>
-            ${gen.images?.length ? gen.images.map(photo => `
-              <figure class="generation-photo">
-                <img src="${safeUrl(photo.url)}" alt="${escapeHtml(photo.caption || (activeModel.name + " " + gen.code))}" loading="lazy">
-                <figcaption>Фото: <a href="${safeUrl(photo.sourceUrl)}" target="_blank" rel="noopener">источник</a> · ${escapeHtml(photo.author)} · <a href="${safeUrl(photo.licenseUrl)}" target="_blank" rel="noopener">${escapeHtml(photo.license)}</a></figcaption>
-              </figure>`).join("") : ""}
-            ${gen.specifications?.length ? `
-              <div class="spec-list"><b class="spec-heading">Характеристики по рынкам и версиям</b>
-                ${gen.specifications.map(spec => `
-                  <section class="spec-card">
-                    <b>${escapeHtml(spec.variant)}</b><small>${escapeHtml(spec.market)}</small>
-                    <dl>
-                      ${[["Двигатель",spec.engine],["Объём",spec.displacement],["Топливо",spec.fuel],["Мощность",spec.power],["Крутящий момент",spec.torque],["КПП",spec.transmission],["Привод",spec.drivetrain]].filter(pair=>pair[1]).map(pair=>`<div><dt>${pair[0]}</dt><dd>${escapeHtml(pair[1])}</dd></div>`).join("")}
-                    </dl>
-                    <a class="spec-source" href="${safeUrl(spec.source)}" target="_blank" rel="noopener">${escapeHtml(spec.sourceLabel || "Источник данных")}</a>
-                  </section>`).join("")}
-              </div>` : ""}
-            ${!gen.images?.length && gen.photoSearchUrl ? `<a class="photo-search" href="${safeUrl(gen.photoSearchUrl)}" target="_blank" rel="noopener">Открыть фотографии поколения ↗</a>` : ""}
-            ${!gen.specifications?.length ? `<small class="pending-data">Характеристики ещё не подтверждены. <a href="${safeUrl(gen.researchUrl)}" target="_blank" rel="noopener">Найти технические данные ↗</a></small>` : ""}
-          </div>
-          <span class="generation-tag">ПОКОЛЕНИЕ</span>
-        </article>`).join("")}</div>
-      <p class="data-note">Характеристики зависят от рынка, года выпуска и комплектации. В карточку включаются только варианты с указанным источником; для точного подбора запчастей сверяйте VIN и код двигателя.</p>
+            <small>${escapeHtml((gen.markets || []).join(" · ") || "Рынки уточняются")}</small>
+            <span class="generation-card-link">Открыть карточку <span aria-hidden="true">↗</span></span>
+          </span>
+        </button>`;
+      }).join("")}</div>
+      <p class="data-note">Характеристики зависят от рынка, года выпуска и комплектации. Для точного подбора запчастей сверяйте VIN и код двигателя.</p>
     </section>`;
   $("favoriteBtn").addEventListener("click", toggleFavorite);
   $("details").querySelectorAll("[data-generation]").forEach(button =>
