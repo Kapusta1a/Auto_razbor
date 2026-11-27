@@ -125,6 +125,12 @@ function showBrand(id) {
   $("details").querySelectorAll("[data-model]").forEach(btn =>
     btn.addEventListener("click", () => showModel(btn.dataset.model))
   );
+  $("details").querySelectorAll(".model-card-rich").forEach((card, index) => {
+    const model = activeBrand.models[index];
+    if (model && !model.generations.some(gen => gen.images?.length)) {
+      loadCommonsPhoto(card, activeBrand.name, model.name, {code:"", years:yearRange(model.generations)});
+    }
+  });
   $("details").scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
@@ -274,7 +280,7 @@ async function loadBrandLogo(brand) {
 
 function monogram(name) { return String(name).replace(/[^A-Za-zА-Яа-я0-9]/g, "").slice(0, 2).toUpperCase(); }
 async function loadCommonsPhoto(card, brandName, modelName, gen) {
-  const host = card.querySelector(".generation-card-image");
+  const host = card.querySelector(".generation-card-image, .model-card-image");
   if (!host || card.dataset.photoLookup === "done") return;
   card.dataset.photoLookup = "done";
   const yearMatch = String(gen.years || "").match(/(?:19|20)\\d{2}/);
@@ -305,7 +311,7 @@ async function loadCommonsPhoto(card, brandName, modelName, gen) {
     const artist = value("Artist") || value("Credit") || "Автор указан на странице файла";
     const img = document.createElement("img");
     img.src = info.thumburl || info.url;
-    img.alt = brandName + " " + modelName + " " + gen.code;
+    img.alt = [brandName, modelName, gen.code].filter(Boolean).join(" ");
     img.loading = "lazy";
     img.title = "Фото: " + artist + " · Лицензия: " + license + " · Источник: Wikimedia Commons";
     host.replaceChildren(img);
