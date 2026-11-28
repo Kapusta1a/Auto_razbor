@@ -125,13 +125,46 @@
               "code": "XV30",
               "years": "2001–2006",
               "markets": [
-                "Global"
+                "Global",
+                "Japan"
               ],
-              "specifications": [],
-              "images": [],
+              "specifications": [
+                {
+                  "market": "Япония",
+                  "variant": "2.4G Touring Navi, бензин, седан, 2WD (2001)",
+                  "engine": "2AZ-FE, рядный 4-цилиндровый DOHC",
+                  "displacement": "2 362 см³",
+                  "fuel": "Неэтилированный обычный бензин",
+                  "power": "159 PS (117 кВт) при 5 600 об/мин",
+                  "torque": "220 Н·м при 4 000 об/мин",
+                  "transmission": "Super ECT, 4-ступенчатый автомат",
+                  "drivetrain": "Передний привод (FF)",
+                  "fuelConsumptionCombined": "11,0 км/л (японский цикл 10·15; не WLTC)",
+                  "fuelTank": "70 л",
+                  "length": "4 815 мм",
+                  "width": "1 795 мм",
+                  "height": "1 490 мм",
+                  "wheelbase": "2 720 мм",
+                  "curbWeight": "1 430 кг",
+                  "seats": "5",
+                  "doors": "4",
+                  "source": "https://toyota.jp/ucar/catalog/brand-TOYOTA/car-CAMRY/200109/1010394/",
+                  "sourceLabel": "Toyota U-Car — Camry Touring Navi, ACV30, Япония, сентябрь 2001"
+                }
+              ],
+              "images": [
+                {
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Toyota_Camry_%28XV30%29_2.0_G_2003.jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyota_Camry_(XV30)_2.0_G_2003.jpg",
+                  "author": "Ethan Llamas",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+                  "caption": "Toyota Camry XV30 2.0 G, 2003, Филиппины"
+                }
+              ],
               "photoSearchUrl": "https://commons.wikimedia.org/wiki/Category%3AToyota_Camry_(XV30)",
-              "researchUrl": "https://www.google.com/search?q=Toyota%20Camry%20XV30%202001%E2%80%932006%20official%20brochure%20technical%20specifications%20engine%20market",
-              "researchStatus": "needs-verification"
+              "researchUrl": "https://global.toyota/jp/newsroom/toyota/21790110.html",
+              "researchStatus": "partially-sourced"
             },
             {
               "id": "toyota-camry-xv40",
