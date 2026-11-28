@@ -93,8 +93,6 @@ function renderBrands(filter = $("search").value) {
       const mark = btn.querySelector(".brand-monogram");
       if (mark) mark.innerHTML = '<img class="brand-logo-img" src="' + safeUrl(logo.url) + '" alt="' + escapeHtml(brand.name) + ' логотип" loading="lazy">';
       btn.title = "Логотип: " + logo.license + " · " + logo.artist + " · Источник: Wikimedia Commons";
-      const small = btn.querySelector(".card-copy small");
-      if (small) small.textContent = brand.models.length + " моделей · " + brand.country + " · логотип: " + logo.license;
     });
   });
   $("count").textContent = q ? `${matches.length} марок найдено` : `${catalog.brands.length} марок`;
@@ -252,13 +250,29 @@ async function loadBrandLogo(brand) {
       const sr = await fetch(search.toString()); if (!sr.ok) return null;
       const hits = (await sr.json()).search || [];
       let filename = "";
-      for (const hit of hits.slice(0, 5)) {
+      // Prefer an exact company-name match; avoid accidentally displaying a similarly
+      // named product, team, person, or unrelated organization as the car marque logo.
+      const normalizedName = String(brand.name).normalize("NFKD").toLowerCase().replace(/[^a-z0-9]+/g, "");
+      const rankedHits = [...hits].sort((a, b) => {
+        const score = item => {
+          const label = String(item.label || "").normalize("NFKD").toLowerCase().replace(/[^a-z0-9]+/g, "");
+          const description = String(item.description || "").toLowerCase();
+          return (label === normalizedName ? 100 : label.includes(normalizedName) ? 50 : 0)
+            + (/automobile|motor|vehicle|car manufacturer|automotive/i.test(description) ? 20 : 0);
+        };
+        return score(b) - score(a);
+      });
+      for (const hit of rankedHits.slice(0, 8)) {
         const entityUrl = new URL("https://www.wikidata.org/w/api.php");
-        entityUrl.search = new URLSearchParams({action:"wbgetentities",ids:hit.id,props:"claims",format:"json",origin:"*"}).toString();
+        entityUrl.search = new URLSearchParams({action:"wbgetentities",ids:hit.id,props:"claims|labels|descriptions",languages:"en",format:"json",origin:"*"}).toString();
         const er = await fetch(entityUrl.toString()); if (!er.ok) continue;
         const entity = (await er.json()).entities?.[hit.id];
+        const label = String(entity?.labels?.en?.value || hit.label || "").normalize("NFKD").toLowerCase().replace(/[^a-z0-9]+/g, "");
+        const description = String(entity?.descriptions?.en?.value || hit.description || "");
+        const exactOrClose = label === normalizedName || label.includes(normalizedName) || normalizedName.includes(label);
+        const automotive = /automobile|motor|vehicle|car manufacturer|automotive|motor vehicle/i.test(description);
         const claim = entity?.claims?.P154?.[0]?.mainsnak?.datavalue?.value;
-        if (claim && typeof claim === "string") { filename = claim; break; }
+        if (claim && typeof claim === "string" && (exactOrClose || automotive)) { filename = claim; break; }
       }
       if (!filename) return null;
       const commons = new URL("https://commons.wikimedia.org/w/api.php");
